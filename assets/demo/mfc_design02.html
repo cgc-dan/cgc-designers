@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MFC Demo</title>
+<style>
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}body{width:90%;margin:0 auto;color:#666666;font-family:'Century Gothic', Verdana, Geneva, Camgirl Live Editor, sans-serif;font-weight:normal;font-style:normal;font-size:16px;background-image: url('https://editbio.files.wordpress.com/2017/09/microbg_2.jpg');background-repeat:repeat;background-position:0 0;}.profile_section_content {color:#666666;padding:5px;margin:5px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 0 0 #777777;box-shadow:0 0 0 #777777;}.profile_section_background {background-color:transparent;background-color:#;filter:alpha(opacity=100);opacity:1;}.img_radius_shadow {-webkit-border-radius:0;border-radius:0;-webkit-box-shadow:0 0 0 #777777; box-shadow:0 0 0 #777777;}.profile_section_content .heading {padding:5px;background-color:#808080;color:#FFFFFF;font-family:'Century Gothic', Verdana, Geneva, Camgirl Live Editor, sans-serif;font-weight:normal;font-style:normal;font-size:14px;-webkit-box-shadow:0 0 0 #777777;box-shadow:0 0 0 #777777;-webkit-text-shadow:0 0 0 #777777;text-shadow:0 0 0 #777777;}.content {padding:5px;}.my_mfc_news_feed {width:100%;height:330px;}#about_me_label {display:none;}#avatar_holder,#status_container,#blurb_container,#unix_last_broadcast_container,#unix_last_updated_container {display:none;}#header_bar,#footer_bar,#profile_main_photo,#tags_container,#about_me_label,#cam_score_container,#profile_friends .heading,#friends_container,#profile_header,#profile_about_me > .heading,#username_container,#gender_container,#body_type_container,#ethnicity_container,#hair_container,#eyes_container,#weight_container,#height_container,#age_container,#city_container,#country_container,#sexual_preference_container,#smoke_container,#drink_container,#drugs_container,#marital_status_container,#occupation_container,#school_container,#favorite_food_container,#pets_container,#automobile_container {display:none;}#about_me_container span#about_me_label,#profile_friends .heading,#profile_friends #friends_container,#profile_friends #favorite_models_container,#profile_about_me #tags_container,#profile_schedule,#profile_about_me div#occupation_container {display:none;}#about_me_value{}.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#4CC88C;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing: border-box;}html{}.clegrid-1 {width: 8.33%;}.clegrid-2 {width: 16.66%;}.clegrid-3 {width: 25%;}.clegrid-4 {width: 33.33%;}.clegrid-5 {width: 41.66%;}.clegrid-5-half {width: 47.66%;}.clegrid-6 {width: 50%;}.clegrid-7 {width: 58.33%;}.clegrid-8 {width: 66.66%;}.clegrid-9 {width: 75%;}.clegrid-10 {width: 83.33%;}.clegrid-11 {width: 91.66%;}.clegrid-12 {width: 100%;}[class*="clegrid-"] {float: left;padding: 15px;border: 0px solid #ccc;}[class*="no"] {float: left;padding: 0;}[class*="padd20"]{display:block;padding:20px;}.cledan202:after {content: "";clear: both;display: inline-table;}.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}.dotted {border-bottom:1px dashed #0C3;border-left:0;border-right:0;margin-bottom:10px;}/**Camgirl Live Editor**/.tab #hire{display:none;-webkit-animation:fadeInScale 1.2s ease-in-out;-moz-animation:fadeInScale 1.2s ease-in-out;-o-animation:fadeInScale 1.2s ease-in-out;-ms-animation:fadeInScale 1.2s ease-in-out;animation:fadeInScale 1.2s ease-in-out;z-index:500;font-size:20px;color:#888;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}.tab #hire:target{display:block;position:fixed;top:0;left:0;width:100%;height:100%;background:url('https://mfcpro.files.wordpress.com/2015/12/overley_grid.png') repeat;background-color:rgba(0,0,0,0.90);z-index:1001;}.additional{padding:25px 25px;}#hire .close a:link, #hire .close a:visited{}#hire .close a:hover{}.close img{background-color:#09C;padding:7px;}.close img:hover{background-color:#333;padding:7px;}.designer h1{display:block;font-size:30px;color:#666;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;line-height:normal;margin:0;text-indent:28px;text-transform:uppercase;}.wrp{display:table;width:100%;background-color:#f1f1f1;border-bottom:1px solid #ccc;}.designer{display: table;width:80%;height:auto;float:none;clear:both;position:relative;margin:3% auto 2% auto;background-color:#fff;padding:0;box-shadow:0 6px 7px -6px #000;}.designer p{font-size:16px;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}.clesas{height:50px;overflow:hidden;font-size:11px;color:#666;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;opacity:0;transition:all .4s;-webkit-transition:all .4s;}.seal:hover .clesas{opacity:1;}.clesas p{display:block;width:90%;height:20px;margin:0 -400px auto auto;font-size:11px;transition:all .4s;-webkit-transition:all .4s;}.seal:hover .clesas p{display:block;width:90%;height:20px;margin:0 auto;}.topbutton img{margin:40px auto 10px auto;transition:all .3s;-webkit-transition:all .3s;}.topbutton img:hover{margin:30px auto 20px auto;-webkit-box-reflect: below -7px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, transparent 50%, transparent 100%);}.dexfooter{margin:10px auto;background:url('https://mfcpro.files.wordpress.com/2016/05/footer.png');background-repeat:no-repeat;background-size:100%;background-position:0 0;background-color:#222;color:#777;text-align:center;font-size:15px;}.goup p{display:block;text-align:center;clear:both;margin:0 auto;}.goup a:link,.goup a:visited{display:inline-block;width:30px;height:30px;background:url('https://mfcpro.files.wordpress.com/2014/06/top1.png');background-size:100%;background-repeat:no-repeat;border-radius:20px;text-align:center;-moz-border-radius:20px;-ms-border-radius:20px;-o-border-radius:20px;-webkit-border-radius:20px;border:1px dotted #000;top:10px;transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;-webkit-transition:all .3s;overflow:hidden;opacity:.7;-webkit-filter: grayscale(100%);filter: grayscale(100%);}.goup a:hover{display:inline-block;width:30px;height:30px;border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;-o-border-radius:20px;-webkit-border-radius:20px;border:1px solid #000;top:-5px;opacity:1;-webkit-filter:none;filter: none;box-shadow:0 3px 8px #000;-webkit-box-shadow:0 3px 8px #000;}.reflect img{-webkit-box-reflect: below -17px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 50%, transparent 100%);}.imgresponsive img, img.responsive{display:block;width:100%;height:auto;margin:0 auto;}.clewrap{background-color:#fff;border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;box-shadow:0 -3px 6px -4px #999;-webkit-box-shadow:0 -3px 6px -4px #999}.clemfcfooter{margin:10px auto 0 auto;background-color:rgba(0,0,0,0.75);}.kelog{position:relative;padding:20px 0 50px;}.kelog img{margin:0 auto -30px auto;transition:all .5s;-webkit-transition:all .5s;}.kelog:hover img{margin:-140px auto 24px auto;box-shadow:0 5px 11px rgba(0,0,0,0.75);-webkit-box-shadow:0 5px 11px rgba(0,0,0,0.75);}#credits p{font-size:15px;color:#777;}#credits a, #credits a:visited{color:#4CC88C;text-decoration:none;}#credits a:hover{color:#CCC;text-decoration:none;}.kelog:hover{background-color:#ef0a76;box-shadow:0 7px 12px -7px #000;-webkit-box-shadow:0 7px 12px -7px #000;}.cbox{opacity:0;margin:8px auto 45px auto;}.kelog:hover .cbox{margin:4px auto 45px auto;opacity:1;background-image:url('https://editbio.files.wordpress.com/2017/09/mic02.png');background-repeat:repeat;background-position:0 0;}
+
+#corp{margin:10px auto 22px auto;background-color:#000000;background-image: url("https://raw.githubusercontent.com/cssmfc/profile/master/assets/misc/silkbg.jpg");background-repeat:no-repeat;background-size:cover;-webkit-background-size:cover;background-position:center;background-attachment:fixed;box-shadow:0 0 8px #999;-webkit-box-shadow:0 0 8px #999;}
+.clmenu ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;}
+.clmenu li {float: left;}
+.clmenu li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;border-bottom:3px solid transparent;}
+.clmenu li a:hover:not(.active) {background-color: #111;border-bottom:3px solid #4CC88C;}
+.clmenu .active {background-color:#4CC88C;}
+.clmenu .active:hover{background-color:#4CAF50;}
+.clmenu .flright{float:right}
+.empty{}
+#aboutme{background-image:url('https://raw.githubusercontent.com/cssmfc/profile/master/assets/misc/side.jpg');background-repeat:no-repeat;background-size:contain;background-position:top left;}
+#tipmenu{background-image:url('https://raw.githubusercontent.com/cssmfc/profile/master/assets/misc/side2.jpg');background-repeat:no-repeat;background-size:contain;background-position:top left;}
+.box{font-size:20px;background-color:rgba(0,0,0,0.70);}.srbox{font-size:26px;background-color:rgba(0,0,0,0.0);}
+.social{text-align:right;}#rules h2{display:block;text-align:center;}.rules,.rules p{font-size:19px;}.rules p{display:block;width:96%;heidght:auto;padding:4px 12px;margin:0 auto;border-bottom:1px solid #222;}
+.social img{display:inline-block;width:95px;height:60px;background-color:transparent;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;}
+.social img:hover{display:inline-block;width:95px;height:60px;-webkit-box-reflect: below -7px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6) 0%, transparent 50%, transparent 100%);background-color:#4CC88C;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;}.tipmenu{height:300px;overflow:auto;}
+.tipmenu ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;}
+.tipmenu li {display:block;width:90%;height:40px;float:none;clear:both;margin:0 auto;padding:6px 12px;border-bottom:1px solid #111;}
+.tipmenu li p:nth-child(1){display:block;width:70%;font-size:19px;padding:6px 1px 3px;float:left;margin:0 auto;}
+.tipmenu li p:nth-child(2){display:block;width:30%;font-size:17px;float:left;margin:0 auto;}
+.tipmenu li a:nth-child(1){display:block;color: white;text-align: center;padding: 6px 16px;text-decoration: none;font-size:14px;}.tipmenu li a:hover:nth-child(1){background-color:#4CC88C;}
+.vids,.vids img {background-color:rgba(0,0,0,0.30);}.vids{border:1px solid transparent;transition:all 0.4s;}.vids:hover{border:1px solid #4CC88C;}
+.timy span{padding:5px 11px;text-align:center;box-shadow:inset 12px 12px 7px #000;font-size:15px;border:1px solid #333;}.buy a, .buy a:visited{padding:5px 11px;text-align:center;box-shadow:inset 12px 12px 7px #000;font-size:15px;border:1px solid #333;text-decoration:none;color:#4CC88C;transition:all 0.3s;}.buy a:hover{padding:5px 11px;text-align:center;box-shadow:inset 12px 12px 7px #000;font-size:15px;border:1px solid #4CC88C;text-decoration:none;color:#f1f1f1;}.mfclogo{transition:all 0.4s;}.mfclogo img{opacity:0.7;display:block;-webkit-box-reflect: below -7px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1) 0%, transparent 50%, transparent 100%);transition:all 0.8s;}.sharemfc{border-bottom:1px solid #4CC88C;}.sharemfc::after{content:"";display:block;width:0%;height:1px;background-color:#4CC88C;margin:0 auto;transition:all 0.4s;}.sharemfc:hover::after{content:"";display:block;width:100%;height:1px;background-color:#4CC88C;margin:0 auto;}.sharemfc:hover img{opacity:1;display:block;-webkit-box-reflect: below -8px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6) 0%, transparent 50%, transparent 100%);}.sronly{display:none;}.srtcenter,.srtleft{text-align:left;}.srtright{text-align:right;}
+
+frame{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}iframe{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}embade{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}.profile_row #profile_about_me{}#photo_gallery_previews {display:block;width:90%;position:relative;margin:0 auto;background-color:#f1f1f1;border:1px solid #ccc;margin:25px auto;padding:10px 17px;color:#555;border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;-webkit-border-radius:7px;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}.user_comment_textarea_small,.user_comment_textarea_small:focus {width:850px;height:100px;-webkit-transition:width .4s ease-in-out;transition:width .4s ease-in-out;padding:12px;margin:10px auto;background:#f1f1f1;border:1px solid #ccc;color:#444;}textarea:focus {-webkit-transition:height .4s ease-in-out;transition:height .4s ease-in-out;}.user_comment_textarea_big {width:850px;height:150px;padding:15px;background:rgba(0,0,0,.50);color:#fff;margin:10px auto;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;outline:none;outline-style:none;font-size:18px;}.wall_post_avatar img {background-color:#f1f1f1;margin-top:1px;margin-left:-5px;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;border:2px solid rgba(255,255,255,0.0);width:70px;height:70px;}#no_profile_avatar {display:none;}.wall_post_avatar:hover img {background-color:#ccc;box-shadow:0 0 6px #999;-ms-box-shadow:0 0 6px #999;-o-box-shadow:0 0 6px #999;-webkit-box-shadow:0 0 6px #999;}.wall_post_info {width:700px;margin-left:42px;border-bottom:1px dotted #666;}.img_radius_shadow {-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}div.wall_post {display:block;margin-top:10px;font-size:18px;background-color:rgba(255,255,255,0.70);border:1px solid #ccc;margin:25px auto;padding:10px 17px;color:#666;border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;-webkit-border-radius:7px;transition:all .9s;-moz-transition:all .9s;-ms-transition:all .9s;-o-transition:all .9s;-webkit-transition:all .9s;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}div#profile_about_me.profile_subsection {text-indent:2px;background:transparent rgba(0,0,0,0.0);background-repeat:no-repeat;background-position:top right;}.wall_post a,.wall_post a:visited {color:#444;text-decoration:none;}.wall_post a:hover {color:#F3C;text-decoration:none;}div#comments {padding:10px 10px;margin-top:30px;background:none;}form#new_comment.hidden {padding:10px;background:rgba(0,0,0,0.0);border:0 solid #fff;border-radius:8px;-moz-border-radius:8px;-ms-border-radius:8px;-o-border-radius:8px;-webkit-border-radius:8px;height:auto;margin-top:60px;}#craziest_thing_label.label {display:block;}#be_anywhere_container,#hobbies_container,#talents_container,#perfect_mate_container,#perfect_date_container,#turn_ons_container,#five_things_container,#know_me_container,#for_fun_container,#favorite_songs_container,#favorite_movies_container,#craziest_thing_container,#favorite_books_container,#meaning_life_container,#know_me_container {display:block;background-color:rgba(255,255,255,0.70);color:#666;border-radius:5px;-webkit-border-radius:5px;border:4px solid #ccc;margin:10px auto 4px auto;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}p{font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;font-weight:300;}#profile_about_me {padding:0;margin:0 auto;}.photo_gallery_count{color:#777;}#rate_label,#average_rating_label,#admirers_label,#friends_label,#favorite_models_label {color:#ccc;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;font-weight:300;}#about_me_container,#about_me_value {visibility:visible!important;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}#profile_friends {display:block;width:90%;margin:10px auto 30px auto!important;color:#666;padding:10px 13px;background-color:rgba(255,255,255,0.70);border:1px solid #ccc;font-size:15px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}input[type="submit"],.post_comment_btn,.preview_comment_btn {padding:11px 22px;text-decoration:none;border:1px solid #ccc;background-color:#111111;color:#444;font-size:16px;text-align:center;}input[type="submit"]:hover,.post_comment_btn:hover,.preview_comment_btn:hover {padding:11px 22px;text-decoration:none;background:#F09;color:#fff;background-image:url('https://editbio.files.wordpress.com/2017/09/mic02.png');background-repeat:repeat;background-position:0 0;}/***Reset***/ .profile_section_content .heading {display:none;}.wall_post_time,.convert-time {display:none;}#profile_main_photo,#tags_container,#about_me_label {display:none;}#profile_interests_content .label {display:block;width:90%;height:auto;margin:4px auto 7px auto;padding:3px 15px;}.no{padding:0;}
+@media only screen and (max-width: 728px){
+body{margin-top:10px;background-image: url('https://editbio.files.wordpress.com/2017/09/microbg.jpg');background-repeat:repeat;background-position:0 0;font-size:13px;color:#666;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}[class*="clegrid-"]{width:100%;}#main img{display:block;width:100%;height:auto;margin:0 auto;}.clmenu ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;}.clmenu li {float: none;clear:left}.clmenu li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;border-bottom:3px solid transparent;}.clmenu li a:hover:not(.active) {background-color: #111;border-bottom:3px solid #4CC88C;}.clmenu .active {background-color:#4CC88C;}.clmenu .active:hover{background-color:#4CAF50;}.clmenu .flright{float:none;clear:right}.social{text-align:center;}.social img{display:block;width:35px;height:auto;background-color:rgba(0,0,0,0.70);}.social img:hover{display:block;width:35px;height:auto;background-color:#4CC88C;}#aboutme{background-repeat:no-repeat;background-size:cover;background-position:top left;}#tipmenu{background-repeat:no-repeat;background-size:cover;background-position:top left;}.srbox{font-size:16px;background-color:rgba(0,0,0,0.70);}.rules p{display:block;width:90%;height:auto;margin:0 auto;font-size:14px;text-align:center;margin:0 auto;padding:3px 0 4px;float:none;clear:both;border-bottom:1px solid #111;}.tipmenu li {display:block;width:90%;height:auto;float:none;clear:both;margin:0 auto;padding:6px 12px;}
+.tipmenu li p:nth-child(1){display:block;width:90%;font-size:14px;padding:6px 1px 3px;float:none;margin:0 auto;}
+.tipmenu li p:nth-child(2){display:block;width:90%;font-size:14px;float:none;margin:0 auto;}
+.tipmenu li a:nth-child(1){display:block;color: white;text-align: center;padding: 6px 16px;text-decoration: none;}.tipmenu li a:hover:nth-child(1){background-color:#4CC88C;}.sronly{display:block;font-size:14px;}.mdonly{display:none;}.social img{display:block;width:95px;height:60px;background-color:transparent;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;}.vids,.vids p{text-align:center;font-size:15px;}.srtcenter,.srtleft,.srtright{text-align:center;}}
+
+
+@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+@keyframes fadeInScale {0% { transform: scale(0.6);}100% { transform: scale(1);}}
+
+*{text-decoration:none;}
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+* html .clearfix {height:1%;}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+
+
+<div id="corp" class="clegrid-12 no row">
+
+<div class="clegrid-12 no imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/profile/master/assets/misc/hder1100x500.jpg" alt="Header Image"/>
+</div>
+
+<div class="clegrid-12 no clmenu">
+<ul>
+<li><a href="#aboutme">About Me</a></li>
+  <li><a href="#rules">Room Rules</a></li>
+  <li><a href="#tipmenu">My Tip Menu</a></li>
+  <li><a href="#videos">My Videos</a></li>
+  <li><a href="#toptippers">Top Tippers</a></li>
+  <li class="flright"><a class="active" href="#" id="show_message_dialog" title="Private Message">Message Me</a></li>
+  <li class="flright"><a class="active" href="#">Offline Tip</a></li>
+</ul>
+</div>
+
+  <div id="aboutme" class="clegrid-12 box">
+  <div class="clegrid-4 empty"></div>
+   <div class="clegrid-8 srbox">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="clegrid-12 social">
+       <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/icons/white_twitter.png"/></a>
+       <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/icons/white_amazon.png"/></a>
+       <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/buttons/share_mfc.png"/></a>
+       <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/buttons/mfc_chat.png"/></a>
+       <a href="#" target="_blank"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/buttons/mfc_tip.png"/></a>
+       <a href="#" id="show_message_dialog" title="Private Message"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/buttons/mfc_mail.png"/></a>
+    </div>
+  </div>
+  
+  
+  
+  
+ <div id="rules" class="clegrid-12 box">
+  <div class="clegrid-3 empty"></div>
+   <div class="clegrid-6 srbox rules">
+        <h2>My Room Rules</h2>
+        <p>Add your room rules here</p>
+        <p>Add your room rules here</p>
+        <p>Add your room rules here</p>
+        <p>Add your room rules here</p>
+        <p>Add your room rules here</p>
+        <p>Add your room rules here</p>
+        <p>Add your room rules here</p>
+        <p>Add your room rules here</p>
+    </div>
+    <div class="clegrid-3 empty"></div>
+  </div> 
+  
+  
+ 
+ <div id="tipmenu" class="clegrid-12 box">
+  <div class="clegrid-4 empty"></div>
+   <div class="clegrid-8 srbox">
+        <h2>My Tip Menu</h2>
+        <div class="tipmenu xcr">
+        <ul>
+            <li><p>Add your tip menu request here</p>
+                <p class="flright"><a href="#">400 tokens</a></p>
+            </li>
+            <li><p>Add your tip menu request here</p>
+                <p class="flright"><a href="#">400 tokens</a></p>
+            </li>
+            <li><p>Add your tip menu request here</p>
+                <p class="flright"><a href="#">400 tokens</a></p>
+            </li>
+            <li><p>Add your tip menu request here</p>
+                <p class="flright"><a href="#">400 tokens</a></p>
+            </li>
+            <li><p>Add your tip menu request here</p>
+                <p class="flright"><a href="#">400 tokens</a></p>
+            </li>
+            <li><p>Add your tip menu request here</p>
+                <p class="flright"><a href="#">400 tokens</a></p>
+            </li>
+            <li><p>Add your tip menu request here</p>
+                <p class="flright"><a href="#">400 tokens</a></p>
+            </li>
+        </ul>
+    </div>
+   
+  </div>
+ 
+ 
+ 
+  
+</div>
+
+
+<div id="videos" class="clegrid-12 box no">
+<div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/profile/master/assets/misc/vc_header.jpg" alt="My Videos"/></div>
+
+<div class="clegrid-12 sharemfc no">
+<div class="clegrid-6 tcenter mfcshare imgresponsive">
+<a class="mfclogo" href="#" target="_blank"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/buttons/images/mfcsw.png" alt="MFC Share"/></a>
+</div>
+<div class="clegrid-5 tcenter">
+<p>Want more videos? Check them out!</p>
+<p class="buy"><a href="#">Access All Videos</a></p>
+</div>
+</div>
+
+<div class="clegrid-12 tcenter">&nbsp;</div>
+
+<div class="clegrid-12 items xcr">
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/backgrounds/thumbnail_video.png" alt="video"/></div>
+  <div class="vidtitle">Video Name</div>
+  <div class="clegrid-12 no buy tcenter">
+    <div class="clegrid-6 tcenter"><a href="#">400 tokens</a></div>
+    <div class="clegrid-6 tcenter timy"><span>3:33</span></div>
+  </div>
+</div>
+
+</div>
+
+  </div>
+  
+  
+  
+<div id="toptippers" class="clegrid-12 box no">
+<div class="imgresponsive tcenter"><img src="https://raw.githubusercontent.com/cssmfc/profile/master/assets/misc/tt_header.jpg" alt="Top Tippers"/></div>
+
+<div class="clegrid-12 sharemfc no">
+<div class="clegrid-6 tcenter mfcshare imgresponsive">
+<a class="mfclogo" href="#" target="_blank"><img src="https://raw.githubusercontent.com/cssmfc/xniteproductions/master/assets/images/headers/twhd.jpg" alt="Top Tippers"/></a>
+</div>
+<div class="clegrid-5 tcenter">
+<p>Join My Wall of Fame! All the love for my Fans</p>
+<p class="buy"><a href="#">Tip To Join</a></p>
+</div>
+</div>
+
+<div class="clegrid-12 tcenter">&nbsp;</div>
+
+<div class="clegrid-12 items xcr">
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+<div class="clegrid-4 vids">
+  <div class="vidtitle">Premium Username</div>
+</div>
+
+</div>
+
+  </div>   
+ 
+
+<div id="credits" class="clegrid-12 clemfcfooter">
+<div class="clegrid-5 tleft srtcenter"><p>2019 - MyFreeCams.com - Model Name</p></div>
+<div class="clegrid-2 tcenter goup"><a href="#top"></a></div>
+<div class="clegrid-5 tright srtright srtcenter"><p>Powered by <a href="#hire">Camgirl Live Editor</a></p></div>
+
+<div class="tab">
+   <div id="hire">
+     <div class="designer">
+     
+     <div class="wrp">
+       <div class="clegrid-11 no"><h1>Camgirl Live Editor</h1></div>
+       <div class="clegrid-1 tright no close">
+       <a href="#off" class="mdonly"><img src="https://leroy799.files.wordpress.com/2017/02/6a6e221a933d3e56b37aeaebd457d175.png"/></a>
+       <a class="sronly" href="#off">Close</a>
+       </div>
+       </div>
+       
+       <div class="clegrid-12 additional">
+       <p>This MyFreeCams profile page is edited by the profile owner using the #1 editing live tool for webcam performers</p>
+       <p><a href="//camgirl.cloud/">Camgirl Live Editor</a> is a professional tool which allow customization and editing of a wide range of templates from pre designed gallery without writing a single line of code.</p>
+       </div>
+     </div>
+   </div>
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+</div></div>
+
+</body>
+</html>

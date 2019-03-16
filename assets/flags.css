@@ -1,0 +1,5 @@
+.langs a, .langs a:visited{color:#999;text-decoration:none;margin:5px auto;}
+.langs a:hover{color:#69C;text-decoration:none;}
+
+.flagen{background-image:url('en.png');background-repeat:no-repeat;background-size:18px auto;background-position:2px -2px;text-indent:20px;}
+.flagro{background-image:url('ro.png');background-repeat:no-repeat;background-size:18px auto;background-position:2px -2px;text-indent:20px;}
