@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EN: MyFreeCams CSS Cheat-Sheet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../page.css" type="text/css"/>
+<link rel="stylesheet" href="../flags.css" type="text/css"/>
+</head>
+<style>
+
+
+
+table{font-size:14px;font-family:sans-serif;}.tr{background:linear-gradient(to bottom,#f1f1f1 0%,#dfdfdf 100%)repeat scroll 0 0 rgba(0,0,0,0);font-size:15px;text-shadow:0 1px 2px #fff;}
+tr:nth-child(even) {background-color:#F5F5F5;}
+tr:nth-child(odd) {background-color: #FFF}
+tr:nth-child(even):hover {background-color:#F3FCFE;color:#627284;}
+tr:nth-child(odd):hover {background-color:#FFD;color:#627284;}
+.mono {font-family:"Lucida Console", Monaco, monospace;padding:4px 3px;font-size:14px;}
+.mono:hover{background-color:rgba(204,204,204,.10);color:#F93;}
+</style>
+<body>
+
+<div class="col-12 header imgresponsive no row">
+ <div class="col-12 row">
+<div class="col-10">
+  <h1 class="col-12">MyFreeCams Info</h1>
+  <p>MyFreeCams CSS Cheat-Sheet ;) use with care</p>
+ </div> 
+  <div class="col-2 language">
+   <a href="#translate" class="translate btn">Help Translate</a>
+   </div>
+</div>
+  
+
+</div>
+</div>
+
+<div class="col-12 no row tr">
+    <div class="col-4">Class and ID</div>
+    <div class="col-4">Function</div>
+    <div class="col-4">Tweak</div>
+</div>
+
+
+
+
+<div class="row bg-white">
+<table class="col-12 no row" cellspacing="3" cellpadding="3">
+  <tr>
+    <td align="left" valign="top" class="mono">div#profile_header.profile_section</td>
+    <td align="left" valign="top">avatar, status, last login container</td>
+    <td align="left" valign="top">you can hide this using {display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">div#profile_main_about_holder.profile_row</td>
+    <td align="left" valign="top">main photo, recent photos, About Me info container</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">div#profile_main_photo</td>
+    <td align="left" valign="top">main photo, recent photo container</td>
+    <td align="left" valign="top">you can hide this using {display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">div#profile_about_me_friends.profile_section</td>
+    <td align="left" valign="top">all content from About Me info box including friends section and rate function</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">div#profile_about_me.profile_subsection</td>
+    <td align="left" valign="top">only About Me info box content</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#five_things_container<br/>
+        #profile_interests_content<br/>
+        #for_fun_container<br/>
+        #craziest_thing_container<br/></td>
+    <td align="left" valign="top">containers</td>
+    <td align="left" valign="top">can be edited, font size, style, color</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#username_label</td>
+    <td align="left" valign="top">Username:</td>
+    <td align="left" valign="top">appears in About Me section</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#gender_label</td>
+    <td align="left" valign="top">Gender:</td>
+    <td align="left" valign="top">result displays: Male or Female</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#body_type_label</td>
+    <td align="left" valign="top">Body Type:</td>
+    <td align="left" valign="top">Slim/Petite, Avrage....</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#ethnicity_label<br/>#hair_label<br/>#eyes_label<br/>#weight_label<br/>#height_label<br/>#age_label<br/>#country_label<br/>#sexual_preference_label<br/>#smoke_label<br/>#drink_label<br/>#marital_status_label<br/>#be_anywhere_container<br/>#know_me_container<br/>#photo_gallery_previews<br/>#photo_galleries<br/>#occupation_label<br/>#cam_score_label<br/>#city_label<br/>#drugs_label<br/>#school_label<br/>#favorite_food_label<br/>#pets_label<br/>#automobile_label</td>
+    <td align="left" valign="top">all lables from About Me info section</td>
+    <td align="left" valign="top">can be edited, font style, hover effect, background color<br/></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#username_value<br/>#gender_value<br/>#body_type_value<br/>#ethnicity_value<br/>#hair_value<br/>#eyes_value<br/>#weight_value<br/>#height_value<br/>#age_value<br/>#country_value<br/>#sexual_preference_value<br/>#smoke_value<br/>#drink_value<br/>#marital_status_value<br/>#occupation_value<br/>#cam_score_value<br/>#city_value<br/>#drugs_value<br/>#school_value<br/>#favorite_food_value<br/>#pets_value<br/>#automobile_value</td>
+    <td align="left" valign="top">corespondend values</td>
+    <td align="left" valign="top">same as labels, the value visual tweek can be added</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#about_me_label<br/>.profile_section_content .heading</td>
+    <td align="left" valign="top">header title About Me section</td>
+    <td align="left" valign="top">can be hidden by adding {opacity:0;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#profile_about_me</td>
+    <td align="left" valign="top">container About Me section</td>
+    <td align="left" valign="top">can be edited, font-size, color, font-style, background</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#five_things_label<br/>#for_fun_label<br/>#craziest_thing_label<br/>#be_anywhere_label<br/>#know_me_label</td>
+    <td align="left" valign="top">header titles are hidden</td>
+    <td align="left" valign="top">{display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.content</td>
+    <td align="left" valign="top">content section</td>
+    <td align="left" valign="top">can be edited, {background: none;border:0px;}, no background image, no borders</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.heading</td>
+    <td align="left" valign="top">the Title area for all sections</td>
+    <td align="left" valign="top">hide by using {display:none;} or {
+  opacity:0;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.userShow</td>
+    <td align="left" valign="top">Premium, Registered, Model</td>
+    <td align="left" valign="top">shows the status of the page owner</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#header_bar</td>
+    <td align="left" valign="top">shows header default MFC Links</td>
+    <td align="left" valign="top">can be hidden using {display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#profile_header<br/>#profile_label</td>
+    <td align="left" valign="top">shows the header content, main title/ lable for the content boxes</td>
+    <td align="left" valign="top">can be edited or removed {display:none}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.profile_section_content</td>
+    <td align="left" valign="top">main content boxes</td>
+    <td align="left" valign="top">can be edited<br/>background-color:rgba(0,0,0,0.7);<br/>
+  border:0 solid #fff;<br/>
+  color:#FFF;<br/>
+  font-size:16px;<br/>
+  The container uses a black background color with opacity, no borders and white font color</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#profile_friends</td>
+    <td align="left" valign="top">Friends and Rating section</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#profile_friends_label,.profile_friends_label<br/>#profile_friends_value,.profile_friends_value<br/>#rate_container,#average_rating_container</td>
+    <td align="left" valign="top">each element inside Friends and Rate section</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#profile_photo_galleries_img<br/>#profile_photo_galleries_img:hover<br/>.photo_gallery_image<br/>.photo_gallery_image:hover</td>
+    <td align="left" valign="top">image gallery</td>
+    <td align="left" valign="top">image gallery thumbnail and hover css styling can be aplied</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#profile_photo_galleries a:link<br/>#profile_photo_galleries a:hover<br/>#profile_photo_galleries a:visited</td>
+    <td align="left" valign="top">links css style to gallery thumbnail previews</td>
+    <td align="left" valign="top">can be edited using custom font colors</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#footer_bar</td>
+    <td align="left" valign="top">default MFC links in footer section</td>
+    <td align="left" valign="top">can be hidden by adding {display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">img</td>
+    <td align="left" valign="top">this tweek I've added myself because IE adds a border to some images</td>
+    <td align="left" valign="top">remove border for images in IE {border:0;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.photo_gallery_name</td>
+    <td align="left" valign="top">shows the name of the gallery</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.photo_gallery_lock</td>
+    <td align="left" valign="top">password protected gallery</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#avatar_holder</td>
+    <td align="left" valign="top">Avatar</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.label</td>
+    <td align="left" valign="top">the title of the section</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.value</td>
+    <td align="left" valign="top">the content value of the label</td>
+    <td align="left" valign="top">custom css style can be applied</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.user_comment_textarea_small</td>
+    <td align="left" valign="top">user comment "type in box"</td>
+    <td align="left" valign="top">when not used can be smaller</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.user_comment_textarea_big</td>
+    <td align="left" valign="top">user comment "type in box"</td>
+    <td align="left" valign="top">when used can become bigger</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">div#comments</td>
+    <td align="left" valign="top">comment section </td>
+    <td align="left" valign="top">css style can be added</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#profile_interests_content .label</td>
+    <td align="left" valign="top">Interests and Hobbies title section</td>
+    <td align="left" valign="top">can be hidden using {display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.wall_post_avatar</td>
+    <td align="left" valign="top">shows the avatar in comment section</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.wall_post_avatar img<br/>.wall_post_avatar img:hover</td>
+    <td align="left" valign="top">css style applied when hover </td>
+    <td align="left" valign="top">if a user doesn't use an avatar on their profile when posting comments, a image can be added in css code as background image using {background: url('image-url-path') no-repeat center;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.wall_post_info</td>
+    <td align="left" valign="top">shows the header of individual comments</td>
+    <td align="left" valign="top">contains the commenters Username/link</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.wall_post_info a:link<br/>.wall_post_info a:visited<br/>.wall_post_info a:hover</td>
+    <td align="left" valign="top">links/ Username in comment section</td>
+    <td align="left" valign="top">each instance can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.wall_post_info a:hover:after</td>
+    <td align="left" valign="top">custom tweek, shows another element when hover</td>
+    <td align="left" valign="top">can be edited like this: {content:'« Visit Profile';<br/>width:110px;height:20px;margin-left:2px;<br/>display:inline-block;font-family:Arial, Helvetica, sans-serif;<br/>text-indent:22px; font-size:12px;color: #FFF;<br/>
+-webkit-transition:all .8s;-moz-transition:all .8s;transition:all .8s;<br/>}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.wall_post_time</td>
+    <td align="left" valign="top">shows comment time</td>
+    <td align="left" valign="top">can be edited or removed {display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.wall_post_body</td>
+    <td align="left" valign="top">the body containg the User's comment</td>
+    <td align="left" valign="top">can be edited using css style codes</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">.header_links,.footer_links</td>
+    <td align="left" valign="top">shows header and footer default MyFreeCams links</td>
+    <td align="left" valign="top">can be removed with {display:none;}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#tags_label<br/>#tags_value</td>
+    <td align="left" valign="top">shows tags on MyFreeCams profile</td>
+    <td align="left" valign="top">can be edited or removed {opacity:0;} </td>
+  </tr>
+  <tr class="tr">
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="center" valign="top">Basic</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">a:link, a</td>
+    <td align="left" valign="top">main css style for link</td>
+    <td align="left" valign="top">css custom style can be applied</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">a:hover</td>
+    <td align="left" valign="top">link style when hover</td>
+    <td align="left" valign="top">css custom style can be applied</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">a:visited</td>
+    <td align="left" valign="top">link style after link is visited</td>
+    <td align="left" valign="top">css custom style can be applied</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">body</td>
+    <td align="left" valign="top">main body layout css style</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#username_container</td>
+    <td align="left" valign="top">username container</td>
+    <td align="left" valign="top">can be edited</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#username_label</td>
+    <td align="left" valign="top">Username:</td>
+    <td align="left" valign="top">can be edited, background image, custom font-size, color</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">#username_value</td>
+    <td align="left" valign="top">Your Username</td>
+    <td align="left" valign="top">can be edited, background image, custom font-size, color</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr class="tr">
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="center" valign="top">Custom tweaks</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">CSS CODE</td>
+    <td align="center" valign="top">DESCRIPTION</td>
+    <td align="center" valign="top">TWEAK EXAMPLES</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">body{margin:0 auto;width:80%!important;}</td>
+    <td align="left" valign="top">margin 0 auto, makes the layout centered<br/>width 80% defines the width of the layout (narrow-centered layout)</td>
+    <td align="left" valign="top">body{margin:0 auto;width:90!important;} - narrow centered layout<br/>body{margin:0 auto;width:100%!important;} - wide centered layout<br/>body{margin:0;width:100%!important;} - full wide layout</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="mono">body{margin-top:200px;}</td>
+    <td align="left" valign="top">moves the profile layout from top with 200px</td>
+    <td align="left" valign="top">body{margin-top:300px;} - moves the profile down with 300px<br/>body{margin-top:400px;} - moves the profile down with 400px<br/>body{margin-top:5%;} - moves the profile down with 5% </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Note:<br/>
+    Other custom css elements can be added/used (selectors for example).</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"></td>
+    <td align="center" valign="top"></td>
+    <td align="left" valign="top"></td>
+  </tr>
+</table>
+</div>
+
+<div class="tab row">
+
+<div id="translate" class="col-12 no">
+<div class="col-12 no tright"><span class="closez"><a href="#!" class="btn">&times;</a></span></div>
+<div class="col-12">
+  <h3>Translate</h3>
+  <p>In order to make this material useful for many other users, we need your help to translate it in other languages.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-12 footer no">
+
+  <div class="row">
+  
+    <div class="col-4">
+      <p><strong>Quick Nav</strong></p>
+      <ul class="structure">
+      <li><a href="../../index.html" title="Back to index">Index</a></li>
+      <li><a href="../../cgc_editor.html" title="Editor Compatibility">Editor Compatibility</a></li>
+      <li><a href="index.html" target="_blank" title="Demos">Online Demos</a></li>
+      </ul>
+    </div>
+    
+    <div class="col-4">
+      <p><strong>Quick Links</strong></p>
+      <ul class="structure">
+      <li><a href="https://camgirl.cloud/" target="_blank" title="Camgirl.Cloud">CGC website</a></li>
+      <li><a href="https://camgirl.cloud/contact/" target="_blank" title="Camgirl.Cloud Contact">CGC Contact</a></li>
+      <li><a href="https://camgirl.cloud/support/" target="_blank" title="Camgirl.Cloud Forum">Support Forum</a></li>
+      </ul>
+    </div>
+    
+    
+    <div class="col-4">
+     <p><strong>Social Links</strong></p>
+      <ul class="structure">
+      <li><a href="https://twitter.com/CSSMFC" target="_blank" title="Camgirl.Cloud on Twitter">CGC on Twitter</a></li>
+      <li><a href="https://www.facebook.com/groups/camgirlcloud/" target="_blank" title="Camgirl.Cloud on Facebook">Join us on Facebook</a></li>
+      </ul>
+    
+    </div>
+    
+    
+    
+    <div class="col-12 credits tright">2019</div>
+    
+    
+  
+  </div>
+
+
+</div>
+
+
+ <!--- end footer --->
+
+
+
+
+</div>
+ <!--- end wrapper --->
+
+
+
+
+</body>
+</html>
