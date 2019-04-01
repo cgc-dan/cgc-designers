@@ -1,2 +1,2 @@
-##CGC Freelancer Program##
+## CGC Freelancer Program ##
 folder
