@@ -1,7 +1,7 @@
 # cgc-designers
 [Camgirl.Cloud Freelance Program](https://camgirl.cloud/docs/designers/)
 
-[CGC Freelancer Program](https://cgc-dan.github.io/cgc-designers/assets/cgc.jpg)
+![CGC Freelancer Program](https://cgc-dan.github.io/cgc-designers/assets/cgc.jpg)
 
 **[Camgirl.Cloud](https://camgirl.cloud/) service is expanding it’s platform and range of services with Freelancer Program.**
 
