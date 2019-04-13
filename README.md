@@ -19,3 +19,11 @@ Our program was developed as "alternative environment" to major websites/service
 So, if you want to become a freelance web/graphic designer on CGC platform, to submit your work, sell it and engage with other webcam performers, pso or other freelancers feel free to do so. Don't be shy.
 
 We've declined collaborations with some entities (websites, services) from this niche because we want to focus on providing a friendly environment for hobbyists first and web design companies last.
+
+**Quick navigation:**
+* [Home Page](https://cgc-dan.github.io/cgc-designers/)
+* [Videos](https://cgc-dan.github.io/cgc-designers/assets/videos/)
+* [Demos & Code Samples](https://cgc-dan.github.io/cgc-designers/assets/demo/)
+
+**Need to get in touch with us?**
+feel free to use the [contact form](https://camgirl.cloud/contact/) from our main website or on [twitter](https://twitter.com/CSSMFC)
