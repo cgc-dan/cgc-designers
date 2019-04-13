@@ -13,6 +13,7 @@ There’s no simple answer but we’ll try to skip all implied technicalities se
 Freelancer Program allows registered and approved members to submit their own design/product/template and sell it trough CGC platform.
 
 **Who can join the Freelancer Program?** 
+
 It’s open for anyone with a bit of creativity, keen eye for aesthetic output and some editing skills. Yes it is a vague definition we know, but let’s keep it simple.
 
 Our program was developed as "alternative environment" to major websites/services like fiverr, freelancer, envato where adult-niche (creative web and graphic design) has no real support. 
