@@ -1,0 +1,2838 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"Project-Id-Version: Tutor LMS\n"
+"POT-Creation-Date: 2019-03-15 16:20+0600\n"
+"PO-Revision-Date: 2019-07-24 12:06+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: tutor.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: ro_RO\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+#: classes/Admin.php:39 classes/Gutenberg.php:55
+msgid "Tutor LMS"
+msgstr "Tutor LMS"
+
+#: classes/Admin.php:41 classes/Post_types.php:89
+#: templates/single/course/enrolled/lead-info.php:73
+#: templates/single/course/lead-info.php:71
+msgid "Categories"
+msgstr "Categorii"
+
+#: classes/Admin.php:43
+msgid "Tags"
+msgstr "Etichete"
+
+#: classes/Admin.php:45 classes/Course.php:263 classes/Options.php:279
+#: classes/Quiz_Attempts_List.php:105 views/pages/students.php:8
+msgid "Students"
+msgstr "Cursanți"
+
+#: classes/Admin.php:47 classes/Course.php:41 classes/Options.php:254
+#: views/pages/instructors.php:18
+msgid "Instructors"
+msgstr "Instructori"
+
+#: classes/Admin.php:49
+msgid "Q & A"
+msgstr "Q & A"
+
+#: classes/Admin.php:49
+msgid "Q & A "
+msgstr "Q & A "
+
+#: classes/Admin.php:51 views/pages/quiz_attempts.php:18
+msgid "Quiz Attempts"
+msgstr "Încercări de testare"
+
+#: classes/Admin.php:56
+msgid "Add-ons"
+msgstr "Opțiuni suplimentare"
+
+#: classes/Admin.php:59 classes/Instructors_List.php:95
+#: views/pages/view_attempt.php:40
+msgid "Status"
+msgstr "Stare"
+
+#: classes/Admin.php:63 classes/Admin.php:390 classes/Quiz.php:100
+#: views/modal/add_quiz.php:21 views/modal/edit_quiz.php:31
+msgid "Settings"
+msgstr "Setări"
+
+#: classes/Admin.php:65
+msgid "Uninstall Tutor LMS"
+msgstr "Dezinstaleaza Tutor LMS"
+
+#: classes/Admin.php:183
+msgid "Permission Denied"
+msgstr "Permisiune refuzata"
+
+#: classes/Admin.php:385
+msgid "Uninstall"
+msgstr "Dezinstaleaza"
+
+#: classes/Ajax.php:126
+msgid "Rating placed success"
+msgstr "Evaluarea plasata cu succesul"
+
+#: classes/Ajax.php:140
+msgid "Empty question title or body"
+msgstr "Stergeti titlul sau corpul întrebării"
+
+#: classes/Ajax.php:172
+msgid "Question has been added successfully"
+msgstr "Întrebarea a fost adăugată cu succes"
+
+#: classes/Ajax.php:182
+msgid "Please write answer"
+msgstr "Vă rugăm să scrieți un răspuns"
+
+#: classes/Ajax.php:210
+msgid "Answer has been added successfully"
+msgstr "Întrebarea a fost adăugată cu succes"
+
+#: classes/Ajax.php:226
+msgid "Course removed from wish list"
+msgstr "Cursul a fost eliminat din lista de dorințe"
+
+#: classes/Ajax.php:229
+msgid "Course added to wish list"
+msgstr "Curs adăugat la lista de dorințe"
+
+#: classes/Course.php:38
+msgid "Course Builder"
+msgstr "Constructor de cursuri"
+
+#: classes/Course.php:39
+msgid "Additional Data"
+msgstr "Date adiționale"
+
+#: classes/Course.php:40
+msgid "Video"
+msgstr "Video"
+
+#: classes/Course.php:42 classes/Utils.php:923
+#: views/metabox/announcements-metabox.php:13
+msgid "Announcements"
+msgstr "Anunturi"
+
+#: classes/Course.php:247
+msgid "Topic has been updated"
+msgstr "Subiectul a fost actualizat"
+
+#: classes/Course.php:262 classes/Options.php:165 classes/Post_types.php:147
+msgid "Lessons"
+msgstr "Lectii"
+
+#: classes/Course.php:264
+msgid "Price"
+msgstr "Pret"
+
+#: classes/Course.php:345
+msgid "Please Sign In first"
+msgstr "Vă rugăm să vă conectați mai întâi"
+
+#: classes/Course.php:393 classes/Lesson.php:238
+msgid "Please Sign-In"
+msgstr "Conectați-vă la contul dvs"
+
+#: classes/Course.php:469
+msgid "Search to get the specific instructors"
+msgstr "Cautati un anumit instructor"
+
+#: classes/Course.php:472
+msgid "No instructor available or you have already added maximum instructors"
+msgstr ""
+"Nici un instructor disponibil sau ați adăugat deja maximul de instructori"
+
+#: classes/Course.php:477
+#, php-format
+msgid ""
+"To add unlimited multiple instructors in your course, get %sTutor LMS Pro%s"
+msgstr ""
+"Pentru a adăuga mai multi instructori nelimitați în cursul dvs., obțineți "
+"%sTutor LMS Pro%s"
+
+#: classes/Instructor.php:37 classes/Instructor.php:143 classes/Student.php:33
+msgid "First name field is required"
+msgstr "Completati campul obligatoriu nume"
+
+#: classes/Instructor.php:38 classes/Instructor.php:144 classes/Student.php:34
+msgid "Last name field is required"
+msgstr "Completati campul obligatoriu prenume"
+
+#: classes/Instructor.php:39 classes/Instructor.php:145 classes/Student.php:35
+msgid "E-Mail field is required"
+msgstr "Completati campul obligatoriu E-Mail"
+
+#: classes/Instructor.php:40 classes/Instructor.php:146 classes/Student.php:36
+msgid "User Name field is required"
+msgstr "Completati campul obligatoriu nume utilizator"
+
+#: classes/Instructor.php:41 classes/Instructor.php:147 classes/Student.php:37
+msgid "Phone Number field is required"
+msgstr "Completati campul obligatoriu numar telefon"
+
+#: classes/Instructor.php:42 classes/Instructor.php:148 classes/Student.php:38
+msgid "Password field is required"
+msgstr "Completati campul obligatoriu pentru parola"
+
+#: classes/Instructor.php:43 classes/Instructor.php:149 classes/Student.php:39
+msgid "Password Confirmation field is required"
+msgstr "Completati campul obligatoriu confirmare parola"
+
+#: classes/Instructor.php:54 classes/Instructor.php:160 classes/Student.php:50
+msgid "Valid E-Mail is required"
+msgstr "Completati campul obligatoriu cu E-Mail valid"
+
+#: classes/Instructor.php:57 classes/Instructor.php:163 classes/Student.php:53
+msgid "Confirm password does not matched with Password field"
+msgstr "Confirmare parola nu corespunde cu parola setata"
+
+#: classes/Instructor.php:127
+msgid "Already applied for instructor"
+msgstr "Ai aplicat deja pentru instructor"
+
+#: classes/Instructor.php:133 classes/Template.php:219
+msgid "Permission denied"
+msgstr "Acces refuzat"
+
+#: classes/Instructor.php:194
+msgid "Instructor has been added successfully"
+msgstr "Instructorul a fost adăugat cu succes"
+
+#: classes/Instructors_List.php:92 classes/Students_List.php:77
+msgid "Name"
+msgstr "Nume"
+
+#: classes/Instructors_List.php:93 classes/Students_List.php:78
+#: templates/dashboard/instructor/registration.php:52
+#: templates/dashboard/instructor/registration.php:55
+#: templates/dashboard/student/registration.php:52
+#: templates/dashboard/student/registration.php:55
+#: views/pages/add_new_instructor.php:63 views/pages/add_new_instructor.php:68
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: classes/Instructors_List.php:94
+msgid "Total Course"
+msgstr "Cursul total"
+
+#: classes/Lesson.php:40 views/metabox/lesson-metabox.php:3
+msgid "Select Course"
+msgstr "Selecteaza Curs"
+
+#: classes/Lesson.php:41
+msgid "Lesson Video"
+msgstr "Lectie video"
+
+#: classes/Lesson.php:42 templates/global/attachments.php:19
+msgid "Attachments"
+msgstr "Atasamente"
+
+#: classes/Lesson.php:99
+msgid "Draft Lesson"
+msgstr "Proiect de lecție"
+
+#: classes/Lesson.php:199 classes/Options.php:116
+#: classes/Question_Answers_List.php:72 classes/Quiz.php:77
+#: classes/Quiz_Attempts_List.php:107 templates/single/quiz/top.php:22
+#: views/pages/view_attempt.php:57
+msgid "Course"
+msgstr "Curs"
+
+#: classes/Options.php:60
+msgid "Option Updated"
+msgstr "Opțiunea actualizată"
+
+#: classes/Options.php:72
+msgid "Unlimited"
+msgstr "Nelimitat"
+
+#: classes/Options.php:77 classes/Options.php:80 classes/Options.php:119
+msgid "General"
+msgstr "General"
+
+#: classes/Options.php:81
+msgid "General Settings"
+msgstr "Satari Generale"
+
+#: classes/Options.php:85
+msgid "Enable Public Profile"
+msgstr "Activați profilul public"
+
+#: classes/Options.php:87
+msgid "Enable this to make a profile publicly visible"
+msgstr "Activați pentru a face un profil public vizibil"
+
+#: classes/Options.php:91
+msgid "Load Tutor default CSS"
+msgstr "Încărcați CSS default Tutor"
+
+#: classes/Options.php:93
+msgid ""
+"If your theme has its own styling, then you can turn it off to load CSS from "
+"the plugin directory"
+msgstr ""
+"Dacă tema dvs. are propriul stil, atunci puteți să o dezactivați pentru a "
+"încărca CSS din directorul plugin-ului"
+
+#: classes/Options.php:97
+msgid "Load Tutor default JavaScript"
+msgstr "Încărcați JavaScript implicit Tutor"
+
+#: classes/Options.php:99
+msgid ""
+"If you have put required script in your theme javascript file, then you can "
+"turn it off to load JavaScript from the plugin directory"
+msgstr ""
+"Dacă ați pus scriptul necesar în fișierul javascript al temei, atunci îl "
+"puteți dezactiva pentru a încărca JavaScript din directorul plugin-ului"
+
+#: classes/Options.php:103
+msgid "Course Permission"
+msgstr "Permisiuni Curs"
+
+#: classes/Options.php:104
+msgid "Students must be logged in to view course"
+msgstr "Cursantii trebuie să fie conectați pentru a vedea cursul"
+
+#: classes/Options.php:108
+msgid "Erase upon uninstallation"
+msgstr "Sterge dupa dezinstalare"
+
+#: classes/Options.php:109
+msgid "Delete all data during uninstall"
+msgstr "Sterge toate datele dupa dezinstalare"
+
+#: classes/Options.php:120
+msgid "Course Settings"
+msgstr "Setari Curs"
+
+#: classes/Options.php:124
+msgid "Display instructors profile"
+msgstr "Afiseaza profilul instructorului"
+
+#: classes/Options.php:125
+msgid "Show the instructor profile on course single page."
+msgstr "Afișați profilul instructorului pe pagina cursului."
+
+#: classes/Options.php:129
+msgid "Enable Q &amp; A on course"
+msgstr "Activați Q &amp; A in curs"
+
+#: classes/Options.php:131
+msgid ""
+"Allow student to place their questions and answers on the course page, only "
+"enrolled student can do this"
+msgstr ""
+"Permiteți cursantului să pună întrebările și răspunsurile pe pagina "
+"cursului, numai cursantul înscris poate face acest lucru"
+
+#: classes/Options.php:136
+msgid "Archive"
+msgstr "Arhiva"
+
+#: classes/Options.php:137
+msgid "Course Archive Settings"
+msgstr "Setarile Arhive Curs"
+
+#: classes/Options.php:141
+msgid "Course Archive Page"
+msgstr "Pagina Arhiva Curs"
+
+#: classes/Options.php:144
+msgid ""
+"Choose the page from the dropdown list where you want to show all of the "
+"courses"
+msgstr ""
+"Alegeți pagina din lista drop-down unde doriți să afișați toate cursurile"
+
+#: classes/Options.php:148
+msgid "Column per row"
+msgstr "Coloană pe rând"
+
+#: classes/Options.php:151
+msgid "Define how many column you want to show on the course single page"
+msgstr "Definiți câte coloane doriți să afișați pe pagina singulară a cursului"
+
+#: classes/Options.php:155
+msgid "Courses Per Page"
+msgstr "Cursuri pe pagina"
+
+#: classes/Options.php:158
+msgid "Define how many courses you want to show per page"
+msgstr "Definiți câte cursuri doriți să afișați pe pagină"
+
+#: classes/Options.php:168
+msgid "Lesson Settings"
+msgstr "Setări pentru lecție"
+
+#: classes/Options.php:169
+msgid "Lesson settings will be here"
+msgstr "Setările pentru lecții vor fi aici"
+
+#: classes/Options.php:173
+msgid "Lesson Permalink Base"
+msgstr "Baza link permanent"
+
+#: classes/Options.php:185 classes/Options.php:188 classes/Question.php:285
+#: classes/Quiz_Attempts_List.php:106 templates/single/quiz/top.php:19
+#: views/metabox/course-topics.php:72 views/pages/view_attempt.php:30
+msgid "Quiz"
+msgstr "Chestionare"
+
+#: classes/Options.php:189
+msgid ""
+"The values you set here define the default values that are used in the "
+"settings form when you create a new quiz."
+msgstr ""
+"Valorile pe care le setați aici definesc valorile implicite care sunt "
+"utilizate în formularul de setări atunci când creați un nou test."
+
+#: classes/Options.php:193 views/metabox/quizzes.php:6
+#: views/modal/edit_quiz.php:142
+msgid "Time Limit"
+msgstr "Limita Tipm"
+
+#: classes/Options.php:194
+msgid "Default time limit for quizzes. 0 means no time limit."
+msgstr ""
+"Limită prestabilită pentru chestionare. 0 înseamnă că nu există o limită de "
+"timp."
+
+#: classes/Options.php:205 views/metabox/quizzes.php:23
+#: views/modal/edit_quiz.php:156
+msgid "Weeks"
+msgstr "Saptamani"
+
+#: classes/Options.php:206 views/metabox/quizzes.php:22
+#: views/modal/edit_quiz.php:155
+msgid "Days"
+msgstr "Zile"
+
+#: classes/Options.php:207 views/metabox/quizzes.php:21
+#: views/modal/edit_quiz.php:154
+msgid "Hours"
+msgstr "Ore"
+
+#: classes/Options.php:208 views/metabox/quizzes.php:20
+#: views/modal/edit_quiz.php:153
+msgid "Minutes"
+msgstr "Minute"
+
+#: classes/Options.php:209 views/metabox/quizzes.php:19
+#: views/modal/edit_quiz.php:152
+msgid "Seconds"
+msgstr "Secunde"
+
+#: classes/Options.php:217
+msgid "When time expires"
+msgstr "Cand timpul expira"
+
+#: classes/Options.php:221
+msgid "Current attempts are submitted automatically"
+msgstr "Încercările actuale sunt trimise automat"
+
+#: classes/Options.php:222
+msgid ""
+"There is a grace period when current attempts can be submitted, but no more "
+"questions answered"
+msgstr ""
+"Există o perioadă de grație atunci când pot fi depuse încercări curente, dar "
+"nu au mai fost răspunsuri la întrebări"
+
+#: classes/Options.php:223
+msgid ""
+"Attempts must be submitted before time expires, otherwise they will not be "
+"counted"
+msgstr ""
+"Încercările trebuie trimise înainte de expirarea termenului, altfel nu vor "
+"fi luate în calcul"
+
+#: classes/Options.php:225
+msgid ""
+"What should happen by default if a student does not submit the quiz before "
+"time expires."
+msgstr ""
+"Ce ar trebui să se întâmple în mod implicit dacă un cursantul nu trimite "
+"testul înainte de expirarea timpului."
+
+#: classes/Options.php:230
+msgid "Attempts allowed"
+msgstr "Incercari permise"
+
+#: classes/Options.php:233
+msgid ""
+"Restriction on the number of attempts students are allowed to take for a "
+"quiz. 0 for no limit"
+msgstr ""
+"Restricționarea numărului de încercări pe care cursantii le pot face pentru "
+"un test. 0 pentru nici o limită"
+
+#: classes/Options.php:238
+msgid "Grading method"
+msgstr "Metoda de clasificare"
+
+#: classes/Options.php:242
+msgid "Highest Grade"
+msgstr "Cel mai înalt grad"
+
+#: classes/Options.php:243
+msgid "Average Grade"
+msgstr "Nota medie"
+
+#: classes/Options.php:244
+msgid "First Attempt"
+msgstr "Prima incercare"
+
+#: classes/Options.php:245
+msgid "Last Attempt"
+msgstr "Ultima incercare"
+
+#: classes/Options.php:247
+msgid ""
+"When multiple attempts are allowed, which method should be used to calculate "
+"a student's final grade for the quiz."
+msgstr ""
+"Când sunt permise mai multe încercări, ce metodă trebuie utilizată pentru a "
+"calcula nota finală a cursantului pentru test."
+
+#: classes/Options.php:257
+msgid "Instructor Profile Settings"
+msgstr "Setările profilului instructorului"
+
+#: classes/Options.php:258 classes/Options.php:283
+msgid "Enable Disable Option to on/off notification on various event"
+msgstr ""
+"Activați Dezactivați opțiunea notificare on/off pentru diverse evenimente"
+
+#: classes/Options.php:262
+msgid "Instructor Register Page"
+msgstr "Pagina de inregistrare Instructor"
+
+#: classes/Options.php:265
+msgid "This will be instructor register page"
+msgstr "Aceasta va fi pagina de inregistrare pentru Instructor"
+
+#: classes/Options.php:269
+msgid "Can publish course"
+msgstr "Poate publica un Curs"
+
+#: classes/Options.php:271
+msgid ""
+"Define if a instructor can publish his courses directly or not, if "
+"unchecked, they can still add courses, but it will go to admin for review"
+msgstr ""
+"Definiți dacă un instructor își poate publica cursurile direct sau nu, dacă "
+"este selectat, se pot adăuga în continuare cursuri, dar vor fi trimise la "
+"admin pentru examinare"
+
+#: classes/Options.php:282
+msgid "Student Profile settings"
+msgstr "Setari Profil Cursant"
+
+#: classes/Options.php:287
+msgid "Student Register Page"
+msgstr "Pagina de inregistrare Cursant"
+
+#: classes/Options.php:290
+msgid "Choose the page for student registration page"
+msgstr "Alegeți pagina pentru înregistrarea elevilor"
+
+#: classes/Options.php:294 classes/init.php:361
+msgid "Student Dashboard"
+msgstr "Tabloul de bord pentru elevi"
+
+#: classes/Options.php:297
+msgid "This page will show students related stuff, like my courses, order, etc"
+msgstr ""
+"Această pagină va afișa materiale legate de cursanti, cum ar fi cursurile, "
+"comanda, etc"
+
+#: classes/Options.php:302
+msgid "Show reviews on profile"
+msgstr "Arata recenziile in profil"
+
+#: classes/Options.php:303
+msgid "Enable students review on their profile"
+msgstr "Activați recenziile în profilul cursantilor"
+
+#: classes/Options.php:305
+msgid ""
+"Enabling this will allow the reviews written by each individual students on "
+"their profile"
+msgstr ""
+"Activarea va permite scrierea de recenzii de fiecare cursant în profilul lor"
+
+#: classes/Options.php:309
+msgid "Show Completed Course"
+msgstr "Afișare curs finalizat"
+
+#: classes/Options.php:311
+msgid "Completed courses will be show on student profile"
+msgstr "Cursurile finalizate vor fi afișate pe profilul cursantilor"
+
+#: classes/Post_types.php:22
+msgctxt "post type general name"
+msgid "Courses"
+msgstr "Cursuri"
+
+#: classes/Post_types.php:23
+msgctxt "post type singular name"
+msgid "Course"
+msgstr "Curs"
+
+#: classes/Post_types.php:24
+msgctxt "admin menu"
+msgid "Courses"
+msgstr "Cursuri"
+
+#: classes/Post_types.php:25
+msgctxt "add new on admin bar"
+msgid "Course"
+msgstr "Curs"
+
+#: classes/Post_types.php:27
+msgid "Add New Course"
+msgstr "Adauga un Curs nou"
+
+#: classes/Post_types.php:28
+msgid "New Course"
+msgstr "Curs Now"
+
+#: classes/Post_types.php:29
+msgid "Edit Course"
+msgstr "Editeaza Curs"
+
+#: classes/Post_types.php:30 templates/single/lesson/required-enroll.php:29
+msgid "View Course"
+msgstr "Vezi Curs"
+
+#: classes/Post_types.php:31 templates/single/course/instructors.php:63
+msgid "Courses"
+msgstr "Cursuri"
+
+#: classes/Post_types.php:32
+msgid "Search Courses"
+msgstr "Cauta Cursuri"
+
+#: classes/Post_types.php:33
+msgid "Parent Courses:"
+msgstr "Cursuri Parinte:"
+
+#: classes/Post_types.php:34
+msgid "No courses found."
+msgstr "Nu sunt gasite Cursuri."
+
+#: classes/Post_types.php:35
+msgid "No courses found in Trash."
+msgstr "Nu sunt gasite Cursuri la gunoi."
+
+#: classes/Post_types.php:40 classes/Post_types.php:156
+#: classes/Post_types.php:205
+msgid "Description."
+msgstr "Descriere."
+
+#: classes/Post_types.php:74
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr "Categorii"
+
+#: classes/Post_types.php:75
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr "Categorie"
+
+#: classes/Post_types.php:76
+msgid "Search Categories"
+msgstr "Cauta categorii"
+
+#: classes/Post_types.php:77
+msgid "Popular Categories"
+msgstr "Categorii populare"
+
+#: classes/Post_types.php:78
+msgid "All Categories"
+msgstr "Toate Categoriile"
+
+#: classes/Post_types.php:81
+msgid "Edit Category"
+msgstr "Editeaza Categorie"
+
+#: classes/Post_types.php:82
+msgid "Update Category"
+msgstr "Actualizați categoria"
+
+#: classes/Post_types.php:83
+msgid "Add New Category"
+msgstr "Adauga categorie noua"
+
+#: classes/Post_types.php:84
+msgid "New Category Name"
+msgstr "Numele categoriei noi"
+
+#: classes/Post_types.php:85
+msgid "Separate categories with commas"
+msgstr "Separa categoriile cu virgule"
+
+#: classes/Post_types.php:86
+msgid "Add or remove categories"
+msgstr "Adauga sau inlatura categorii"
+
+#: classes/Post_types.php:87
+msgid "Choose from the most used categories"
+msgstr "Alegeți dintre cele mai utilizate categorii"
+
+#: classes/Post_types.php:88
+msgid "No categories found."
+msgstr "Nu au fost găsite categorii."
+
+#: classes/Post_types.php:105
+msgctxt "taxonomy general name"
+msgid "Skills"
+msgstr "Aptitudini"
+
+#: classes/Post_types.php:106
+msgctxt "taxonomy singular name"
+msgid "Skill"
+msgstr "Aptitudine"
+
+#: classes/Post_types.php:107
+msgid "Search Skills"
+msgstr "Căutați abilități"
+
+#: classes/Post_types.php:108
+msgid "Popular Skills"
+msgstr "Aptitudini populare"
+
+#: classes/Post_types.php:109
+msgid "All Skills"
+msgstr "Toate Aptitudinile"
+
+#: classes/Post_types.php:112
+msgid "Edit Skill"
+msgstr "Editeaza Aptitudine"
+
+#: classes/Post_types.php:113
+msgid "Update Skill"
+msgstr "Actualizati Aptitudine"
+
+#: classes/Post_types.php:114
+msgid "Add New Skill"
+msgstr "Adauga aptitudine noua"
+
+#: classes/Post_types.php:115
+msgid "New Skill Name"
+msgstr "Numele unei noi Aptitudini"
+
+#: classes/Post_types.php:116
+msgid "Separate skills with commas"
+msgstr "Separați abilitățile cu virgule"
+
+#: classes/Post_types.php:117
+msgid "Add or remove skills"
+msgstr "Adauga sau inlatura Aptitudini"
+
+#: classes/Post_types.php:118
+msgid "Choose from the most used skills"
+msgstr "Alegeți dintre cele mai utilizate Aptitudini"
+
+#: classes/Post_types.php:119
+msgid "No skills found."
+msgstr "Nu au fost găsite competențe."
+
+#: classes/Post_types.php:120 templates/single/course/tags.php:20
+msgid "Skills"
+msgstr "Aptitudini"
+
+#: classes/Post_types.php:138
+msgctxt "post type general name"
+msgid "Lessons"
+msgstr "Lectii"
+
+#: classes/Post_types.php:139
+msgctxt "post type singular name"
+msgid "Lesson"
+msgstr "Lectie"
+
+#: classes/Post_types.php:140
+msgctxt "admin menu"
+msgid "Lessons"
+msgstr "Lectii"
+
+#: classes/Post_types.php:141
+msgctxt "add new on admin bar"
+msgid "Lesson"
+msgstr "Lectii"
+
+#: classes/Post_types.php:143
+msgid "Add New Lesson"
+msgstr "Adauga Lectie Noua"
+
+#: classes/Post_types.php:144
+msgid "New Lesson"
+msgstr "O Lectie Noua"
+
+#: classes/Post_types.php:145
+msgid "Edit Lesson"
+msgstr "Editeaza Lectie"
+
+#: classes/Post_types.php:146
+msgid "View Lesson"
+msgstr "Vezi Lectie"
+
+#: classes/Post_types.php:148
+msgid "Search Lessons"
+msgstr "Cauta Lectii"
+
+#: classes/Post_types.php:149
+msgid "Parent Lessons:"
+msgstr "Lectii Parinte:"
+
+#: classes/Post_types.php:150
+msgid "No lessons found."
+msgstr "Nu s-au gasit lectii."
+
+#: classes/Post_types.php:151
+msgid "No lessons found in Trash."
+msgstr "Nu sunt lectii la gunoi."
+
+#: classes/Post_types.php:187
+msgctxt "post type general name"
+msgid "Quizzes"
+msgstr "Teste"
+
+#: classes/Post_types.php:188
+msgctxt "post type singular name"
+msgid "Quiz"
+msgstr "Test"
+
+#: classes/Post_types.php:189
+msgctxt "admin menu"
+msgid "Quizzes"
+msgstr "Teste"
+
+#: classes/Post_types.php:190
+msgctxt "add new on admin bar"
+msgid "Quiz"
+msgstr "Test"
+
+#: classes/Post_types.php:192
+msgid "Add New Quiz"
+msgstr "Adauga un Test"
+
+#: classes/Post_types.php:193
+msgid "New Quiz"
+msgstr "Test Nou"
+
+#: classes/Post_types.php:194
+msgid "Edit Quiz"
+msgstr "Editeaza Test"
+
+#: classes/Post_types.php:195
+msgid "View Quiz"
+msgstr "Vezi Test"
+
+#: classes/Post_types.php:196
+msgid "Quizzes"
+msgstr "Teste"
+
+#: classes/Post_types.php:197
+msgid "Search Quizzes"
+msgstr "Cauta Teste"
+
+#: classes/Post_types.php:198
+msgid "Parent Quizzes:"
+msgstr "Teste Parinte:"
+
+#: classes/Post_types.php:199
+msgid "No quizzes found."
+msgstr "Nu s-au gasit Teste."
+
+#: classes/Post_types.php:200
+msgid "No quizzes found in Trash."
+msgstr "Nu sunte Teste la gunoi."
+
+#: classes/Question.php:27 classes/Question_Answers_List.php:70
+#: views/metabox/quiz/single-question-item.php:67
+#: views/pages/view_attempt.php:160
+msgid "Question"
+msgstr "Intrebare"
+
+#: classes/Question.php:79 classes/Quiz.php:798
+#: views/modal/question_answer_form.php:18
+msgid "True"
+msgstr "Adevarat"
+
+#: classes/Question.php:92 classes/Quiz.php:805
+#: views/modal/question_answer_form.php:20
+msgid "False"
+msgstr "Fals"
+
+#: classes/Question.php:193
+msgid "New answer option"
+msgstr "Opțiune nouă de răspuns"
+
+#: classes/Question.php:198 classes/Utils.php:2842
+#: views/metabox/quiz_questions.php:22
+msgid "True/False"
+msgstr "Adevarat/Fals"
+
+#: classes/Question_Answers_List.php:71
+msgid "Student"
+msgstr "Cursant"
+
+#: classes/Question_Answers_List.php:73 classes/Quiz.php:919
+#: views/modal/question_form.php:165 views/pages/answer.php:11
+msgid "Answer"
+msgstr "Raspuns"
+
+#: classes/Quiz.php:78 classes/Quiz.php:99 templates/single/quiz/body.php:404
+#: templates/single/quiz/top.php:33 views/modal/add_quiz.php:18
+#: views/modal/edit_quiz.php:28
+msgid "Questions"
+msgstr "Intrebare"
+
+#: classes/Quiz.php:144
+msgid "New quiz title"
+msgstr "Titlul noului test"
+
+#: classes/Quiz.php:148
+msgid "Place quiz title to create new quiz"
+msgstr "Adauga titlul testului pentru a crea un test nou"
+
+#: classes/Quiz.php:149
+msgid "Provide a quiz title to create a quiz from here."
+msgstr "Adauga titlu de test pentru a crea un test de aici."
+
+#: classes/Quiz.php:494
+msgid "Quiz has been timeout already"
+msgstr "Timpul acordat testului a expirat"
+
+#: classes/Quiz.php:681
+msgid "Question "
+msgstr "Intrebare "
+
+#: classes/Quiz.php:903 views/modal/question_form.php:148
+msgid "Answer options &amp; mark correct"
+msgstr "Opțiunile de răspuns &amp; marcați corect"
+
+#: classes/Quiz.php:906 views/modal/question_form.php:151
+msgid ""
+"Student should order below items exact this order, make sure your answer is "
+"in right order, you can re-order them"
+msgstr ""
+"Cursantul ar trebui sa ordoneze elementele de mai jos in aceasi ordine, "
+"asigura-te ca raspunsul tau e in orinea exacta, le poti re-ordona"
+
+#: classes/Quiz.php:935 classes/Quiz.php:941 views/modal/question_form.php:182
+#: views/modal/question_form.php:189 views/pages/view_attempt.php:299
+msgid "Mark as correct"
+msgstr "Marcheaza ca Corect"
+
+#: classes/Quiz_Attempts_List.php:36 views/pages/view_attempt.php:163
+msgid "Review"
+msgstr "Revizuire"
+
+#: classes/Quiz_Attempts_List.php:43
+msgid " ago"
+msgstr " în urmă"
+
+#: classes/Quiz_Attempts_List.php:88 templates/single/quiz/body.php:459
+#: views/pages/view_attempt.php:71
+msgid "Pass"
+msgstr "Trecut"
+
+#: classes/Quiz_Attempts_List.php:90 templates/single/quiz/body.php:461
+#: views/pages/view_attempt.php:73
+msgid "Fail"
+msgstr "Eșuat"
+
+#: classes/Quiz_Attempts_List.php:108
+msgid "Total Questions"
+msgstr "Total Intrebari"
+
+#: classes/Quiz_Attempts_List.php:109
+msgid "Earned Mark"
+msgstr "Marcheaza câștigat"
+
+#: classes/Quiz_Attempts_List.php:110
+msgid "Attempt Status"
+msgstr "Statut încercare"
+
+#: classes/Students_List.php:79
+#: templates/dashboard/student/completed-courses.php:1
+msgid "Completed Course"
+msgstr "Curs Complet"
+
+#: classes/Tutor_List_Table.php:154
+msgid "List View"
+msgstr "Vizualizare listă"
+
+#: classes/Tutor_List_Table.php:155
+msgid "Excerpt View"
+msgstr "Vizualizare extras"
+
+#: classes/Tutor_List_Table.php:315
+msgid "No items found."
+msgstr "Nu au fost gasite articolele."
+
+#: classes/Tutor_List_Table.php:437
+msgid "Select bulk action"
+msgstr "Selecteaza actiuni in grup"
+
+#: classes/Tutor_List_Table.php:439
+msgid "Bulk Actions"
+msgstr "Actiuni in grup"
+
+#: classes/Tutor_List_Table.php:449
+msgid "Apply"
+msgstr "Aplica"
+
+#: classes/Tutor_List_Table.php:497 classes/Tutor_List_Table.php:1275
+msgid "Show more details"
+msgstr "Arata mai multe detalii"
+
+#: classes/Tutor_List_Table.php:559
+msgid "Filter by date"
+msgstr "Filtreaza dupa data"
+
+#: classes/Tutor_List_Table.php:561
+msgid "All dates"
+msgstr "Toate datele"
+
+#: classes/Tutor_List_Table.php:574
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: classes/Tutor_List_Table.php:624
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s comment"
+msgstr[1] "%s comments"
+msgstr[2] "%s comments"
+
+#: classes/Tutor_List_Table.php:625
+#, php-format
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] "%s approved comment"
+msgstr[1] "%s approved comments"
+msgstr[2] "%s approved comments"
+
+#: classes/Tutor_List_Table.php:626
+#, php-format
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] "%s pending comment"
+msgstr[1] "%s pending comments"
+msgstr[2] "%s pending comments"
+
+#: classes/Tutor_List_Table.php:631 classes/Tutor_List_Table.php:643
+#: classes/Tutor_List_Table.php:656
+msgid "No comments"
+msgstr "Fara comentarii"
+
+#: classes/Tutor_List_Table.php:643
+msgid "No approved comments"
+msgstr "Nu există comentarii aprobate"
+
+#: classes/Tutor_List_Table.php:656
+msgid "No pending comments"
+msgstr "Nu există comentarii în așteptare"
+
+#: classes/Tutor_List_Table.php:730 classes/Tutor_List_Table.php:1299
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s item"
+msgstr[1] "%s items"
+msgstr[2] "%s items"
+
+#: classes/Tutor_List_Table.php:766
+msgid "First page"
+msgstr "Prima pagina"
+
+#: classes/Tutor_List_Table.php:776
+msgid "Previous page"
+msgstr "Pagina precedenta"
+
+#: classes/Tutor_List_Table.php:783 classes/Tutor_List_Table.php:786
+msgid "Current Page"
+msgstr "Pagina curenta"
+
+#: classes/Tutor_List_Table.php:792
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s din %2$s"
+
+#: classes/Tutor_List_Table.php:799
+msgid "Next page"
+msgstr "Urmatoarea pagina"
+
+#: classes/Tutor_List_Table.php:809
+msgid "Last page"
+msgstr "Ultima pagina"
+
+#: classes/Tutor_List_Table.php:1029
+msgid "Select All"
+msgstr "Selecteaza tot"
+
+#: classes/Utils.php:916
+msgid "Overview"
+msgstr "Prezentare generală"
+
+#: classes/Utils.php:921
+msgid "Q&A"
+msgstr "Q&A"
+
+#: classes/Utils.php:1704
+msgid "Course Enrolled"
+msgstr "Inscris la curs"
+
+#: classes/Utils.php:1888
+msgid "Home"
+msgstr "Acasa"
+
+#: classes/Utils.php:1889 templates/dashboard/student/my-courses.php:1
+msgid "My Courses"
+msgstr "Cursurile Mele"
+
+#: classes/Utils.php:1890
+msgid "Active Courses"
+msgstr "Cursuri Active"
+
+#: classes/Utils.php:1891
+msgid "Completed Courses"
+msgstr "Cursuri Complete"
+
+#: classes/Utils.php:1892 templates/dashboard/student/wishlist.php:4
+msgid "WishList"
+msgstr "Lista Dorinte"
+
+#: classes/Utils.php:1961
+msgid "Pending"
+msgstr "In asteptare"
+
+#: classes/Utils.php:1962
+msgid "Approved"
+msgstr "Aprobat"
+
+#: classes/Utils.php:1963
+msgid "Blocked"
+msgstr "Blocat"
+
+#: classes/Utils.php:2843 views/metabox/quiz_questions.php:24
+#: views/modal/question_form.php:47
+msgid "Single Choice"
+msgstr "O singura optiune"
+
+#: classes/Utils.php:2844 views/metabox/quiz_questions.php:23
+#: views/modal/question_form.php:50
+msgid "Multiple Choice"
+msgstr "Mai multe optiuni"
+
+#: classes/Utils.php:2845 views/modal/question_form.php:53
+msgid "Open Ended/Essay"
+msgstr "Deschidere finalizată/Eseu"
+
+#: classes/Utils.php:2846 views/modal/question_form.php:56
+msgid "Short Answer"
+msgstr "Raspuns scurt"
+
+#: classes/Utils.php:2847
+msgid "Fill In The Blank"
+msgstr "Completează spațiul liber"
+
+#: classes/Utils.php:2848
+msgid "Answer Sorting"
+msgstr "Sorteaza Raspuns"
+
+#: classes/Utils.php:2849
+msgid "Assessment"
+msgstr "Evaluare"
+
+#: classes/Utils.php:2850 views/modal/question_form.php:62
+msgid "Matching"
+msgstr "Potrivire"
+
+#: classes/Utils.php:2851 views/modal/question_form.php:65
+msgid "Image Matching"
+msgstr "Potrivirea imaginii"
+
+#: classes/Utils.php:2852 views/modal/question_form.php:68
+msgid "Image Answering"
+msgstr "Raspunsuri cu imagine"
+
+#: classes/Utils.php:2853 views/modal/question_form.php:71
+msgid "Ordering"
+msgstr "Ordonare"
+
+#: classes/Utils.php:3428
+msgid "All Levels"
+msgstr "Toate nivelurile"
+
+#: classes/Utils.php:3429
+msgid "Beginner"
+msgstr "Incepator"
+
+#: classes/Utils.php:3430
+msgid "Intermediate"
+msgstr "Intermediar"
+
+#: classes/Utils.php:3431
+msgid "Expert"
+msgstr "Expert"
+
+#: classes/Utils.php:3454
+msgid "Enrolled Course"
+msgstr "Inscris la curs"
+
+#: classes/Utils.php:3455
+msgid "Courses Taken"
+msgstr "Cursurile optate"
+
+#: classes/Utils.php:3456
+msgid "Reviews Written"
+msgstr "Recenzii scrise"
+
+#: classes/init.php:275 tutor.php:39
+msgid "Tutor Instructor"
+msgstr "Tutor Instructor"
+
+#: classes/init.php:370
+msgid "Student Registration"
+msgstr "Inregistrare Cursant"
+
+#: classes/init.php:379
+msgid "Instructor Registration"
+msgstr "Inregistrare Instructor"
+
+#: templates/dashboard/instructor/apply_for_instructor.php:9
+msgid "Apply to become an instructor"
+msgstr "Aplica pentru a deveni Instructor"
+
+#: templates/dashboard/instructor/logged-in.php:7
+msgid "You are instructor"
+msgstr "Esti instructor"
+
+#: templates/dashboard/instructor/registration.php:20
+#: templates/dashboard/instructor/registration.php:23
+#: templates/dashboard/student/registration.php:20
+#: templates/dashboard/student/registration.php:23
+#: views/pages/add_new_instructor.php:27 views/pages/add_new_instructor.php:31
+msgid "First Name"
+msgstr "Nume"
+
+#: templates/dashboard/instructor/registration.php:30
+#: templates/dashboard/instructor/registration.php:33
+#: templates/dashboard/student/registration.php:30
+#: templates/dashboard/student/registration.php:33
+#: views/pages/add_new_instructor.php:39 views/pages/add_new_instructor.php:44
+msgid "Last Name"
+msgstr "Prenume"
+
+#: templates/dashboard/instructor/registration.php:40
+#: templates/dashboard/instructor/registration.php:43
+#: templates/dashboard/student/registration.php:40
+#: templates/dashboard/student/registration.php:43
+#: views/pages/add_new_instructor.php:51 views/pages/add_new_instructor.php:56
+msgid "User Name"
+msgstr "Nume utilizator"
+
+#: templates/dashboard/instructor/registration.php:63
+#: templates/dashboard/instructor/registration.php:66
+#: templates/dashboard/student/registration.php:63
+#: templates/dashboard/student/registration.php:66
+#: views/pages/add_new_instructor.php:75 views/pages/add_new_instructor.php:80
+msgid "Phone Number"
+msgstr "Numar telefon"
+
+#: templates/dashboard/instructor/registration.php:76
+#: templates/dashboard/instructor/registration.php:79
+#: templates/dashboard/student/registration.php:76
+#: templates/dashboard/student/registration.php:79
+#: templates/global/login.php:26 views/pages/add_new_instructor.php:87
+#: views/pages/add_new_instructor.php:92
+msgid "Password"
+msgstr "Parola"
+
+#: templates/dashboard/instructor/registration.php:86
+#: templates/dashboard/student/registration.php:86
+#: views/pages/add_new_instructor.php:99
+msgid "Password confirmation"
+msgstr "Confirmare parola"
+
+#: templates/dashboard/instructor/registration.php:89
+#: templates/dashboard/student/registration.php:89
+#: views/pages/add_new_instructor.php:104
+msgid "Password Confirmation"
+msgstr "Confirmare Parola"
+
+#: templates/dashboard/instructor/registration.php:98
+#: templates/dashboard/student/registration.php:98
+#: templates/student-public-profile.php:101
+#: views/pages/add_new_instructor.php:111
+msgid "Bio"
+msgstr "Bio"
+
+#: templates/dashboard/instructor/registration.php:109
+msgid "Become a instructor"
+msgstr "Aplica pentru a deveni Instructor"
+
+#: templates/dashboard/student/active-courses.php:1
+msgid "Active Course"
+msgstr "Cursuri Active"
+
+#: templates/dashboard/student/active-courses.php:20
+#: templates/dashboard/student/completed-courses.php:21
+#: templates/dashboard/student/my-courses.php:27
+msgid "Total Lessons:"
+msgstr "Total Lectii:"
+
+#: templates/dashboard/student/active-courses.php:26
+#: templates/dashboard/student/completed-courses.php:27
+#: templates/dashboard/student/my-courses.php:33
+msgid "Completed Lessons:"
+msgstr "Lectii Complete:"
+
+#: templates/dashboard/student/active-courses.php:42
+#: templates/dashboard/student/completed-courses.php:44
+msgid "There's no active course"
+msgstr "Nu sunt cursuri active"
+
+#: templates/dashboard/student/dashboard.php:14
+msgid "My Course : "
+msgstr "Cursurile Mele: "
+
+#: templates/dashboard/student/dashboard.php:15
+msgid "Active Course : "
+msgstr "Cursuri Active: "
+
+#: templates/dashboard/student/dashboard.php:16
+msgid "Complete Course : "
+msgstr "Curs complet : "
+
+#: templates/dashboard/student/registration.php:109
+msgid "Register"
+msgstr "Inregistrare"
+
+#: templates/global/course-archive-filter-bar.php:12
+msgid "Release Date (newest first)"
+msgstr "Data lansării (cele mai noi)"
+
+#: templates/global/course-archive-filter-bar.php:14
+msgid "Release Date (oldest first)"
+msgstr "Data lansării (cele mai vechi)"
+
+#: templates/global/course-archive-filter-bar.php:15
+msgid "Course Title (a-z)"
+msgstr "Titlu Curs (a-z)"
+
+#: templates/global/course-archive-filter-bar.php:16
+msgid "Course Title (z-a)"
+msgstr "Titlu Curs (z-a)"
+
+#: templates/global/login.php:25
+msgid "Username or Email Address"
+msgstr "Nume utilizator sau adresa de Email"
+
+#: templates/global/login.php:27
+msgid "Remember Me"
+msgstr "Tine-ma minte"
+
+#: templates/global/login.php:28
+msgid "Log In"
+msgstr "Log in"
+
+#: templates/global/login.php:38
+msgid "Forgot Password?"
+msgstr "Ai uitat Parola?"
+
+#: templates/login.php:23
+msgid "Please Sign-In to view this section"
+msgstr "Conectați-vă pentru a vedea această secțiune"
+
+#: templates/loop/course-price-edd.php:15
+#: templates/loop/course-price-woocommerce.php:15
+#: templates/loop/course-price.php:15
+msgid "Get Enrolled"
+msgstr "Înregistrează-te la Curs"
+
+#: templates/loop/course-price-edd.php:16
+#: templates/loop/course-price-woocommerce.php:16
+#: templates/loop/course-price.php:16
+#: templates/single/course/wc-price-html.php:21
+msgid "Free"
+msgstr "Gratuit"
+
+#: templates/loop/meta.php:12 templates/single/course/enrolled/lead-info.php:47
+#: templates/single/course/lead-info.php:47
+msgid "by"
+msgstr "de"
+
+#: templates/loop/meta.php:21
+msgid "In"
+msgstr "In"
+
+#: templates/profile/bio.php:10
+msgid "About Me:"
+msgstr "Despre Mine:"
+
+#: templates/profile/bio.php:13
+msgid "Bio data is empty"
+msgstr "Datele Bio sunt goale"
+
+#: templates/profile/courses_taken.php:37
+#: templates/profile/enrolled_course.php:34
+#: templates/profile/reviews_wrote.php:11
+msgid "Not Found"
+msgstr "Nu a fost gasit"
+
+#: templates/profile/courses_taken.php:38
+#: templates/profile/enrolled_course.php:35
+#: templates/profile/reviews_wrote.php:12
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Ne pare rău, dar căutați ceva care nu este aici."
+
+#: templates/profile/reviews_wrote.php:49
+msgid "On"
+msgstr "La"
+
+#: templates/single-quiz.php:42 templates/single/lesson/content.php:43
+#: templates/single/quiz/single_quiz_contents.php:20
+#, php-format
+msgid "Go to %s Course Home %s"
+msgstr "Mergi la %s Curs %s"
+
+#: templates/single/course/add-to-cart-edd.php:16
+msgid "Please make sure that your EDD product exists and valid for this course"
+msgstr "Asigurați-vă că produsul EDD există și este valabil pentru acest curs"
+
+#: templates/single/course/add-to-cart-woocommerce.php:28
+msgid "Please make sure that your product exists and valid for this course"
+msgstr "Asigurați-vă că produsul dvs. există și este valabil pentru acest curs"
+
+#: templates/single/course/add-to-cart.php:38
+msgid "Enroll Now"
+msgstr "Inscrie-te Acum"
+
+#: templates/single/course/complete_form.php:27
+msgid "Complete Course"
+msgstr "Curs Complet"
+
+#: templates/single/course/course-benefits.php:27
+msgid "What Will I Learn?"
+msgstr "Ce voi învăța?"
+
+#: templates/single/course/course-content.php:24
+#: views/metabox/quiz/single-question-item.php:78
+#: views/modal/question_form.php:133
+msgid "Description"
+msgstr "Descriere"
+
+#: templates/single/course/course-enrolled-box.php:30
+msgid "Enrolled"
+msgstr "Inscris"
+
+#: templates/single/course/course-enrolled-box.php:41
+msgid "Start Course"
+msgstr "Incepe Curs"
+
+#: templates/single/course/course-requirements.php:26
+msgid "Requirements"
+msgstr "Cerinţe"
+
+#: templates/single/course/course-target-audience.php:25
+msgid "Target Audience"
+msgstr "Se adresează"
+
+#: templates/single/course/course-topics.php:26
+msgid "Topics for this course"
+msgstr "Subiecte pentru acest curs"
+
+#: templates/single/course/course-topics.php:35
+msgid " Lessons"
+msgstr " Lecții"
+
+#: templates/single/course/enrolled/announcements.php:42
+msgid "No announcements posted yet."
+msgstr "Nu au fost adaugate încă anunțuri."
+
+#: templates/single/course/enrolled/announcements.php:44
+msgid ""
+"The instructor hasn’t added any announcements to this course yet. "
+"Announcements are used to inform you of updates or additions to the course."
+msgstr ""
+"Instructorul nu a adăugat încă niciun anunț la acest curs. Anunțurile sunt "
+"folosite pentru a vă informa despre actualizări sau imbunătățiri adăugate la "
+"curs."
+
+#: templates/single/course/enrolled/completing-progress.php:16
+msgid "Course Status"
+msgstr "Status Curs"
+
+#: templates/single/course/enrolled/completing-progress.php:21
+msgid " Complete"
+msgstr " Complet"
+
+#: templates/single/course/enrolled/lead-info.php:52
+#: templates/single/course/lead-info.php:52
+msgid "Course level:"
+msgstr "Nivel Curs:"
+
+#: templates/single/course/enrolled/lead-info.php:57
+#: templates/single/course/lead-info.php:57
+msgid "Share:"
+msgstr "Share:"
+
+#: templates/single/course/enrolled/lead-info.php:89
+#: templates/single/course/lead-info.php:87
+msgid "Total Hour"
+msgstr "Total Ore"
+
+#: templates/single/course/enrolled/lead-info.php:94
+#: templates/single/course/lead-info.php:92
+msgid "Total Enrolled"
+msgstr "Total înscriși"
+
+#: templates/single/course/enrolled/lead-info.php:102
+#: templates/single/course/lead-info.php:100
+msgid "Last Update"
+msgstr "Ultima actualizare"
+
+#: templates/single/course/enrolled/lead-info.php:117
+msgid "Continue to lesson"
+msgstr "Continuați lecția"
+
+#: templates/single/course/enrolled/lead-info.php:133
+#: templates/single/course/lead-info.php:115
+msgid "About Course"
+msgstr "Despre Curs"
+
+#: templates/single/course/enrolled/nav.php:23
+msgid "Course Page"
+msgstr "Pagina Curs"
+
+#: templates/single/course/enrolled/question_and_answer.php:21
+#: templates/single/lesson/sidebar_question_and_answer.php:134
+msgid "Ask a new question"
+msgstr "Puneți o nouă întrebare"
+
+#: templates/single/course/enrolled/question_and_answer.php:32
+#: templates/single/lesson/sidebar_question_and_answer.php:143
+#: views/modal/question_answer_edit_form.php:74
+#: views/modal/question_answer_form.php:70
+msgid "Question Title"
+msgstr "Titlu întrebare"
+
+#: templates/single/course/enrolled/question_and_answer.php:48
+#: templates/single/course/enrolled/question_and_answer.php:132
+#: templates/single/lesson/sidebar_question_and_answer.php:105
+#: views/modal/add_quiz.php:53 views/modal/add_quiz.php:76
+#: views/modal/add_quiz.php:101 views/modal/edit_quiz.php:64
+#: views/modal/edit_quiz.php:128 views/modal/question_form.php:235
+msgid "Cancel"
+msgstr "Anulare"
+
+#: templates/single/course/enrolled/question_and_answer.php:49
+msgid "Post Question"
+msgstr "Publica intrebare"
+
+#: templates/single/course/enrolled/question_and_answer.php:119
+#: templates/single/lesson/sidebar_question_and_answer.php:92
+msgid "Add an answer"
+msgstr "Adauga raspuns"
+
+#: templates/single/course/enrolled/question_and_answer.php:128
+#: templates/single/lesson/sidebar_question_and_answer.php:101
+msgid "Write your answer here..."
+msgstr "Scrieți răspunsul dvs. aici ..."
+
+#: templates/single/course/enrolled/question_and_answer.php:134
+#: templates/single/lesson/sidebar_question_and_answer.php:107
+msgid "Add Answer"
+msgstr "Adauga Raspuns"
+
+#: templates/single/course/instructors.php:18
+msgid "About the instructors"
+msgstr "Despre Instructori"
+
+#: templates/single/course/instructors.php:56
+msgid "ratings"
+msgstr "evaluări"
+
+#: templates/single/course/instructors.php:76
+msgid "students"
+msgstr "cursanti"
+
+#: templates/single/course/login.php:17
+msgid "Login"
+msgstr "Logare"
+
+#: templates/single/course/material-includes.php:24
+#: views/metabox/course-additional-data.php:120
+msgid "Material Includes"
+msgstr "Materialul include"
+
+#: templates/single/course/q_and_a_turned_off.php:15
+msgid "This feature has been disabled by the administrator"
+msgstr "Această caracteristică a fost dezactivată de administrator"
+
+#: templates/single/course/review-form.php:10
+msgid "Edit review"
+msgstr "Editeaza recenzie"
+
+#: templates/single/course/review-form.php:12
+msgid "Write a review"
+msgstr "Adauga recenzie"
+
+#: templates/single/course/review-form.php:29
+msgid "write a review"
+msgstr "adauga recenzie"
+
+#: templates/single/course/review-form.php:32
+msgid "Submit Review"
+msgstr "Trimite recenzie"
+
+#: templates/single/course/reviews.php:24
+msgid "Student Feedback"
+msgstr "Feedback cursant"
+
+#: templates/single/lesson/complete_form.php:27
+msgid "Complete Lesson"
+msgstr "Lecție completă"
+
+#: templates/single/lesson/required-enroll.php:27
+msgid "Please enroll This course first"
+msgstr "Înscrieți-vă mai întâi acest curs"
+
+#: templates/single/lesson/sidebar_question_and_answer.php:122
+msgid "No questions yet"
+msgstr "Nici o întrebare"
+
+#: templates/single/lesson/sidebar_question_and_answer.php:123
+msgid ""
+"Be the first to ask your question! You’ll be able to add details in the next "
+"step."
+msgstr ""
+"Fiți primul care pune întrebarea! Veți putea adăuga detalii în pasul următor."
+
+#: templates/single/lesson/sidebar_question_and_answer.php:159
+msgid "Submit My Question"
+msgstr "Trimiteți întrebarea Mea"
+
+#: templates/single/quiz/body.php:40
+msgid "Time remaining : "
+msgstr "Timp ramas: "
+
+#: templates/single/quiz/body.php:102
+msgid "Marks : "
+msgstr "Marcati: "
+
+#: templates/single/quiz/body.php:322
+msgid "Answer &amp; Next Question"
+msgstr "Răspuns &amp; Urmatoarea intrebare"
+
+#: templates/single/quiz/body.php:331 templates/single/quiz/body.php:348
+msgid "Submit Quiz"
+msgstr "Trimiteți Test"
+
+#: templates/single/quiz/body.php:368
+msgid "Finish"
+msgstr "Finalizat"
+
+#: templates/single/quiz/body.php:386
+msgid "Start Quiz"
+msgstr "Incepe Test"
+
+#: templates/single/quiz/body.php:398
+msgid "Previous attempts"
+msgstr "Incercarile anterioare"
+
+#: templates/single/quiz/body.php:403 templates/single/quiz/top.php:44
+msgid "Time"
+msgstr "Timp"
+
+#: templates/single/quiz/body.php:405
+msgid "Total Marks"
+msgstr "Bifari Totale"
+
+#: templates/single/quiz/body.php:406
+msgid "Earned Marks"
+msgstr "Bifari Castigate"
+
+#: templates/single/quiz/body.php:407
+msgid "Pass Mark"
+msgstr "Bifari trecute"
+
+#: templates/single/quiz/body.php:408 views/pages/view_attempt.php:63
+msgid "Result"
+msgstr "Rezultat"
+
+#: templates/single/quiz/body.php:423
+msgid "Manually reviewed at"
+msgstr "Evaluat manual la"
+
+#: templates/single/quiz/no_course_belongs.php:4
+msgid "No course found for this quiz"
+msgstr "Nu a fost găsit niciun curs pentru acest test"
+
+#: templates/single/quiz/no_course_belongs.php:5
+msgid ""
+"It seems there is no course belongs with this quiz, you can not attempt on "
+"this quiz without a course belongs, please notify to your instructor to fix "
+"this issue."
+msgstr ""
+"Se pare că nu există niciun curs care aparține acestui test, nu puteți "
+"încerca acest test fără să aparțină unui curs, vă rugăm să-l informați pe "
+"instructorul dvs. pentru a remedia această problemă."
+
+#: templates/single/quiz/top.php:53 views/metabox/quizzes.php:35
+#: views/modal/edit_quiz.php:178
+msgid "Attempts Allowed"
+msgstr "Incercari permise"
+
+#: templates/single/quiz/top.php:62
+msgid "Attemped"
+msgstr "Incercat"
+
+#: templates/single/quiz/top.php:71
+msgid "Attempts Remaining"
+msgstr "Încercări rămase"
+
+#: templates/single/quiz/top.php:80 views/metabox/quizzes.php:67
+#: views/modal/edit_quiz.php:197
+msgid "Passing Grade"
+msgstr "Nota de trecere"
+
+#: templates/student-public-profile.php:40
+msgid "Hello,"
+msgstr "Buna,"
+
+#: templates/student-public-profile.php:44
+msgid "You are "
+msgstr "Tu esti "
+
+#: templates/student-public-profile.php:71
+msgid "Registration Date"
+msgstr "Data Inregistrare"
+
+#: templates/student-public-profile.php:75
+msgid "Course completed"
+msgstr "Curs complet"
+
+#: templates/student-public-profile.php:79
+msgid "Reviews Wrote"
+msgstr "Recenzii scrise"
+
+#: views/metabox/announcements-metabox.php:4
+msgid "Title"
+msgstr "Titlu"
+
+#: views/metabox/announcements-metabox.php:27
+msgid "available variable"
+msgstr "variabila disponibila"
+
+#: views/metabox/announcements-metabox.php:30
+msgid "Add Announcement"
+msgstr "Adauga Anunt"
+
+#: views/metabox/announcements-metabox.php:50
+msgid "Delete Announcement"
+msgstr "Sterge Anunt"
+
+#: views/metabox/course-add-product-metabox.php:16
+msgid "Select product"
+msgstr "Selecteaza Produs"
+
+#: views/metabox/course-add-product-metabox.php:17
+msgid "When selling the course"
+msgstr "La vânzarea cursului"
+
+#: views/metabox/course-add-product-metabox.php:27
+msgid "Select a Product"
+msgstr "Selecteaza un Produs"
+
+#: views/metabox/course-add-product-metabox.php:43
+msgid ""
+"If you like to sell your course, then select a product, the purchase will be "
+"process by WooCommerce"
+msgstr ""
+"Dacă doriți să vindeți cursul, selectați un produs, achiziția va fi "
+"procesată de WooCommerce"
+
+#: views/metabox/course-additional-data.php:23
+msgid "Total Course Duration"
+msgstr "Durata totală a cursului"
+
+#: views/metabox/course-additional-data.php:32
+#: views/metabox/video-metabox.php:71
+msgid "HH"
+msgstr "HH"
+
+#: views/metabox/course-additional-data.php:36
+#: views/metabox/video-metabox.php:76
+msgid "MM"
+msgstr "MM"
+
+#: views/metabox/course-additional-data.php:41
+#: views/metabox/video-metabox.php:81
+msgid "SS"
+msgstr "SS"
+
+#: views/metabox/course-additional-data.php:54
+msgid "Level"
+msgstr "Nivel"
+
+#: views/metabox/course-additional-data.php:73
+msgid "Benefits of this course"
+msgstr "Beneficiile acestui curs"
+
+#: views/metabox/course-additional-data.php:74
+msgid "What I will learn"
+msgstr "Ce voi învăța"
+
+#: views/metabox/course-additional-data.php:81
+msgid ""
+"The students will know what they will learn after completing this course, "
+"One line per answer"
+msgstr ""
+"Cursantii vor ști ce vor învăța după terminarea cursului, O linie pentru "
+"fiecare răspuns"
+
+#: views/metabox/course-additional-data.php:89
+msgid "Requirements/Instructions"
+msgstr "Cerințe/Instrucțiuni"
+
+#: views/metabox/course-additional-data.php:96
+msgid ""
+"One per line, additional requirements or special instructions for the "
+"students."
+msgstr ""
+"Separat pe linie, cerințe suplimentare sau instrucțiuni speciale pentru "
+"cursanti."
+
+#: views/metabox/course-additional-data.php:104
+msgid "Targeted Audience"
+msgstr "Publicul vizat"
+
+#: views/metabox/course-additional-data.php:111
+msgid ""
+"Specify the targeted audience who will benefit most from the course, One "
+"line per target audience"
+msgstr ""
+"Specificați publicul țintă care va beneficia cel mai mult de curs, o linie "
+"pentru fiecare public țintă"
+
+#: views/metabox/course-additional-data.php:127
+msgid "A list of assets you will be providing for the students in this course"
+msgstr "O listă de materiale pe care le veți furniza elevilor din acest curs"
+
+#: views/metabox/course-attachments-metabox.php:22
+#: views/metabox/lesson-attachments-metabox.php:32
+msgid "Upload Attachment"
+msgstr "Incarca atasament"
+
+#: views/metabox/course-contents.php:12
+msgid "Add a topics to build this course"
+msgstr "Adăugați un subiect pentru a crea acest curs"
+
+#: views/metabox/course-contents.php:28
+msgid "Delete Topic"
+msgstr "Sterge Subiect"
+
+#: views/metabox/course-contents.php:41 views/metabox/course-topics.php:23
+msgid "Topic Name"
+msgstr "Nume Subiect"
+
+#: views/metabox/course-contents.php:47
+msgid ""
+"Topic title will be publicly show where required, you can call it as a "
+"section also in course"
+msgstr ""
+"Titlul subiectului va fi afișat public acolo unde este necesar, îl puteți "
+"numi și secțiune în curs"
+
+#: views/metabox/course-contents.php:54 views/metabox/course-topics.php:35
+msgid "Topic Summery"
+msgstr "Rezumatul subiectului"
+
+#: views/metabox/course-contents.php:59 views/metabox/course-topics.php:40
+msgid ""
+"The idea of a summary is a short text to prepare students for the activities "
+"within the topic or week. The text is shown on the course page under the "
+"topic name."
+msgstr ""
+"Ideea unui rezumat este un text scurt pentru a pregăti cursantii pentru "
+"activitățile din cadrul subiectului sau săptămânii. Textul este afișat pe "
+"pagina cursului sub numele de subiect."
+
+#: views/metabox/course-contents.php:62
+msgid "Edit Topic"
+msgstr "Editeaza Subiect"
+
+#: views/metabox/course-contents.php:108
+msgid "Add new lesson"
+msgstr "Adauga lectie noua"
+
+#: views/metabox/course-contents.php:110
+msgid "Add Topic Quiz"
+msgstr "Adăugați chestionar pentru subiecte"
+
+#: views/metabox/course-contents.php:130
+msgid "Un-assigned lessons"
+msgstr "Lecții nealocate"
+
+#: views/metabox/course-topics.php:2
+msgid "Expand all"
+msgstr "Extinde toate"
+
+#: views/metabox/course-topics.php:3
+msgid "Collapse all"
+msgstr "Restrângeți-le pe toate"
+
+#: views/metabox/course-topics.php:14
+msgid "Add new topic"
+msgstr "Adauga subiect nou"
+
+#: views/metabox/course-topics.php:19 views/metabox/course-topics.php:45
+msgid "Add Topic"
+msgstr "Adauga Subiect"
+
+#: views/metabox/course-topics.php:28
+msgid ""
+"Topic titles will be publicly show where required, you can call it as a "
+"section also in course"
+msgstr ""
+"Titlurile de subiectelor vor fi afișate public acolo unde este necesar, îl "
+"puteți numi și ca secțiune în curs"
+
+#: views/metabox/instructors-metabox.php:42
+msgid "Add More Instructor"
+msgstr "Adăugați mai mulți instructori"
+
+#: views/metabox/instructors-metabox.php:58
+msgid "Search instructor..."
+msgstr "Cauta instructor..."
+
+#: views/metabox/instructors-metabox.php:66
+msgid "Add Instructors"
+msgstr "Adauga Instructori"
+
+#: views/metabox/lesson-metabox.php:11
+msgid "Select a course"
+msgstr "Selecteaza un curs"
+
+#: views/metabox/lesson-metabox.php:22
+msgid "Choose the course for this lesson"
+msgstr "Alegeți cursul pentru această lecție"
+
+#: views/metabox/quiz/multi-answer-options.php:7
+msgid "Answer text"
+msgstr "Răspundeți la text"
+
+#: views/metabox/quiz/multi-answer-options.php:8
+msgid "Is Correct"
+msgstr "Este Corect"
+
+#: views/metabox/quiz/multi-answer-options.php:33
+msgid "Add an option"
+msgstr "Adauga optiune"
+
+#: views/metabox/quiz/single-question-item.php:41
+#: views/modal/question_form.php:32
+msgid "Question Type"
+msgstr "Tip Intrebare"
+
+#: views/metabox/quiz/single-question-item.php:56
+#: views/modal/question_form.php:110
+msgid "Mark for this question"
+msgstr "Bifați această întrebare"
+
+#: views/metabox/quiz/single-question-item.php:60
+msgid "Set the mark for this question how much will they get"
+msgstr "Setați nota pentru această întrebare cât de mult vor primi"
+
+#: views/metabox/quiz/single-question-item.php:72
+msgid "Title for the question."
+msgstr "Titlul pentru intrebare."
+
+#: views/metabox/quiz/single-question-item.php:83
+msgid "Write the details about this question"
+msgstr "Scrieți detalii despre această întrebare"
+
+#: views/metabox/quiz_questions.php:19 views/modal/question_form.php:21
+msgid "Write your question here"
+msgstr "Scrieți întrebarea aici"
+
+#: views/metabox/quiz_questions.php:27 views/modal/edit_quiz.php:114
+msgid "Add Question"
+msgstr "Adauga Intrebare"
+
+#: views/metabox/quizzes.php:29 views/modal/edit_quiz.php:173
+msgid "Time limit for this quiz. 0 means no time limit."
+msgstr ""
+"Termen limită pentru acest test. 0 înseamnă că nu există o limită de timp."
+
+#: views/metabox/quizzes.php:49 views/modal/edit_quiz.php:192
+msgid ""
+"Restriction on the number of attempts a student is allowed to take for this "
+"quiz. 0 for no limit"
+msgstr ""
+"Restricționarea numărului de încercări pe care un student le poate face "
+"pentru acest test. 0 pentru nici o limită"
+
+#: views/metabox/quizzes.php:79 views/modal/edit_quiz.php:207
+msgid "Set the passing percentage for this quiz"
+msgstr "Stabiliți procentajul de trecere pentru acest test"
+
+#: views/metabox/quizzes.php:87 views/modal/edit_quiz.php:211
+msgid "Max questions allowed to answer"
+msgstr "Întrebări maxime permise să răspundă"
+
+#: views/metabox/quizzes.php:91 views/modal/edit_quiz.php:215
+msgid ""
+"This amount of question will be available for students to answer, and "
+"question will comes randomly from all available questions belongs with a "
+"quiz, if this amount greater then available question, then all questions "
+"will be available for a student to answer."
+msgstr ""
+"Acest numar de întrebari va fi disponibil elevilor pentru a răspunde, "
+"întrebarea va fi afisata aleator dintre toate întrebările disponibile ce "
+"aparțin unui test, dacă această sumă este mai mare decât întrebarile "
+"disponibile, atunci toate întrebările vor fi disponibile pentru ca un "
+"student să răspundă."
+
+#: views/metabox/user-profile-fields.php:1
+msgid "Tutor Fields"
+msgstr "Campuri Tutor"
+
+#: views/metabox/user-profile-fields.php:13
+msgid "Job Title"
+msgstr "Denumirea funcției"
+
+#: views/metabox/user-profile-fields.php:20
+msgid "Profile Bio"
+msgstr "Profil Bio"
+
+#: views/metabox/user-profile-fields.php:32
+msgid "Write a little bit more about you, it will show publicly."
+msgstr "Scrie ceva mai mult despre tine, va fi afisat public."
+
+#: views/metabox/user-profile-fields.php:37
+msgid "Profile Photo"
+msgstr "Poza Profil"
+
+#: views/metabox/user-profile-fields.php:49 views/metabox/video-metabox.php:103
+msgid "Upload"
+msgstr "Incarca"
+
+#: views/metabox/video-metabox.php:24
+msgid "Course Intro Video"
+msgstr "Curs Intro Video"
+
+#: views/metabox/video-metabox.php:26
+msgid "Video Source"
+msgstr "Sursa Video"
+
+#: views/metabox/video-metabox.php:33
+msgid "Select Video Source"
+msgstr "Selecteaza Sursa Video"
+
+#: views/metabox/video-metabox.php:34
+msgid "HTML5 (mp4)"
+msgstr "HTML5 (mp4)"
+
+#: views/metabox/video-metabox.php:35
+msgid "YouTube"
+msgstr "YouTube"
+
+#: views/metabox/video-metabox.php:36
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: views/metabox/video-metabox.php:40
+msgid "Select the video type and place video value below."
+msgstr "Selectați tipul videoclipului și plasați valoarea video de mai jos."
+
+#: views/metabox/video-metabox.php:47
+msgid "Media ID"
+msgstr "ID Media"
+
+#: views/metabox/video-metabox.php:52
+msgid "YouTube Video URL"
+msgstr "URL Video YouTube"
+
+#: views/metabox/video-metabox.php:55
+msgid "Vimeo Video URL"
+msgstr "URL Video Vimeo"
+
+#: views/metabox/video-metabox.php:64
+msgid "Video Run Time"
+msgstr "Timp de rulare video"
+
+#: views/metabox/video-metabox.php:90
+msgid "Video Poster"
+msgstr "Poster video"
+
+#: views/modal/add_quiz.php:15 views/modal/edit_quiz.php:25
+msgid "Quiz Info"
+msgstr "Info Chestionare"
+
+#: views/modal/add_quiz.php:24 views/modal/edit_quiz.php:34
+msgid "Advanced Options"
+msgstr "Optiuni Avansate"
+
+#: views/modal/add_quiz.php:37 views/modal/edit_quiz.php:47
+#: views/modal/question_form.php:23
+msgid "Type your quiz title here"
+msgstr "Tasteaza aici titlul chestionarului"
+
+#: views/modal/add_quiz.php:50 views/modal/edit_quiz.php:61
+msgid "Save &amp; Next"
+msgstr "Salvați &amp; Următor"
+
+#: views/modal/add_quiz.php:71 views/modal/add_quiz.php:96
+#: views/modal/edit_quiz.php:124 views/modal/edit_quiz.php:226
+#: views/modal/edit_quiz.php:306 views/modal/question_form.php:11
+msgid "Back"
+msgstr "Inapoi"
+
+#: views/modal/add_quiz.php:73 views/modal/add_quiz.php:98
+#: views/modal/edit_quiz.php:125
+msgid "Next"
+msgstr "Urmator"
+
+#: views/modal/edit-lesson.php:14
+msgid "Lesson title"
+msgstr "Titlu Lectie"
+
+#: views/modal/edit-lesson.php:29
+msgid "Feature Image"
+msgstr "Imagine de copertă"
+
+#: views/modal/edit-lesson.php:36
+msgid "Upload Feature Image"
+msgstr "Incarca Imagine de copertă"
+
+#: views/modal/edit-lesson.php:39
+msgid "Update Feature Image"
+msgstr "Actualizeaza Imagine de copertă"
+
+#: views/modal/edit-lesson.php:62
+msgid "Update Lesson"
+msgstr "Actualizeaza Lectie"
+
+#: views/modal/edit_quiz.php:168
+msgid "Hide quiz time - display"
+msgstr "Ascundeți ora testului - afișați"
+
+#: views/modal/edit_quiz.php:178 views/modal/question_form.php:133
+msgid "Optional"
+msgstr "Optional"
+
+#: views/modal/edit_quiz.php:227 views/modal/edit_quiz.php:307
+msgid "Save"
+msgstr "Salveaza"
+
+#: views/modal/edit_quiz.php:240
+msgid "Quiz Auto Start"
+msgstr "Chestionar Auto Start"
+
+#: views/modal/edit_quiz.php:248
+msgid ""
+"If you enable this option, the quiz will start automatically after the page "
+"is loaded."
+msgstr ""
+"Dacă activați această opțiune, testul va începe automat după încărcarea "
+"paginii."
+
+#: views/modal/edit_quiz.php:256
+msgid "Question Layout"
+msgstr "Model vizual Intrebare"
+
+#: views/modal/edit_quiz.php:262
+msgid "Set question layout view"
+msgstr "Setați vizualizarea aspectului pentru întrebare"
+
+#: views/modal/edit_quiz.php:263
+msgid "Single Question"
+msgstr "O singura Intrebare"
+
+#: views/modal/edit_quiz.php:264
+msgid "Question Pagination"
+msgstr "Paginatie pentru Intrebare"
+
+#: views/modal/edit_quiz.php:265
+msgid "Question below each other"
+msgstr "Lista de intrebari"
+
+#: views/modal/edit_quiz.php:275
+msgid "Hide question number"
+msgstr "Ascunde numarul de intrebari"
+
+#: views/modal/edit_quiz.php:283
+msgid "Show/hide question number during attempt."
+msgstr "Afișați/ascundeți numărul întrebării în timpul încercărilor."
+
+#: views/modal/edit_quiz.php:292
+msgid "Short answer characters limit"
+msgstr "Caractere limită de răspuns scurt"
+
+#: views/modal/edit_quiz.php:298
+msgid ""
+"Student will place answer in short answer question type within this "
+"characters limit."
+msgstr ""
+"Cursantul va răspunsunde în tipul alocat cu un raspuns scurt limitat de "
+"numarul de caractere admis."
+
+#: views/modal/question_answer_edit_form.php:29
+#: views/modal/question_answer_edit_form.php:96
+#: views/modal/question_answer_form.php:35
+#: views/modal/question_answer_form.php:91
+#: views/modal/question_answer_form.php:111
+msgid "Answer title"
+msgstr "Titlu raspuns"
+
+#: views/modal/question_answer_edit_form.php:37
+#: views/modal/question_answer_edit_form.php:112
+#: views/modal/question_answer_edit_form.php:150
+#: views/modal/question_answer_edit_form.php:186
+#: views/modal/question_answer_form.php:43
+#: views/modal/question_answer_form.php:127
+#: views/modal/question_answer_form.php:155
+#: views/modal/question_answer_form.php:184
+msgid "Upload Image"
+msgstr "Incarca Imagine"
+
+#: views/modal/question_answer_edit_form.php:58
+#: views/modal/question_answer_edit_form.php:133
+#: views/modal/question_answer_form.php:56
+#: views/modal/question_answer_form.php:140
+msgid "Answer option view format"
+msgstr "Opțiune de vizualizare format a raspunsului"
+
+#: views/modal/question_answer_edit_form.php:61
+#: views/modal/question_answer_edit_form.php:136
+#: views/modal/question_answer_form.php:58
+#: views/modal/question_answer_form.php:142
+msgid "Only text"
+msgstr "Doar text"
+
+#: views/modal/question_answer_edit_form.php:63
+#: views/modal/question_answer_edit_form.php:138
+#: views/modal/question_answer_form.php:59
+#: views/modal/question_answer_form.php:143
+msgid "Only Image"
+msgstr "Doar imagine"
+
+#: views/modal/question_answer_edit_form.php:64
+#: views/modal/question_answer_edit_form.php:139
+#: views/modal/question_answer_form.php:60
+#: views/modal/question_answer_form.php:144
+msgid "Text &amp; Image both"
+msgstr "Text &amp; Imagine"
+
+#: views/modal/question_answer_edit_form.php:77
+#: views/modal/question_answer_form.php:73
+msgid ""
+"Please make sure that <b>{dash}</b> variable contains in your question title "
+"to show dash, You can use multiple variable"
+msgstr ""
+"Asigurați-vă că <b>{dash}</b> variabila este conținuta în titlul dvs. pentru "
+"întrebare pentru a afișa liniuța. Puteți utiliza mai multe variabile"
+
+#: views/modal/question_answer_edit_form.php:82
+#: views/modal/question_answer_form.php:78
+msgid "Gap Answer"
+msgstr "Decalaj Raspuns"
+
+#: views/modal/question_answer_edit_form.php:85
+#: views/modal/question_answer_form.php:81
+msgid ""
+"Separate multiple answer by pipe <b>( | )</b> , 1 answer per variable "
+"assigned in question"
+msgstr "Separați răspunsul multiplu cu <b>( | )</b>, 1 răspuns per variabilă"
+
+#: views/modal/question_answer_edit_form.php:103
+#: views/modal/question_answer_form.php:98
+#: views/modal/question_answer_form.php:118
+msgid "Matched Answer title"
+msgstr "Titlul răspunsului corespunzător"
+
+#: views/modal/question_answer_edit_form.php:172
+#: views/modal/question_answer_form.php:170
+msgid "Image matched text"
+msgstr "Imaginea potrivita cu text"
+
+#: views/modal/question_answer_edit_form.php:208
+#: views/modal/question_answer_form.php:199
+msgid "Answer input value"
+msgstr "Valoarea raspunsului dat"
+
+#: views/modal/question_answer_edit_form.php:211
+#: views/modal/question_answer_form.php:202
+msgid ""
+"Student input text should be matched with this answer, write in <b>Small "
+"Caps</b>"
+msgstr ""
+"Textul tastat de cursant trebuie să corespundă acestui răspuns, scrieți "
+"<b>Litere mici</b>"
+
+#: views/modal/question_answer_edit_form.php:221
+msgid "Update Answer"
+msgstr "Actualizeaza Raspuns"
+
+#: views/modal/question_answer_form.php:16
+msgid "Select option which is correct"
+msgstr "Alege optiunea de raspunsul corecta"
+
+#: views/modal/question_answer_form.php:212
+msgid "Save Answer"
+msgstr "Salveaza Raspuns"
+
+#: views/modal/question_form.php:44
+msgid "True False"
+msgstr "Adevarat Fals"
+
+#: views/modal/question_form.php:59
+msgid "Fill In The Gaps"
+msgstr "Completeza locurile libere"
+
+#: views/modal/question_form.php:86
+msgid "Answer Required"
+msgstr "Răspuns necesar"
+
+#: views/modal/question_form.php:98
+msgid "Randomize"
+msgstr "Aleator"
+
+#: views/modal/question_form.php:112
+msgid "set the mark ex. 10"
+msgstr "setați obiectiv ex. 10"
+
+#: views/modal/question_form.php:124
+msgid "Show marks"
+msgstr "Arata obiectiv"
+
+#: views/modal/question_form.php:216
+msgid "Add An Option"
+msgstr "Adauga o Optiune"
+
+#: views/modal/question_form.php:231
+msgid "Save &amp; Continue"
+msgstr "Salveaza &amp; Continua"
+
+#: views/options/field-types/groups/select.php:5
+#: views/options/field-types/select.php:4
+msgid "Select Option"
+msgstr "Alege Optiune"
+
+#: views/options/options_generator.php:2
+msgid "Tutor Settings"
+msgstr "Setari Tutor"
+
+#: views/options/options_generator.php:71
+msgid "Save Settings"
+msgstr "Salveaza Setari"
+
+#: views/pages/add_new_instructor.php:3 views/pages/add_new_instructor.php:127
+msgid "Add new instructor"
+msgstr "Adauga instructor nou"
+
+#: views/pages/addons.php:7
+msgid "Tutor Add-ons"
+msgstr "Tutor optiuni suplimentare"
+
+#: views/pages/addons.php:13
+msgid "Plugins"
+msgstr "Plugin-uri"
+
+#: views/pages/addons.php:14
+msgid "Themes"
+msgstr "Teme"
+
+#: views/pages/addons.php:36
+#, php-format
+msgid "Last checked %s ago, It will check again after %s from now"
+msgstr "Ultima verificare %s în urmă, Va verifica din nou după %s de acum"
+
+#: views/pages/addons.php:59
+msgid "Buy Now"
+msgstr "Cumpara Acum"
+
+#: views/pages/addons.php:79 views/pages/enable_disable_addons.php:46
+msgid "Version"
+msgstr "Versiune"
+
+#: views/pages/addons.php:90 views/pages/addons.php:94
+#, php-format
+msgid "No %s currently avaialable"
+msgstr "Nici %s în prezent disponibil"
+
+#: views/pages/answer.php:31
+msgid "Write an answer here"
+msgstr "Scrie aici un raspuns"
+
+#: views/pages/answer.php:35
+msgid "Place answer"
+msgstr "Adauga raspuns"
+
+#: views/pages/answer.php:64
+msgid "on"
+msgstr "pe"
+
+#: views/pages/enable_disable_addons.php:3
+msgid "Addons List"
+msgstr "Lista optiuni suplimentare"
+
+#: views/pages/get-pro.php:2
+msgid "Get pro plugin from themeum.com"
+msgstr "Obțineți pluginul Pro de la themeum.com"
+
+#: views/pages/instructors.php:20
+msgid "Add New Instructor"
+msgstr "Adauga Instructor Nou"
+
+#: views/pages/instructors.php:27 views/pages/question_answer.php:23
+#: views/pages/quiz_attempts.php:23 views/pages/students.php:13
+msgid "Search"
+msgstr "Cauta"
+
+#: views/pages/question_answer.php:18
+msgid "Question & Answer"
+msgstr "Intrebare & Raspuns"
+
+#: views/pages/status.php:3
+msgid "Tutor Environment Status"
+msgstr "Status  mediu Tutor"
+
+#: views/pages/status.php:16
+msgid "WordPress environment"
+msgstr "Mediu WordPress"
+
+#: views/pages/status.php:21
+msgid "Home URL"
+msgstr "URL pagina de pornire"
+
+#: views/pages/status.php:22
+msgid "The homepage URL of your site."
+msgstr "Adresa URL a paginii de pornire a site-ului dvs."
+
+#: views/pages/status.php:26
+msgid "Site URL"
+msgstr "Adresa URL a site-ului"
+
+#: views/pages/status.php:27
+msgid "The root URL of your site."
+msgstr "Adresa URL rădăcină a site-ului dvs."
+
+#: views/pages/status.php:32
+msgid "WordPress version"
+msgstr "Versiune WordPress"
+
+#: views/pages/status.php:33
+msgid "The version of WordPress installed on your site."
+msgstr "Versiunea WordPress instalată pe site-ul dvs."
+
+#: views/pages/status.php:52
+#, php-format
+msgid "%1$s - There is a newer version of WordPress available (%2$s)"
+msgstr "%1$s - Există o versiune mai nouă a WordPress disponibilă (%2$s)"
+
+#: views/pages/status.php:61
+msgid "Tutor Version"
+msgstr "Versiune Tutor"
+
+#: views/pages/status.php:62
+msgid "The version of tutor."
+msgstr "Versiunea tutor."
+
+#: views/pages/status.php:67
+msgid "WordPress multisite"
+msgstr "WordPress multisite"
+
+#: views/pages/status.php:68
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr "Indiferent dacă aveți sau nu Multisite WordPress activat."
+
+#: views/pages/status.php:72
+msgid "WordPress memory limit"
+msgstr "Limita memoriei WordPress"
+
+#: views/pages/status.php:73
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr "Maxim de memorie (RAM) pe care site-ul dvs. o poate utiliza simultan."
+
+#: views/pages/status.php:78
+#, php-format
+msgid "%1$s - We recommend setting memory to at least 64MB. See: %2$s"
+msgstr "%1$s - Vă recomandăm să setați memoria la cel puțin 64MB. Vezi: %2$s"
+
+#: views/pages/status.php:78
+msgid "Increasing memory allocated to PHP"
+msgstr "Creșterea memoriei alocate PHP"
+
+#: views/pages/status.php:86
+msgid "WordPress debug mode"
+msgstr "Modul de depanare WordPress"
+
+#: views/pages/status.php:87
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr "Afișează dacă WordPress este sau nu în modul Depanare."
+
+#: views/pages/status.php:97
+msgid "WordPress cron"
+msgstr "WordPress cron"
+
+#: views/pages/status.php:98
+msgid "Displays whether or not WP Cron Jobs are enabled."
+msgstr "Afișează dacă WP Cron Jobs sunt activate sau nu."
+
+#: views/pages/status.php:108
+msgid "Language"
+msgstr "Limba"
+
+#: views/pages/status.php:109
+msgid "The current language used by WordPress. Default = English"
+msgstr "Limba curentă folosită de WordPress. Implicit = Engleză"
+
+#: views/pages/status.php:113
+msgid "External object cache"
+msgstr "Cache obiecte externe"
+
+#: views/pages/status.php:114
+msgid "Displays whether or not WordPress is using an external object cache."
+msgstr "Afișează dacă WordPress utilizează sau nu o memorie cache externă."
+
+#: views/pages/status.php:131
+msgid "Server environment"
+msgstr "Mediu Server"
+
+#: views/pages/status.php:136
+msgid "Server info"
+msgstr "Server info"
+
+#: views/pages/status.php:137
+msgid "Information about the web server that is currently hosting your site."
+msgstr "Informații despre serverul web care găzduiește în prezent site-ul dvs."
+
+#: views/pages/status.php:141
+msgid "PHP version"
+msgstr "Versiune PHP"
+
+#: views/pages/status.php:142
+msgid "The version of PHP installed on your hosting server."
+msgstr "Versiunea PHP instalată pe serverul dvs. de găzduire."
+
+#: views/pages/status.php:151
+msgid ""
+"Tutor will run under this version of PHP, however, it has reached end of "
+"life. We recommend using PHP version 7.2 or above for greater performance "
+"and security."
+msgstr ""
+"Tutor va rula sub această versiune PHP. Vă recomandăm să utilizați PHP "
+"versiunea 7.2 sau o versiune superioară pentru o performanță și securitate "
+"mai bune."
+
+#: views/pages/status.php:153
+msgid ""
+"We recommend using PHP version 7.2 or above for greater performance and "
+"security."
+msgstr ""
+"Vă recomandăm să utilizați PHP versiunea 7.2 sau o versiune superioară "
+"pentru o performanță și securitate mai bune."
+
+#: views/pages/status.php:164
+msgid "PHP post max size"
+msgstr "Dimensiune post maxim pentru PHP"
+
+#: views/pages/status.php:165
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+"Cea mai mare dimensiune a fișierului care poate fi inclusă într-un singur "
+"post."
+
+#: views/pages/status.php:169
+msgid "PHP time limit"
+msgstr "Timp limită PHP"
+
+#: views/pages/status.php:170
+msgid ""
+"The amount of time (in seconds) that your site will spend on a single "
+"operation before timing out (to avoid server lockups)"
+msgstr ""
+"Timp (în secunde) pe care site-ul dvs. îl va folosi pe o singură operațiune "
+"înainte de expirarea timpului (pentru a evita blocarea serverului)"
+
+#: views/pages/status.php:174
+msgid "PHP max input vars"
+msgstr "PHP max input vars"
+
+#: views/pages/status.php:175
+msgid ""
+"The maximum number of variables your server can use for a single function to "
+"avoid overloads."
+msgstr ""
+"Numărul maxim de variabile pe care le poate utiliza serverul dvs. pentru o "
+"singură funcție pentru a evita supraîncărcarea."
+
+#: views/pages/status.php:179
+msgid "cURL version"
+msgstr "versiune cURL"
+
+#: views/pages/status.php:180
+msgid "The version of cURL installed on your server."
+msgstr "Versiunea cURL instalata pe serverul dvs."
+
+#: views/pages/status.php:184
+msgid "SUHOSIN installed"
+msgstr "SUHOSIN instalat"
+
+#: views/pages/status.php:185
+msgid ""
+"Suhosin is an advanced protection system for PHP installations. It was "
+"designed to protect your servers on the one hand against a number of well "
+"known problems in PHP applications and on the other hand against potential "
+"unknown vulnerabilities within these applications or the PHP core itself. If "
+"enabled on your server, Suhosin may need to be configured to increase its "
+"data submission limits."
+msgstr ""
+"Suhosin este un sistem avansat de protecție pentru instalurile PHP. Acesta a "
+"fost conceput pentru a vă proteja serverele, pe de o parte, de o serie de "
+"probleme bine cunoscute în aplicațiile PHP și, pe de altă parte, împotriva "
+"vulnerabilităților potențiale necunoscute în cadrul acestor aplicații sau a "
+"nucleului PHP propriu-zis. Dacă este activată pe serverul dvs., este posibil "
+"ca Suhosin să fie configurat să crească limitele de trimitere a datelor."
+
+#: views/pages/status.php:195
+msgid "MySQL version"
+msgstr "Versiune MySQL"
+
+#: views/pages/status.php:196
+msgid "The version of MySQL installed on your hosting server."
+msgstr "Versiunea MySQL instalată pe serverul dvs. de găzduire."
+
+#: views/pages/status.php:201
+#, php-format
+msgid "%1$s - We recommend a minimum MySQL version of 5.6. See: %2$s"
+msgstr "%1$s - Vă recomandăm o versiune minimă MySQL de 5.6. Vezi %2$s"
+
+#: views/pages/status.php:201
+msgid "WordPress requirements"
+msgstr "Cerințele WordPress"
+
+#: views/pages/status.php:210
+msgid "Max upload size"
+msgstr "Dimensiunea maximă pentru încărcare"
+
+#: views/pages/status.php:211
+msgid ""
+"The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+"Cea mai mare dimensiune a fișierului care poate fi încărcată pe WordPress."
+
+#: views/pages/status.php:215
+msgid "Default timezone is UTC"
+msgstr "Fusul orar implicit este UTC"
+
+#: views/pages/status.php:216
+msgid "The default timezone for your server."
+msgstr "Fusul orar implicit pentru serverul dvs."
+
+#: views/pages/status.php:221
+#, php-format
+msgid "Default timezone is %s - it should be UTC"
+msgstr "Fusul orar implicit este %s - ar trebui să fie UTC"
+
+#: views/pages/status.php:229
+msgid "fsockopen/cURL"
+msgstr "fsockopen/cURL"
+
+#: views/pages/status.php:230
+msgid ""
+"Payment gateways can use cURL to communicate with remote servers to "
+"authorize payments, other plugins may also use it when communicating with "
+"remote services."
+msgstr ""
+"Metodele de plată pot utiliza cURL pentru a comunica cu serverele la "
+"distanță si pentru a autoriza plățile, alte plugin-uri le pot utiliza, "
+"atunci când comunică cu servicii de la distanță."
+
+#: views/pages/status.php:236
+msgid ""
+"Your server does not have fsockopen or cURL enabled - PayPal IPN and other "
+"scripts which communicate with other servers will not work. Contact your "
+"hosting provider."
+msgstr ""
+"Serverul dvs. nu are activat fsockopen sau cURL - PayPal IPN și alte "
+"scripturi care comunică cu alte servere nu vor funcționa. Contactați "
+"furnizorul dvs. de găzduire."
+
+#: views/pages/status.php:242
+msgid "DOMDocument"
+msgstr "DOMDocument"
+
+#: views/pages/status.php:243
+msgid ""
+"HTML/Multipart emails use DOMDocument to generate inline CSS in templates."
+msgstr ""
+"HTML/Multipart utilizează DOMDocument pentru a genera CSS inline în șabloane."
+
+#: views/pages/status.php:250
+#, php-format
+msgid ""
+"Your server does not have the %s class enabled - HTML/Multipart emails, and "
+"also some extensions, will not work without DOMDocument."
+msgstr ""
+"Serverul dvs. nu are activat clasa %s - e-mailurile , HTML/Multipart și, de "
+"asemenea, unele extensii, nu vor funcționa fără DOMDocument."
+
+#: views/pages/status.php:256
+msgid "GZip"
+msgstr "GZip"
+
+#: views/pages/status.php:257
+msgid "GZip (gzopen) is used to open the GEOIP database from MaxMind."
+msgstr ""
+"GZip (gzopen) este utilizat pentru a deschide baza de date GEOIP de la "
+"MaxMind."
+
+#: views/pages/status.php:264
+#, php-format
+msgid ""
+"Your server does not support the %s function - this is required to use the "
+"GeoIP database from MaxMind."
+msgstr ""
+"Serverul dvs. nu acceptă funcția %s - aceasta este necesară pentru "
+"utilizarea bazei de date GeoIP de la MaxMind."
+
+#: views/pages/status.php:270
+msgid "Multibyte string"
+msgstr "Șir multibyte"
+
+#: views/pages/status.php:271
+msgid ""
+"Multibyte String (mbstring) is used to convert character encoding, like for "
+"emails or converting characters to lowercase."
+msgstr ""
+"Șirul multibyte (mbstring) este folosit pentru a converti codarea "
+"caracterelor, ca și pentru e-mailuri sau conversia caracterelor în litere "
+"mici."
+
+#: views/pages/status.php:278
+#, php-format
+msgid ""
+"Your server does not support the %s functions - this is required for better "
+"character encoding. Some fallbacks will be used instead for it."
+msgstr ""
+"Serverul dvs. nu acceptă funcțiile %s - aceasta este necesară pentru o mai "
+"bună codificare a caracterelor. Alti inlocuitori vor fi folosite în locul "
+"lor."
+
+#: views/pages/uninstall.php:9
+msgid "Uninstall Tutor"
+msgstr "Dezinstaleaza Tutor"
+
+#: views/pages/uninstall.php:10
+msgid ""
+"Just deactive tutor plugin or completely uninstall and erase all of data "
+"saved before by tutor."
+msgstr ""
+"Dezactivați plugin-ul Tutor sau dezinstalați complet și ștergeți toate "
+"datele salvate anterior de Tutor."
+
+#: views/pages/view_attempt.php:7
+msgid "Attempt not found"
+msgstr "Încercarea nu a fost găsită"
+
+#: views/pages/view_attempt.php:20
+msgid "View Attempts"
+msgstr "Vizualizați încercările"
+
+#: views/pages/view_attempt.php:25
+msgid "Attempt By"
+msgstr "Încercat de"
+
+#: views/pages/view_attempt.php:35
+msgid "Attempt At"
+msgstr "Încercat la"
+
+#: views/pages/view_attempt.php:84
+msgid "Quiz Time"
+msgstr "Timp Chestionar"
+
+#: views/pages/view_attempt.php:94
+msgid "Attempt Time"
+msgstr "Timp de încercare"
+
+#: views/pages/view_attempt.php:137
+msgid "Manually reviewed at :"
+msgstr "Evaluat manual la:"
+
+#: views/pages/view_attempt.php:153
+msgid "Quiz Overview"
+msgstr "Vizualizare generală a chestionarului"
+
+#: views/pages/view_attempt.php:158
+msgid "Type"
+msgstr "Tip"
+
+#: views/pages/view_attempt.php:159
+msgid "No."
+msgstr "Nu."
+
+#: views/pages/view_attempt.php:161
+msgid "Given Answers"
+msgstr "Raspunsuri Date"
+
+#: views/pages/view_attempt.php:162
+msgid "Correct/Incorrect"
+msgstr "Correct/Incorect"
+
+#: views/pages/view_attempt.php:288
+msgid "Review Required"
+msgstr "Revizuirea este Necesară"
+
+#: views/pages/view_attempt.php:301
+msgid "Mark as In correct"
+msgstr "Marcați ca Incorect"
+
+#. Plugin URI of the plugin/theme
+msgid "http://https://themeum.com/tutor"
+msgstr "http://https://themeum.com/tutor"
+
+#. Description of the plugin/theme
+msgid ""
+"Tutor is a complete solution for creating a Learning Management System in "
+"WordPress way. It can help you to create"
+msgstr ""
+"Tutor este o soluție completă pentru crearea unui sistem de management al "
+"învățării în modul WordPress. Vă poate ajuta să creați"
+
+#. Author of the plugin/theme
+msgid "Themeum"
+msgstr "Themeum"
+
+#. Author URI of the plugin/theme
+msgid "http://themeum.com"
+msgstr "http://themeum.com"
