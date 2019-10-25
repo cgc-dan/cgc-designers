@@ -1,0 +1,448 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Learn 2 Code - Strong HTML tag\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DAN N <CSSMFC@BITRIX24.COM>\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+
+#: cb-strong:1
+msgctxt ""
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: cb-strong:2
+msgctxt ""
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: cb-strong:3
+msgctxt "Nav bar"
+msgid "About"
+msgstr ""
+
+#: cb-strong:4
+msgctxt ""
+msgid "Platform"
+msgstr ""
+
+#: cb-strong:5
+msgctxt ""
+msgid "Why"
+msgstr ""
+
+#: cb-strong:6
+msgctxt "Page Title"
+msgid "strong"
+msgstr ""
+
+#: cb-strong:7
+msgctxt "Second Nav"
+msgid "Markup"
+msgstr ""
+
+#: cb-strong:8
+msgid "Code snippets"
+msgstr ""
+
+#: cb-strong:9
+msgctxt ""
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-strong:10
+msgctxt ""
+msgid "Demos and Examples"
+msgstr ""
+
+#: cb-strong:11
+msgctxt "About section"
+msgid "Designing Chaturbate Bios"
+msgstr ""
+
+#: cb-strong:12
+msgctxt ""
+msgid "HTML Tag - Strong"
+msgstr ""
+
+#: cb-strong:13
+msgctxt "Table"
+msgid "TAG"
+msgstr ""
+
+#: cb-strong:14
+msgctxt ""
+msgid "HTML MARKUP"
+msgstr ""
+
+#: cb-strong:15
+msgctxt ""
+msgid "DEFINES"
+msgstr ""
+
+#: cb-strong:16
+msgctxt ""
+msgid "The HTML &lt;strong&gt; gives text a strong emphasis which traditionally means that the text is displayed as bold by the browser"
+msgstr ""
+
+#: cb-strong:17
+msgctxt ""
+msgid "This tag is also commonly referred to as the &lt;strong&gt; element"
+msgstr ""
+
+#: cb-strong:18
+msgctxt ""
+msgid "Can be used to visually change the render of a single letter, word, paragraph, or as a block element optimized for Chaturbate platform."
+msgstr ""
+
+#: cb-strong:19
+msgctxt ""
+msgid "HTML tag used to render the text in bold style — similar to"
+msgstr ""
+
+#: cb-strong:20
+msgctxt ""
+msgid "HTML tag"
+msgstr ""
+
+#: cb-strong:21
+msgctxt "Markup code"
+msgid "can be used as default, as it is, or empowered by inline-css."
+msgstr ""
+
+#: cb-strong:22
+msgctxt ""
+msgid "This is a text which uses simple strong HTML tags"
+msgstr ""
+
+#: cb-strong:23
+msgctxt ""
+msgid "This is a text which uses strong HTML tags and inline-css"
+msgstr ""
+
+#: cb-strong:24
+msgctxt ""
+msgid "Basic markup"
+msgstr ""
+
+#: cb-strong:25
+msgctxt ""
+msgid "Extended markup"
+msgstr ""
+
+#: cb-strong:26
+msgctxt ""
+msgid "HTML Markup Code:"
+msgstr ""
+
+#: cb-strong:27
+msgctxt ""
+msgid "Will render:"
+msgstr ""
+
+#: cb-strong:28
+msgctxt "Render source"
+msgid "Test markup codes and see how your browser is rendering them. Use"
+msgstr ""
+
+#: cb-strong:29
+msgctxt ""
+msgid "button to see how to use the source editor and rendering tool"
+msgstr ""
+
+#: cb-strong:30
+msgctxt ""
+msgid "Markup Code Box"
+msgstr ""
+
+#: cb-strong:31
+msgctxt ""
+msgid "Show"
+msgstr ""
+
+#: cb-strong:32
+msgctxt ""
+msgid "Default"
+msgstr ""
+
+#: cb-strong:33
+msgctxt ""
+msgid "Render Box"
+msgstr ""
+
+#: cb-strong:34
+msgctxt ""
+msgid "That\'s how it looks rendered in browser. Optionally you can"
+msgstr ""
+
+#: cb-strong:35
+msgctxt ""
+msgid "Save as PDF"
+msgstr ""
+
+#: cb-strong:36
+msgctxt ""
+msgid "Default button, on click, removes the markup code from light-blue box"
+msgstr ""
+
+#: cb-strong:37
+msgctxt "Codes"
+msgid "Markup Codes using"
+msgstr ""
+
+#: cb-strong:38
+msgctxt ""
+msgid "HTML Tag"
+msgstr ""
+
+#: cb-strong:39
+msgctxt ""
+msgid "Strong tags can hold different types of content but keep in mind that there\'s a certain legacy between all HTML tags."
+msgstr ""
+
+#: cb-strong:40
+msgctxt ""
+msgid "Strong tags and how to style them to look more appealing using inline-CSS"
+msgstr ""
+
+#: cb-strong:41
+msgctxt ""
+msgid "Basic html for strong element with some inline-css"
+msgstr ""
+
+#: cb-strong:42
+msgctxt ""
+msgid "Other styling using inline-css"
+msgstr ""
+
+#: cb-strong:43
+msgctxt ""
+msgid "Some Text Here"
+msgstr ""
+
+#: cb-strong:44
+msgctxt ""
+msgid "Some Text Here as a link"
+msgstr ""
+
+#: cb-strong:45
+msgctxt ""
+msgid "Using strong HTML markup with a link inside"
+msgstr ""
+
+#: cb-strong:46
+msgctxt ""
+msgid "As mentioned above, there\'s a legacy and a certain structure between markup codes, from parent to child. In this case the parent element is the strong and the child element is the link."
+msgstr ""
+
+#: cb-strong:47
+msgctxt ""
+msgid "A bit more complex, 1 strong containing 2 other blocks defined as span (also a HTML tag accepted by Chaturbate)"
+msgstr ""
+
+#: cb-strong:48
+msgctxt ""
+msgid "Box Left"
+msgstr ""
+
+#: cb-strong:49
+msgctxt ""
+msgid "Box Right"
+msgstr ""
+
+#: cb-strong:50
+msgctxt "Reference"
+msgid "Inline-css can be added to:"
+msgstr ""
+
+#: cb-strong:51
+msgctxt ""
+msgid "ref. tag"
+msgstr ""
+
+#: cb-strong:52
+msgctxt "How to use..."
+msgid "How to use..."
+msgstr ""
+
+#: cb-strong:53
+msgctxt ""
+msgid "Paste markup codes showed on page inside the Markup Code Box (left box)"
+msgstr ""
+
+#: cb-strong:54
+msgctxt ""
+msgid "Click on Show button"
+msgstr ""
+
+#: cb-strong:55
+msgctxt ""
+msgid "View the rendered markup inside the Render Box (right box)"
+msgstr ""
+
+#: cb-strong:56
+msgctxt ""
+msgid "Show button allows you to start rendering the markup code"
+msgstr ""
+
+#: cb-strong:57
+msgctxt ""
+msgid "Default button is used as reset the Markup Code box, all input will be lost"
+msgstr ""
+
+#: cb-strong:58
+msgctxt ""
+msgid "Print this page as pdf - well, you don\'t need much but its there, just in case. Please note, the print page will only print content from Render Box."
+msgstr ""
+
+#: cb-strong:59
+msgctxt "Code Snippets"
+msgid "Code Snippets"
+msgstr ""
+
+#: cb-strong:60
+msgctxt "Editing Tips"
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-strong:61
+msgctxt ""
+msgid "Our suggestions for fast editing and viable markup rendering"
+msgstr ""
+
+#: cb-strong:62
+msgctxt ""
+msgid "On Chaturbate platform, strong HTML tag can be used as it is, adding a visual aspect to its content, but it also can be used as a block."
+msgstr ""
+
+#: cb-strong:63
+msgctxt ""
+msgid "Use of"
+msgstr ""
+
+#: cb-strong:64
+msgctxt ""
+msgid "All links (on page or external URLs) are set up to open on another page (with a countdown) so there\'s no need to use"
+msgstr ""
+
+
+#: cb-strong:65
+msgctxt ""
+msgid "Available Advertising Space. Contact us and rent this space for your banner or textual ad."
+msgstr ""
+
+#: cb-strong:66
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: cb-strong:67
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: cb-strong:68
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: cb-strong:69
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: cb-strong:70
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: cb-strong:71
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: cb-strong:72
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: cb-strong:73
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: cb-strong:74
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: cb-strong:75
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: cb-strong:76
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: cb-strong:77
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: cb-strong:78
+msgctxt ""
+msgid "Because it is one service you can rely on. Because it\'s unique and flexible."
+msgstr ""
+
+#: cb-strong:79
+msgctxt ""
+msgid "Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can\'t be wrong."
+msgstr ""
+
+#: cb-strong:80
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: cb-strong:81
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: cb-strong:82
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: cb-strong:83
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: cb-strong:84
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: cb-strong:85
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: cb-strong:86
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: cb-strong:87
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""

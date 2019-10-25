@@ -1,0 +1,412 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Learn 2 Code - Font HTML tag\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/forum/developer-corner/cgc-web-designer/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DAN N <CSSMFC@BITRIX24.COM>\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+
+#:  cb-font.html:1
+msgctxt ""
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: cb-font.html:2
+msgctxt ""
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: cb-font.html:3
+msgctxt "Nav bar"
+msgid "About"
+msgstr ""
+
+#: cb-font.html:4
+msgctxt ""
+msgid "Platform"
+msgstr ""
+
+#: cb-font.html:5
+msgctxt ""
+msgid "Why"
+msgstr ""
+
+#: cb-font.html:6
+msgctxt "Page Title"
+msgid "font"
+msgstr ""
+
+#: cb-font.html:7
+msgctxt "Second Nav"
+msgid "Markup"
+msgstr ""
+
+#: cb-font.html:8
+msgid "Code snippets"
+msgstr ""
+
+#: cb-font.html:9
+msgctxt ""
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-font.html:10
+msgctxt ""
+msgid "Demos and Examples"
+msgstr ""
+
+#: cb-font.html:11
+msgctxt "About section"
+msgid "Designing Chaturbate Bios"
+msgstr ""
+
+#: cb-font.html:12
+msgctxt ""
+msgid "HTML Tag - Font"
+msgstr ""
+
+#: cb-font.html:13
+msgctxt ""
+msgid "&lt;font&gt; HTML tag used to define and render style for text elements"
+msgstr ""
+
+#: cb-font.html:14
+msgctxt ""
+msgid "On Chaturbate this HTML element is not popular among web designers but it can be useful as a block/container in certain situations."
+msgstr ""
+
+#: cb-font.html:15
+msgctxt "Table"
+msgid "TAG"
+msgstr ""
+
+#: cb-font.html:16
+msgctxt ""
+msgid "HTML MARKUP"
+msgstr ""
+
+#: cb-font.html:17
+msgctxt ""
+msgid "DEFINES"
+msgstr ""
+
+#: cb-font.html:18
+msgctxt ""
+msgid "HTML tag used to define and render style for text elements"
+msgstr ""
+
+#: cb-font.html:19
+msgctxt "Markup"
+msgid "can be used in conjunction with inline css and can hold other block elements"
+msgstr ""
+
+#: cb-font.html:20
+msgctxt ""
+msgid "Basic markup"
+msgstr ""
+
+#: cb-font.html:21
+msgctxt ""
+msgid "Extended markup"
+msgstr ""
+
+#: cb-font.html:22
+msgctxt ""
+msgid "HTML Markup Code:"
+msgstr ""
+
+#: cb-font.html:23
+msgctxt ""
+msgid "Will render:"
+msgstr ""
+
+#: cb-font.html:24
+msgctxt ""
+msgid "This element is using &lt;font&gt; tags"
+msgstr ""
+
+#: cb-font.html:25
+msgctxt "Render source"
+msgid "Test markup codes and see how your browser is rendering them. Use"
+msgstr ""
+
+#: cb-font.html:26
+msgctxt ""
+msgid "button to see how to use the source editor and rendering tool"
+msgstr ""
+
+#: cb-font.html:27
+msgctxt ""
+msgid "Markup Code Box"
+msgstr ""
+
+#: cb-font.html:28
+msgctxt ""
+msgid "Show"
+msgstr ""
+
+#: cb-font.html:29
+msgctxt ""
+msgid "Default"
+msgstr ""
+
+#: cb-font.html:30
+msgctxt ""
+msgid "Render Box"
+msgstr ""
+
+#: cb-font.html:31
+msgctxt ""
+msgid "That\'s how it looks rendered in browser. Optionally you can"
+msgstr ""
+
+#: cb-font.html:32
+msgctxt ""
+msgid "Save as PDF"
+msgstr ""
+
+#: cb-font.html:33
+msgctxt ""
+msgid "Default button, on click, removes the markup code from light-blue box"
+msgstr ""
+
+#: cb-font.html:34
+msgctxt "Codes"
+msgid "Markup Codes using"
+msgstr ""
+
+#: cb-font.html:35
+msgctxt ""
+msgid "HTML tag"
+msgstr ""
+
+#: cb-font.html:36
+msgctxt ""
+msgid "Even if &lt;font&gt; HTML element is not popular it has value because it acts like a block element and block elements are easy to use in custom projects."
+msgstr ""
+
+#: cb-font.html:37
+msgctxt ""
+msgid "&lt;font&gt; tag and how to style them to look more appealing using inline-CSS"
+msgstr ""
+
+#: cb-font.html:38
+msgctxt ""
+msgid "Other styling using inline-css"
+msgstr ""
+
+#: cb-font.html:39
+msgctxt ""
+msgid "Box reflect css, inline-css accepted by Chaturbate platform"
+msgstr ""
+
+#: cb-font.html:40
+msgctxt ""
+msgid "As you can see, css can work its magic and can be applied to other HTML elements too."
+msgstr ""
+
+#: cb-font.html:41
+msgctxt ""
+msgid "Box shadow css, inline-css accepted by Chaturbate platform"
+msgstr ""
+
+#: cb-font.html:42
+msgctxt ""
+msgid "Clip path css, inline-css accepted by Chaturbate platform"
+msgstr ""
+
+#: cb-font.html:43
+msgctxt "Reference"
+msgid "Inline-css can be added to:"
+msgstr ""
+
+#: cb-font.html:44
+msgctxt ""
+msgid "ref. tag"
+msgstr ""
+
+#: cb-font.html:45
+msgctxt "How to use..."
+msgid "How to use..."
+msgstr ""
+
+#: cb-font.html:46
+msgctxt ""
+msgid "Paste markup codes showed on page inside the Markup Code Box (left box)"
+msgstr ""
+
+#: cb-font.html:47
+msgctxt ""
+msgid "Click on Show button"
+msgstr ""
+
+#: cb-font.html:48
+msgctxt ""
+msgid "View the rendered markup inside the Render Box (right box)"
+msgstr ""
+
+#: cb-font.html:49
+msgctxt ""
+msgid "Show button allows you to start rendering the markup code"
+msgstr ""
+
+#: cb-font.html:50
+msgctxt ""
+msgid "Default button is used as reset the Markup Code box, all input will be lost"
+msgstr ""
+
+#: cb-font.html:51
+msgctxt ""
+msgid "Print this page as pdf - well, you don't need much but its there, just in case. Please note, the print page will only print content from Render Box."
+msgstr ""
+
+#: cb-font.html:52
+msgctxt "Code Snippets"
+msgid "Code Snippets"
+msgstr ""
+
+#: cb-font.html:53
+msgctxt "Editing Tips"
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-font.html:54
+msgctxt ""
+msgid "Our suggestions for fast editing and viable markup rendering"
+msgstr ""
+
+#: cb-font.html:55
+msgctxt ""
+msgid "Use of"
+msgstr ""
+
+#: cb-font.html:56
+msgctxt ""
+msgid "All links (on page or external URLs) are set up to open on another page (with a countdown) so there's no need to use"
+msgstr ""
+
+#: cb-font.html:57
+msgctxt ""
+msgid "Keep in mind that HTML is using a certain structure between parent (container) box and its child elements (content)."
+msgstr ""
+
+#: cb-font.html:58
+msgctxt "Ads"
+msgid "Available Advertising Space. Contact us and rent this space for your banner or textual ad."
+msgstr ""
+
+#: cb-font.html:59
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: cb-font.html:60
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: cb-font.html:61
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: cb-font.html:62
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: cb-font.html:63
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: cb-font.html:64
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: cb-font.html:65
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: cb-font.html:66
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: cb-font.html:67
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: cb-font.html:68
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: cb-font.html:69
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: cb-font.html:70
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: cb-font.html:71
+msgctxt ""
+msgid "Because it is one service you can rely on. Because it\'s unique and flexible."
+msgstr ""
+
+#: cb-font.html:72
+msgctxt ""
+msgid "Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can\'t be wrong."
+msgstr ""
+
+#: cb-font.html:73
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: cb-font.html:74
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: cb-font.html:75
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: cb-font.html:76
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: cb-font.html:77
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: cb-font.html:78
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: cb-font.html:79
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: cb-font.html:80
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""

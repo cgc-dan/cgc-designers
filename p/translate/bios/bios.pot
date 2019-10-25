@@ -1,0 +1,257 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Learn 2 Code - Code Bios and Profiles\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/forum/developer-corner/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DAN N <CSSMFC@BITRIX24.COM>\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+
+#: index.html:1
+msgctxt ""
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: index.html:2
+msgctxt ""
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: index.html:3
+msgctxt "Nav bar"
+msgid "About"
+msgstr ""
+
+#: index.html:4
+msgctxt ""
+msgid "Platform"
+msgstr ""
+
+#: index.html:5
+msgctxt ""
+msgid "Why"
+msgstr ""
+
+#: index.html:6
+msgctxt "Page Title"
+msgid "Code Bios and Profiles"
+msgstr ""
+
+#: index.html:7
+msgctxt "About section"
+msgid "Quick Info"
+msgstr ""
+
+#: index.html:8
+msgid "Welcome to Bios/Profiles category"
+msgstr ""
+
+#: index.html:9
+msgctxt ""
+msgid "If you want to dive into creative process of coding and developing custom designs profiles and bios you\'ll need some tools to help you."
+msgstr ""
+
+#: index.html:10
+msgctxt ""
+msgid "We recommend"
+msgstr ""
+
+#: index.html:11
+msgctxt ""
+msgid "helps with HTML/CSS markup editing. Online basic source Editor"
+msgstr ""
+
+#: index.html:12
+msgctxt ""
+msgid "will help with HTML/CSS markup editing program. It is a commercial/trial downloadable program, popular among Windows users"
+msgstr ""
+
+#: index.html:13
+msgctxt ""
+msgid "helps with HTML/CSS markup editing. It is a free downloadable program, popular among Windows users"
+msgstr ""
+
+#: index.html:14
+msgctxt ""
+msgid "helps with HTML/CSS markup editing. Some of this editors are free, some are commercial/trial. Editors for MAC users"
+msgstr ""
+
+#: index.html:15
+msgctxt "Modules"
+msgid "Choose your learning module and get started."
+msgstr ""
+
+#: index.html:16
+msgctxt ""
+msgid "Coding Chaturbate Bios"
+msgstr ""
+
+#: index.html:17
+msgctxt ""
+msgid "Index:"
+msgstr ""
+
+#: index.html:18
+msgctxt ""
+msgid "Chaturbate allowed markup tags"
+msgstr ""
+
+#: index.html:19
+msgctxt ""
+msgid "Go for it"
+msgstr ""
+
+#: index.html:20
+msgctxt ""
+msgid "Coding MyFreeCams Profiles"
+msgstr ""
+
+#: index.html:21
+msgctxt ""
+msgid "Coding Niteflirt Bios"
+msgstr ""
+
+#: index.html:22
+msgctxt ""
+msgid "Coding Camsoda Bios"
+msgstr ""
+
+#: index.html:23
+msgctxt ""
+msgid "MyFreeCams allowed markup tags"
+msgstr ""
+
+#: index.html:24
+msgctxt ""
+msgid "Camsoda allowed markup tags"
+msgstr ""
+
+#: index.html:25
+msgctxt ""
+msgid "Code snippets"
+msgstr ""
+
+#: index.html:26
+msgctxt ""
+msgid "Demos and Examples"
+msgstr ""
+
+#: index.html:27
+msgctxt ""
+msgid "Editing Tips"
+msgstr ""
+
+#: index.html:28
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: index.html:29
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: index.html:30
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: index.html:31
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: index.html:32
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: index.html:33
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: index.html:34
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: index.html:35
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: index.html:36
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: index.html:37
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: index.html:38
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: index.html:39
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: index.html:40
+msgctxt ""
+msgid "Because it is one service you can rely on. Because it\'s unique and flexible."
+msgstr ""
+
+#: index.html:41
+msgctxt ""
+msgid "Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can\'t be wrong."
+msgstr ""
+
+#: index.html:42
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: index.html:42
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: index.html:44
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: index.html:45
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: index.html:46
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: index.html:47
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: index.html:48
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: index.html:49
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""

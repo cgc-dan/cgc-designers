@@ -1,0 +1,430 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Learn 2 Code - Heading HTML tags\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/forum/developer-corner/"
+"cgc-web-designer/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-10-22 14:30+0300\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_GB\n"
+
+#: cb-h1.html:1
+msgctxt ""
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: cb-h1.html:2
+msgctxt ""
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: cb-h1.html:3
+msgctxt "Nav bar"
+msgid "About"
+msgstr ""
+
+#: cb-h1.html:4
+msgctxt ""
+msgid "Platform"
+msgstr ""
+
+#: cb-h1.html:5
+msgctxt ""
+msgid "Why"
+msgstr ""
+
+#: cb-h1.html:6
+msgctxt "Page Title"
+msgid "h1, h2, h3"
+msgstr ""
+
+#: cb-h1.html:7
+msgctxt "Second Nav"
+msgid "Markup"
+msgstr ""
+
+#: cb-h1.html:8
+msgid "Code snippets"
+msgstr ""
+
+#: cb-h1.html:9
+msgctxt ""
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-h1.html:10
+msgctxt ""
+msgid "Demos and Examples"
+msgstr ""
+
+#: cb-h1.html:11
+msgctxt "About section"
+msgid "Designing Chaturbate Bios"
+msgstr ""
+
+#: cb-h1.html:12
+msgctxt ""
+msgid "HTML Tag - Heading"
+msgstr ""
+
+#: cb-h1.html:13
+msgctxt ""
+msgid ""
+"&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; HTML tags, defines heading text elements"
+msgstr ""
+
+#: cb-h1.html:14
+msgctxt ""
+msgid ""
+"On Chaturbate this HTML element is not used often because, by default, this "
+"elements are considered blocks"
+msgstr ""
+
+#: cb-h1.html:15
+msgctxt "Table"
+msgid "TAG"
+msgstr ""
+
+#: cb-h1.html:16
+msgctxt ""
+msgid "HTML MARKUP"
+msgstr ""
+
+#: cb-h1.html:17
+msgctxt ""
+msgid "DEFINES"
+msgstr ""
+
+#: cb-h1.html:18
+msgctxt ""
+msgid "Heading Title"
+msgstr ""
+
+#: cb-h1.html:19
+msgctxt ""
+msgid "HTML tags, defines heading text elements"
+msgstr ""
+
+#: cb-h1.html:20
+msgctxt "Markup"
+msgid ""
+"can be used in conjunction with inline css and it is not recommended to hold "
+"other block elements"
+msgstr ""
+
+#: cb-h1.html:21
+msgctxt ""
+msgid "Basic markup"
+msgstr ""
+
+#: cb-h1.html:22
+msgctxt ""
+msgid "Extended markup"
+msgstr ""
+
+#: cb-h1.html:23
+msgctxt ""
+msgid "HTML Markup Code:"
+msgstr ""
+
+#: cb-h1.html:24
+msgctxt ""
+msgid "Will render:"
+msgstr ""
+
+#: cb-h1.html:25
+msgctxt "Render Source"
+msgid "Test markup codes and see how your browser is rendering them. Use"
+msgstr ""
+
+#: cb-h1.html:26
+msgctxt ""
+msgid "button to see how to use the source editor and rendering tool"
+msgstr ""
+
+#: cb-h1.html:27
+msgctxt ""
+msgid "Markup Code Box"
+msgstr ""
+
+#: cb-h1.html:28
+msgctxt ""
+msgid "Show"
+msgstr ""
+
+#: cb-h1.html:29
+msgctxt ""
+msgid "Default"
+msgstr ""
+
+#: cb-h1.html:30
+msgctxt ""
+msgid "Render Box"
+msgstr ""
+
+#: cb-h1.html:31
+msgctxt ""
+msgid "That's how it looks rendered in browser. Optionally you can"
+msgstr ""
+
+#: cb-h1.html:32
+msgctxt ""
+msgid "Save as PDF"
+msgstr ""
+
+#: cb-h1.html:33
+msgctxt ""
+msgid "Default button, on click, removes the markup code from light-blue box"
+msgstr ""
+
+#: cb-h1.html:34
+msgctxt "Codes"
+msgid "Markup Codes using"
+msgstr ""
+
+#: cb-h1.html:35
+msgctxt ""
+msgid "HTML tag"
+msgstr ""
+
+#: cb-h1.html:36
+msgctxt ""
+msgid ""
+"Our suggestion is not to use this HTML tags in your editing process but if "
+"you do want to use them, here are a few code snippets which uses &lt;h1&gt; "
+"HTML element with inline-css"
+msgstr ""
+
+#: cb-h1.html:37
+msgctxt ""
+msgid ""
+"&lt;h1&gt; / &lt;h2&gt; / &lt;h3&gt; tags and how to style them to look more "
+"appealing using inline-CSS"
+msgstr ""
+
+#: cb-h1.html:38
+msgctxt ""
+msgid ""
+"Basic html for &lt;h1&gt; / &lt;h2&gt; / &lt;h3&gt; elements with some "
+"inline-css"
+msgstr ""
+
+#: cb-h1.html:39
+msgctxt ""
+msgid "Other styling using inline-css"
+msgstr ""
+
+#: cb-h1.html:40
+msgctxt ""
+msgid "This box is using &lt;h1&gt; HTML tag"
+msgstr ""
+
+#: cb-h1.html:41
+msgctxt "Reference"
+msgid "Inline-css can be added to:"
+msgstr ""
+
+#: cb-h1.html:42
+msgctxt ""
+msgid "ref. tag"
+msgstr ""
+
+#: cb-h1.html:43
+msgctxt "How to use..."
+msgid "How to use..."
+msgstr ""
+
+#: cb-h1.html:44
+msgctxt ""
+msgid "Paste markup codes showed on page inside the Markup Code Box (left box)"
+msgstr ""
+
+#: cb-h1.html:45
+msgctxt ""
+msgid "Click on Show button"
+msgstr ""
+
+#: cb-h1.html:46
+msgctxt ""
+msgid "View the rendered markup inside the Render Box (right box)"
+msgstr ""
+
+#: cb-h1.html:47
+msgctxt ""
+msgid "Show button allows you to start rendering the markup code"
+msgstr ""
+
+#: cb-h1.html:48
+msgctxt ""
+msgid ""
+"Default button is used as reset the Markup Code box, all input will be lost"
+msgstr ""
+
+#: cb-h1.html:49
+msgctxt ""
+msgid ""
+"Print this page as pdf - well, you don't need much but its there, just in "
+"case. Please note, the print page will only print content from Render Box."
+msgstr ""
+
+#: cb-h1.html:50
+msgctxt "Code Snippets"
+msgid "Code Snippets"
+msgstr ""
+
+#: cb-h1.html:51
+msgctxt "Editing Tips"
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-h1.html:52
+msgctxt ""
+msgid "Our suggestions for fast editing and viable markup rendering"
+msgstr ""
+
+#: cb-h1.html:53
+msgctxt ""
+msgid ""
+"If you decide to use heading tags make sure that after saving the editing "
+"progress, all boxes are rendering properly."
+msgstr ""
+
+#: cb-h1.html:54
+msgctxt ""
+msgid "Use of"
+msgstr ""
+
+#: cb-h1.html:55
+msgctxt ""
+msgid ""
+"All links (on page or external URLs) are set up to open on another page "
+"(with a countdown) so there's no need to use"
+msgstr ""
+
+#: cb-h1.html:56
+msgctxt "Ads"
+msgid ""
+"Available Advertising Space. Contact us and rent this space for your banner "
+"or textual ad."
+msgstr ""
+
+#: cb-h1.html:57
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: cb-h1.html:58
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: cb-h1.html:59
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: cb-h1.html:60
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: cb-h1.html:61
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: cb-h1.html:62
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: cb-h1.html:63
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: cb-h1.html:64
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: cb-h1.html:65
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: cb-h1.html:66
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: cb-h1.html:67
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: cb-h1.html:68
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: cb-h1.html:69
+msgctxt ""
+msgid ""
+"Because it is one service you can rely on. Because it's unique and flexible."
+msgstr ""
+
+#: cb-h1.html:70
+msgctxt ""
+msgid ""
+"Because over +17k registered members, studio owners, web cam performers, "
+"affiliates and web designers can't be wrong."
+msgstr ""
+
+#: cb-h1.html:71
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: cb-h1.html:72
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: cb-h1.html:73
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: cb-h1.html:74
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: cb-h1.html:75
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: cb-h1.html:76
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: cb-h1.html:77
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: cb-h1.html:78
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""

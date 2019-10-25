@@ -1,0 +1,447 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Learn 2 Code - Underline HTML tag\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/forum/developer-corner/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DAN N <CSSMFC@BITRIX24.COM>\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+
+#: cb-u.html:1
+msgctxt ""
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: cb-u.html:2
+msgctxt ""
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: cb-u.html:3
+msgctxt "Nav bar"
+msgid "About"
+msgstr ""
+
+#: cb-u.html:4
+msgctxt ""
+msgid "Platform"
+msgstr ""
+
+#: cb-u.html:5
+msgctxt ""
+msgid "Why"
+msgstr ""
+
+#: cb-u.html:6
+msgctxt "Page Title"
+msgid "u"
+msgstr ""
+
+#: cb-u.html:7
+msgctxt "Second Nav"
+msgid "Markup"
+msgstr ""
+
+#: cb-u.html:8
+msgid "Code snippets"
+msgstr ""
+
+#: cb-u.html:9
+msgctxt ""
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-u.html:10
+msgctxt ""
+msgid "Demos and Examples"
+msgstr ""
+
+#: cb-u.html:11
+msgctxt "About section"
+msgid "Designing Chaturbate Bios"
+msgstr ""
+
+#: cb-u.html:12
+msgctxt ""
+msgid "HTML Tag - Underline"
+msgstr ""
+
+#: cb-u.html:13
+msgctxt "Table"
+msgid "TAG"
+msgstr ""
+
+#: cb-u.html:14
+msgctxt ""
+msgid "HTML MARKUP"
+msgstr ""
+
+#: cb-u.html:15
+msgctxt ""
+msgid "DEFINES"
+msgstr ""
+
+#: cb-u.html:16
+msgctxt ""
+msgid "The HTML &lt;u&gt; tag represents some text that should be stylistically different from normal text"
+msgstr ""
+
+#: cb-u.html:17
+msgctxt ""
+msgid "On Chaturbate this additional element is helpful when editing a custom design."
+msgstr ""
+
+#: cb-u.html:18
+msgctxt ""
+msgid "HTML tag used to render the text underlined"
+msgstr ""
+
+#: cb-u.html:19
+msgctxt ""
+msgid "can be used as default, as it is, or empowered by inline-css."
+msgstr ""
+
+#: cb-u.html:20
+msgctxt ""
+msgid "This is a text which uses simple underline HTML tags"
+msgstr ""
+
+#: cb-u.html:21
+msgctxt ""
+msgid "This is a text which uses underline HTML tags and inline-css"
+msgstr ""
+
+#: cb-u.html:22
+msgctxt ""
+msgid "Basic markup"
+msgstr ""
+
+#: cb-u.html:23
+msgctxt ""
+msgid "Extended markup"
+msgstr ""
+
+#: cb-u.html:24
+msgctxt ""
+msgid "HTML Markup Code:"
+msgstr ""
+
+#: cb-u.html:25
+msgctxt ""
+msgid "Will render:"
+msgstr ""
+
+#: cb-u.html:26
+msgctxt "Render Source"
+msgid "Test markup codes and see how your browser is rendering them. Use"
+msgstr ""
+
+#: cb-u.html:27
+msgctxt ""
+msgid "button to see how to use the source editor and rendering tool"
+msgstr ""
+
+#: cb-u.html:28
+msgctxt ""
+msgid "Markup Code Box"
+msgstr ""
+
+#: cb-u.html:29
+msgctxt ""
+msgid "Show"
+msgstr ""
+
+#: cb-u.html:30
+msgctxt ""
+msgid "Default"
+msgstr ""
+
+#: cb-u.html:31
+msgctxt ""
+msgid "Render Box"
+msgstr ""
+
+#: cb-u.html:32
+msgctxt ""
+msgid "That\'s how it looks rendered in browser. Optionally you can"
+msgstr ""
+
+#: cb-u.html:33
+msgctxt ""
+msgid "Save as PDF"
+msgstr ""
+
+#: cb-u.html:34
+msgctxt ""
+msgid "Default button, on click, removes the markup code from light-blue box"
+msgstr ""
+
+#: cb-u.html:35
+msgctxt "Markup Codes"
+msgid "Markup Codes using"
+msgstr ""
+
+#: cb-u.html:36
+msgctxt ""
+msgid "HTML tag"
+msgstr ""
+
+#: cb-u.html:37
+msgctxt ""
+msgid "Underline tags can hold different types of content but keep in mind that there\'s a certain legacy between all HTML tags."
+msgstr ""
+
+#: cb-u.html:38
+msgctxt ""
+msgid "Underline tags and how to style them to look more appealing using inline-CSS"
+msgstr ""
+
+#: cb-u.html:39
+msgctxt ""
+msgid "Basic html for underline element with some inline-css"
+msgstr ""
+
+#: cb-u.html:40
+msgctxt ""
+msgid "Other styling using inline-css"
+msgstr ""
+
+#: cb-u.html:41
+msgctxt ""
+msgid "Some Text Here"
+msgstr ""
+
+#: cb-u.html:42
+msgctxt ""
+msgid "Some Text Here as a link"
+msgstr ""
+
+#: cb-u.html:43
+msgctxt ""
+msgid "Using underline HTML markup with a link inside"
+msgstr ""
+
+#: cb-u.html:44
+msgctxt ""
+msgid "Other styling using inline-css and removing the underline style"
+msgstr ""
+
+#: cb-u.html:45
+msgctxt ""
+msgid "As mentioned above, there\'s a legacy and a certain structure between markup codes, from parent to child. In this case the parent element is the underline and the child element is the link."
+msgstr ""
+
+#: cb-u.html:46
+msgctxt ""
+msgid "A bit more complex, 1 underline containing 3 other blocks defined as span (also a HTML tag accepted by Chaturbate)"
+msgstr ""
+
+#: cb-u.html:47
+msgctxt ""
+msgid "Box Left"
+msgstr ""
+
+#: cb-u.html:48
+msgctxt ""
+msgid "Right Center"
+msgstr ""
+
+#: cb-u.html:49
+msgctxt ""
+msgid "Right Right"
+msgstr ""
+
+#: cb-u.html:50
+msgctxt "Reference"
+msgid "Inline-css can be added to:"
+msgstr ""
+
+#: cb-u.html:51
+msgctxt ""
+msgid "ref. tag"
+msgstr ""
+
+#: cb-u.html:52
+msgctxt "How to use..."
+msgid "How to use..."
+msgstr ""
+
+#: cb-u.html:53
+msgctxt ""
+msgid "Paste markup codes showed on page inside the Markup Code Box (left box)"
+msgstr ""
+
+#: cb-u.html:54
+msgctxt ""
+msgid "Click on Show button"
+msgstr ""
+
+#: cb-u.html:55
+msgctxt ""
+msgid "View the rendered markup inside the Render Box (right box)"
+msgstr ""
+
+#: cb-u.html:56
+msgctxt ""
+msgid "Show button allows you to start rendering the markup code"
+msgstr ""
+
+#: cb-u.html:57
+msgctxt ""
+msgid "Default button is used as reset the Markup Code box, all input will be lost"
+msgstr ""
+
+#: cb-u.html:58
+msgctxt ""
+msgid "Print this page as pdf - well, you don\'t need much but its there, just in case. Please note, the print page will only print content from Render Box."
+msgstr ""
+
+#: cb-u.html:59
+msgctxt "Code Snippets"
+msgid "Code Snippets"
+msgstr ""
+
+#: cb-u.html:60
+msgctxt "Editing Tips"
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-u.html:61
+msgctxt ""
+msgid "Our suggestions for fast editing and viable markup rendering"
+msgstr ""
+
+#: cb-u.html:62
+msgctxt ""
+msgid "On Chaturbate platform, underline HTML tag can be used as it is, adding a visual aspect to its content, but it also can be used as a block."
+msgstr ""
+
+#: cb-u.html:63
+msgctxt ""
+msgid "Use of"
+msgstr ""
+
+#: cb-u.html:64
+msgctxt ""
+msgid "All links (on page or external URLs) are set up to open on another page (with a countdown) so there\'s no need to use"
+msgstr ""
+
+#: cb-u.html:65
+msgctxt "Ads"
+msgid "Available Advertising Space. Contact us and rent this space for your banner or textual ad."
+msgstr ""
+
+#: cb-u.html:66
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: cb-u.html:67
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: cb-u.html:68
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: cb-u.html:69
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: cb-u.html:70
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: cb-u.html:71
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: cb-u.html:72
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: cb-u.html:73
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: cb-u.html:74
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: cb-u.html:75
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: cb-u.html:76
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: cb-u.html:77
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: cb-u.html:78
+msgctxt ""
+msgid "Because it is one service you can rely on. Because it\'s unique and flexible."
+msgstr ""
+
+#: cb-u.html:79
+msgctxt ""
+msgid "Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can\'t be wrong."
+msgstr ""
+
+#: cb-u.html:80
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: cb-u.html:81
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: cb-u.html:82
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: cb-u.html:83
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: cb-u.html:84
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: cb-u.html:85
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: cb-u.html:86
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: cb-u.html:87
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""

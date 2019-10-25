@@ -1,0 +1,438 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Learn 2 Code - Italic HTML tag\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/forum/developer-corner/cgc-web-designer/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DAN N <CSSMFC@BITRIX24.COM>\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+
+#: cb-i.html:1
+msgctxt ""
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: cb-i.html:2
+msgctxt ""
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: cb-i.html:3
+msgctxt "Nav bar"
+msgid "About"
+msgstr ""
+
+#: cb-i.html:4
+msgctxt ""
+msgid "Platform"
+msgstr ""
+
+#: cb-i.html:5
+msgctxt ""
+msgid "Why"
+msgstr ""
+
+#: cb-i.html:6
+msgctxt "Page Title"
+msgid "i"
+msgstr ""
+
+#: cb-i.html:7
+msgctxt "Second Nav"
+msgid "Markup"
+msgstr ""
+
+#: cb-i.html:8
+msgid "Code snippets"
+msgstr ""
+
+#: cb-i.html:9
+msgctxt ""
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-i.html:10
+msgctxt ""
+msgid "Demos and Examples"
+msgstr ""
+
+#: cb-i.html:11
+msgctxt "About section"
+msgid "Designing Chaturbate Bios"
+msgstr ""
+
+#: cb-i.html:12
+msgctxt ""
+msgid "HTML Tag - Italic"
+msgstr ""
+
+#: cb-i.html:13
+msgctxt "Table"
+msgid "TAG"
+msgstr ""
+
+#: cb-i.html:14
+msgctxt ""
+msgid "HTML MARKUP"
+msgstr ""
+
+#: cb-i.html:15
+msgctxt ""
+msgid "DEFINES"
+msgstr ""
+
+#: cb-i.html:16
+msgctxt ""
+msgid "The HTML &lt;i&gt; element defines italic text, without any extra importance."
+msgstr ""
+
+#: cb-i.html:17
+msgctxt ""
+msgid "On Chaturbate this additional element is helpful when editing a custom design."
+msgstr ""
+
+#: cb-i.html:18
+msgctxt ""
+msgid "HTML tag used to render the text italic"
+msgstr ""
+
+#: cb-i.html:19
+msgctxt ""
+msgid "can be used as default, as it is, or empowered by inline-css."
+msgstr ""
+
+#: cb-i.html:20
+msgctxt ""
+msgid "This is a text which uses simple italic HTML tags"
+msgstr ""
+
+#: cb-i.html:21
+msgctxt ""
+msgid "This is a text which uses italic HTML tags and inline-css"
+msgstr ""
+
+#: cb-i.html:22
+msgctxt ""
+msgid "Basic markup"
+msgstr ""
+
+#: cb-i.html:23
+msgctxt ""
+msgid "Extended markup"
+msgstr ""
+
+#: cb-i.html:24
+msgctxt ""
+msgid "HTML Markup Code:"
+msgstr ""
+
+#: cb-i.html:25
+msgctxt ""
+msgid "Will render:"
+msgstr ""
+
+
+#: cb-i.html:26
+msgctxt "Render Source"
+msgid "Test markup codes and see how your browser is rendering them. Use"
+msgstr ""
+
+#: cb-i.html:27
+msgctxt ""
+msgid "button to see how to use the source editor and rendering tool"
+msgstr ""
+
+#: cb-i.html:28
+msgctxt ""
+msgid "Markup Code Box"
+msgstr ""
+
+#: cb-i.html:29
+msgctxt ""
+msgid "Show"
+msgstr ""
+
+#: cb-i.html:30
+msgctxt ""
+msgid "Default"
+msgstr ""
+
+#: cb-i.html:31
+msgctxt ""
+msgid "Render Box"
+msgstr ""
+
+#: cb-i.html:32
+msgctxt ""
+msgid "That\'s how it looks rendered in browser. Optionally you can"
+msgstr ""
+
+#: cb-i.html:33
+msgctxt ""
+msgid "Save as PDF"
+msgstr ""
+
+#: cb-i.html:34
+msgctxt ""
+msgid "Default button, on click, removes the markup code from light-blue box"
+msgstr ""
+
+#: cb-i.html:35
+msgctxt "Markup Codes"
+msgid "Markup Codes using"
+msgstr ""
+
+#: cb-i.html:36
+msgctxt ""
+msgid "HTML tag"
+msgstr ""
+
+#: cb-i.html:37
+msgctxt ""
+msgid "Italic tags can hold different types of content but keep in mind that there\'s a certain legacy between all HTML tags."
+msgstr ""
+
+#: cb-i.html:38
+msgctxt ""
+msgid "Italic tags and how to style them to look more appealing using inline-CSS"
+msgstr ""
+
+#: cb-i.html:39
+msgctxt ""
+msgid "Basic html for italic element with some inline-css"
+msgstr ""
+
+#: cb-i.html:40
+msgctxt ""
+msgid "Other styling using inline-css"
+msgstr ""
+
+#: cb-i.html:41
+msgctxt ""
+msgid "Some Text Here"
+msgstr ""
+
+#: cb-i.html:42
+msgctxt ""
+msgid "Some Text Here as a link"
+msgstr ""
+
+#: cb-i.html:43
+msgctxt ""
+msgid "Using italic HTML markup with a link inside"
+msgstr ""
+
+#: cb-i.html:44
+msgctxt ""
+msgid "As mentioned above, there\'s a legacy and a certain structure between markup codes, from parent to child. In this case the parent element is the italic and the child element is the link."
+msgstr ""
+
+#: cb-i.html:45
+msgctxt ""
+msgid "A bit more complex, 1 italic containing 2 other blocks defined as span (also a HTML tag accepted by Chaturbate)"
+msgstr ""
+
+#: cb-i.html:46
+msgctxt ""
+msgid "Box Left"
+msgstr ""
+
+#: cb-i.html:47
+msgctxt ""
+msgid "Right Left"
+msgstr ""
+
+#: cb-i.html:48
+msgctxt "Reference"
+msgid "Inline-css can be added to:"
+msgstr ""
+
+#: cb-i.html:49
+msgctxt ""
+msgid "ref. tag"
+msgstr ""
+
+#: cb-i.html:50
+msgctxt "How to use..."
+msgid "How to use..."
+msgstr ""
+
+#: cb-i.html:51
+msgctxt ""
+msgid "Paste markup codes showed on page inside the Markup Code Box (left box)"
+msgstr ""
+
+#: cb-i.html:52
+msgctxt ""
+msgid "Click on Show button"
+msgstr ""
+
+#: cb-i.html:53
+msgctxt ""
+msgid "View the rendered markup inside the Render Box (right box)"
+msgstr ""
+
+#: cb-i.html:54
+msgctxt ""
+msgid "Show button allows you to start rendering the markup code"
+msgstr ""
+
+#: cb-i.html:55
+msgctxt ""
+msgid "Default button is used as reset the Markup Code box, all input will be lost"
+msgstr ""
+
+#: cb-i.html:56
+msgctxt ""
+msgid "Print this page as pdf - well, you don\'t need much but its there, just in case. Please note, the print page will only print content from Render Box."
+msgstr ""
+
+#: cb-i.html:57
+msgctxt "Code Snippets"
+msgid "Code Snippets"
+msgstr ""
+
+#: cb-i.html:58
+msgctxt "Editing Tips"
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-i.html:59
+msgctxt ""
+msgid "Our suggestions for fast editing and viable markup rendering"
+msgstr ""
+
+#: cb-i.html:60
+msgctxt ""
+msgid "On Chaturbate platform, italic HTML tag can be used as it is, adding a visual aspect to its content, but it also can be used as a block."
+msgstr ""
+
+#: cb-i.html:61
+msgctxt ""
+msgid "Use of"
+msgstr ""
+
+#: cb-i.html:62
+msgctxt ""
+msgid "All links (on page or external URLs) are set up to open on another page (with a countdown) so there\'s no need to use"
+msgstr ""
+
+#: cb-i.html:63
+msgctxt "Ads"
+msgid "Available Advertising Space. Contact us and rent this space for your banner or textual ad."
+msgstr ""
+
+#: cb-i.html:64
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: cb-i.html:65
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: cb-i.html:66
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: cb-i.html:67
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: cb-i.html:68
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: cb-i.html:69
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: cb-i.html:70
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: cb-i.html:71
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: cb-i.html:72
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: cb-i.html:73
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: cb-i.html:74
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: cb-i.html:75
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: cb-i.html:76
+msgctxt ""
+msgid "Because it is one service you can rely on. Because it\'s unique and flexible."
+msgstr ""
+
+#: cb-i.html:77
+msgctxt ""
+msgid "Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can\'t be wrong."
+msgstr ""
+
+#: cb-i.html:78
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: cb-i.html:79
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: cb-i.html:80
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: cb-i.html:81
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: cb-i.html:82
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: cb-i.html:83
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: cb-i.html:84
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: cb-i.html:85
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""

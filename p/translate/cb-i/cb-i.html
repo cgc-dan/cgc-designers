@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML-CSS - Learn 2 Code - Italic HTML tag</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <style>
+/*
+Based on Minimal CSS (minimalcss.com) under the MIT license.
+*/
+
+/* Reset */
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Layout */
+body { background-color: #fff; color: #333;	font: 14px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+header { width: 100%; margin: 0 auto; position: relative; padding: 20px 0; margin-bottom: 20px; }
+
+nav ul { margin: 0; }
+nav ul li { display: inline; margin-right: 20px; font-size: 16px; line-height: 28px; color: #333; }
+nav ul li a { color: #333; }
+
+.container { position: relative; max-width: 87%; margin: 0 auto; }
+
+footer { border-top:1px solid #ccc; font-size:11px; line-height:26px; color:#999; }
+footer a { color:#999999; }
+footer a:hover { color:#105CB6; }
+footer ul li { display:inline; list-style:none; padding-left:20px; }
+
+/* Typography */
+a { color: #105CB6; text-decoration: none; }
+a:hover, a:focus { color: #105CB6; text-decoration: underline; }
+a:active { color: #105CB6; }
+
+h1 { font-size: 24px; line-height: 20px; margin: 10px 0; }
+h2 { font-size: 20px; line-height: 20px; margin: 10px 0; }
+h3 { font-size: 16px; line-height: 20px; margin: 10px 0; }
+h4 { font-size: 14px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 12px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 10px; line-height: 20px; margin: 10px 0; }
+h1,h2,h3,h4,h5,h6 { color: #333; }
+
+p { margin-bottom: 10px; }
+
+.float-left     { float: left; }
+.float-right    { float: right; }
+img.float-left  { float: left; margin: 0 20px 20px 0; }
+img.float-right { float: right; margin: 0 0 20px 20px; }
+img.center      { margin: 0 auto; display: block; }
+
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Misc */
+hr { background-color: #ccc; border: 0px; color: #ccc; height: 1px; margin: 8px 0 20px 0; }
+pre, code { background:#E0ECF6; display:block; margin-bottom: 20px; padding:10px; }
+
+blockquote { margin: 10px 10px 20px; padding: 9px; background-color: #f8f8f8; color: #666; border-left: 5px solid #ddd; font: 14px/20px Georgia, Times, serif; quotes: "\201C" "\201D"; }
+blockquote p { margin: 0; }
+blockquote:before { content: open-quote; font-weight: bold; }
+blockquote:after  { content: close-quote; font-weight: bold; }
+
+/* List */
+ul { list-style-position:inside; }
+ol { list-style-position:inside; }
+
+/* Table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th { font-weight: bold; }
+tfoot { font-style: italic; }
+
+/* Metadata part */
+
+.metadata {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 90%;
+}
+table.metadata td {
+  padding-right: 20px;
+}
+
+.stats {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.graph {
+  width: 100%;
+}
+.graph div { float: left; }
+.graph div:first-child { border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.graph div:last-child { border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+.percent-done    { background-color: rgb(90, 228, 140); height: 10px; }
+.percent-fuzzy   { background-color: rgb(255, 167, 52); height: 10px; }
+.percent-untrans { background-color: #F1F1F1; height: 10px; }
+.legend {
+  font-size: smaller;
+  color: #aaa;
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* Translations */
+table.translations {
+  width: 100%;
+  table-layout: fixed;
+}
+table.translations th, table.translations td {
+  padding: 5px 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #E1E1E1;
+}
+table.translations th {
+  text-align: left;
+}
+table.translations th:first-child, table.translations td:first-child { padding-left: 0; }
+table.translations th:last-child, table.translations td:last-child { padding-right: 0; }
+
+.with-comments td {
+  border-bottom: none !important;
+}
+tr.comments div {
+  float: left;
+  max-width: 90%;
+  font-size: smaller;
+  color: #aaa;
+}
+tr.comments div p:last-child { margin-bottom: 0; }
+tr.comments td { padding-top: 0; }
+
+.fuzzy .tra {
+  color: rgb(218, 123, 0);
+}
+
+.msgctxt {
+  color: rgb(70, 109, 137);
+  font-size: smaller;
+  background-color: rgb(217, 232, 242);
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-right: 4px;
+}
+/*** Custom stuff ***/
+.none{display:none;}
+.tra{border-left:1px solid #f1f1f1;padding-left:5px;background-color:#FBFEFF;/**
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='498' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Created with Dan N - https://dandesign.camgirl.cloud/ --%3E%3Cg%3E%3Ctitle%3Ebackground%3C/title%3E%3Crect x='-1' y='-1' width='500' height='26' id='canvas_background' fill='none'/%3E%3C/g%3E%3Cg%3E%3Ctitle%3ELayer 1%3C/title%3E%3Ctext fill='%23000000' stroke-width='0' x='21.22896' y='13.4655' id='svg_1' font-size='24' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(0.5481149178565747,0,0,0.4969260853789845,1.204665143913714,6.9935734772781535) ' stroke='%23000' opacity='0.54'%3Etype your translation here%3C/text%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position:3px 5px;
+**/}
+
+.send{display:block;width:100%;height:40px;margin:10px auto 12px 0px;
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='498' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Created with Dan N - https://dandesign.camgirl.cloud/ --%3E%3Cg%3E%3Ctitle%3Ebackground%3C/title%3E%3Crect x='-1' y='-1' width='500' height='26' id='canvas_background' fill='none'/%3E%3C/g%3E%3Cg%3E%3Ctitle%3ELayer 1%3C/title%3E%3Ctext fill='%23000000' stroke-width='0' x='21.22896' y='13.4655' id='svg_1' font-size='26' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(0.5481149178565747,0,0,0.4969260853789845,1.204665143913714,6.9935734772781535) ' stroke='%23000' opacity='1'%3E3. Send the PDF file to our email address cssmfc@bitrix24.com%3C/text%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position:0px 5px;}
+.tra:focus{background-color:#fff;background-image:none;}
+.float{position:fixed;top:10px;right:11px;}
+.floatbottom{position:fixed;bottom:10px;right:11px;}
+.svg-icon-print {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.svg-icon-print path,
+.svg-icon-print polygon,
+.svg-icon-print rect {
+  fill: #4691f6;
+}
+
+.svg-icon-print circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+.svg-icon-print:hover path,
+.svg-icon-print:hover polygon,
+.svg-icon-print:hover rect {
+  fill: #555;
+}
+.svg-icon-print:hover{}
+
+.svg-icon-off {
+  width: 2.5em;
+  height: 2.5em;
+  opacity:.8;
+}
+
+.svg-icon-off path,
+.svg-icon-off polygon,
+.svg-icon-off rect {
+  fill: #fff;
+}
+
+.svg-icon-off circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+.svg-icon-off {
+  width: 2.5em;
+  height: 2.5em;
+  opacity:1;
+}
+.tab #dinfo a.close{position:fixed;top:-910px;right:10px;z-index:100;}
+.tab #dinfo:target a.close{position:fixed;top:10px;right:10px;z-index:100;}
+
+.svg-icon-up {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.svg-icon-up path,
+.svg-icon-up polygon,
+.svg-icon-up rect {
+  fill: #4691f6;
+}
+
+.svg-icon-up circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+.svg-icon-up:hover path,
+.svg-icon-up:hover polygon,
+.svg-icon-up:hover rect {
+  fill: #555;
+}
+
+.tab #dinfo{display:block;width:100%;height:300px;position:fixed;top:-99999999px;left:0;opacity:0;-webkit-transition: ease-in-out .5s linear;transition:ease-in-out .5s linear;}
+.tab #dinfo:target{display:block;width:100%;height:100%;position:fixed;top:0;left:0;opacity:1;background-color:rgba(0,0,0,.80);z-index:10000;}
+.dinfobox{display:block;width:80%;padding:20px;background-color:#fff;margin:20% auto 20% auto;}
+html{scroll-behavior: smooth;}
+@media print {
+ .svg-icon-print{display:none;}
+ #dinfo{display:none;}
+ .floatbottom{display:none;}
+ .tra{border-left:1px solid #f1f1f1;padding-left:5px;}
+}
+  </style>
+</head>
+<body>
+<div class='container'>
+<table class='metadata'>
+<tr><td><strong>Project:</strong></td><td>HTML-CSS - Learn 2 Code - Italic HTML tag</td></tr>
+<tr><td><strong>Default Language:</strong></td><td>English</td></tr>
+</table>
+<div class="buttons">
+<a href="#dinfo"><svg class="svg-icon-print" viewBox="0 0 20 20">
+							<path d="M14.999,8.543c0,0.229-0.188,0.417-0.416,0.417H5.417C5.187,8.959,5,8.772,5,8.543s0.188-0.417,0.417-0.417h9.167C14.812,8.126,14.999,8.314,14.999,8.543 M12.037,10.213H5.417C5.187,10.213,5,10.4,5,10.63c0,0.229,0.188,0.416,0.417,0.416h6.621c0.229,0,0.416-0.188,0.416-0.416C12.453,10.4,12.266,10.213,12.037,10.213 M14.583,6.046H5.417C5.187,6.046,5,6.233,5,6.463c0,0.229,0.188,0.417,0.417,0.417h9.167c0.229,0,0.416-0.188,0.416-0.417C14.999,6.233,14.812,6.046,14.583,6.046 M17.916,3.542v10c0,0.229-0.188,0.417-0.417,0.417H9.373l-2.829,2.796c-0.117,0.116-0.71,0.297-0.71-0.296v-2.5H2.5c-0.229,0-0.417-0.188-0.417-0.417v-10c0-0.229,0.188-0.417,0.417-0.417h15C17.729,3.126,17.916,3.313,17.916,3.542 M17.083,3.959H2.917v9.167H6.25c0.229,0,0.417,0.187,0.417,0.416v1.919l2.242-2.215c0.079-0.077,0.184-0.12,0.294-0.12h7.881V3.959z"></path>
+						</svg></a>
+                        <a onclick="myFunction()" href="#"><svg class="svg-icon-print" viewBox="0 0 20 20">
+							<path d="M17.453,12.691V7.723 M17.453,12.691V7.723 M1.719,12.691V7.723 M18.281,12.691V7.723 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M7.309,13.312h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,13.312,7.309,13.312 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M16.625,6.066h-1.449V3.168c0-0.228-0.186-0.414-0.414-0.414H5.238c-0.228,0-0.414,0.187-0.414,0.414v2.898H3.375c-0.913,0-1.656,0.743-1.656,1.656v4.969c0,0.913,0.743,1.656,1.656,1.656h1.449v2.484c0,0.228,0.187,0.414,0.414,0.414h9.523c0.229,0,0.414-0.187,0.414-0.414v-2.484h1.449c0.912,0,1.656-0.743,1.656-1.656V7.723C18.281,6.81,17.537,6.066,16.625,6.066 M5.652,3.582h8.695v2.484H5.652V3.582zM14.348,16.418H5.652v-4.969h8.695V16.418z M17.453,12.691c0,0.458-0.371,0.828-0.828,0.828h-1.449v-2.484c0-0.228-0.186-0.414-0.414-0.414H5.238c-0.228,0-0.414,0.186-0.414,0.414v2.484H3.375c-0.458,0-0.828-0.37-0.828-0.828V7.723c0-0.458,0.371-0.828,0.828-0.828h13.25c0.457,0,0.828,0.371,0.828,0.828V12.691z M7.309,13.312h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,13.312,7.309,13.312M7.309,15.383h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,15.383,7.309,15.383 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555"></path>
+						</svg></a>
+</div>
+<div class='stats'>
+  <div class='legend'>Total Lines: 85</div>
+</div>
+<table class='translations'>
+  <thead>
+    <tr>
+      <th>Source text — English</th>
+      <th contenteditable="true">Translation — Add Language (ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>LEARN 2 CODE</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>powered by camgirl.cloud</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Nav bar</span>About</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Platform</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Why</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Page Title</span>i</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Second Nav</span>Markup</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Code snippets</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Editing Tips</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Demos and Examples</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>About section</span>Designing Chaturbate Bios</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>HTML Tag - Italic</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Table</span>TAG</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>HTML MARKUP</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>DEFINES</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>The HTML &amp;lt;i&amp;gt; element defines italic text, without any extra importance.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>On Chaturbate this additional element is helpful when editing a custom design.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>HTML tag used to render the text italic</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>can be used as default, as it is, or empowered by inline-css.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>This is a text which uses simple italic HTML tags</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>This is a text which uses italic HTML tags and inline-css</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Basic markup</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Extended markup</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>HTML Markup Code:</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Will render:</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Render Source</span>Test markup codes and see how your browser is rendering them. Use</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>button to see how to use the source editor and rendering tool</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Markup Code Box</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Show</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Default</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Render Box</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>That's how it looks rendered in browser. Optionally you can</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Save as PDF</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Default button, on click, removes the markup code from light-blue box</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Markup Codes</span>Markup Codes using</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>HTML tag</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Italic tags can hold different types of content but keep in mind that there's a certain legacy between all HTML tags.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Italic tags and how to style them to look more appealing using inline-CSS</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Basic html for italic element with some inline-css</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Other styling using inline-css</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Some Text Here</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Some Text Here as a link</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Using italic HTML markup with a link inside</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>As mentioned above, there's a legacy and a certain structure between markup codes, from parent to child. In this case the parent element is the italic and the child element is the link.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>A bit more complex, 1 italic containing 2 other blocks defined as span (also a HTML tag accepted by Chaturbate)</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Box Left</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Right Left</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Reference</span>Inline-css can be added to:</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>ref. tag</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>How to use...</span>How to use...</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Paste markup codes showed on page inside the Markup Code Box (left box)</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Click on Show button</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>View the rendered markup inside the Render Box (right box)</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Show button allows you to start rendering the markup code</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Default button is used as reset the Markup Code box, all input will be lost</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Print this page as pdf - well, you don't need much but its there, just in case. Please note, the print page will only print content from Render Box.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Code Snippets</span>Code Snippets</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Editing Tips</span>Editing Tips</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Our suggestions for fast editing and viable markup rendering</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>On Chaturbate platform, italic HTML tag can be used as it is, adding a visual aspect to its content, but it also can be used as a block.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Use of</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>All links (on page or external URLs) are set up to open on another page (with a countdown) so there's no need to use</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Ads</span>Available Advertising Space. Contact us and rent this space for your banner or textual ad.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Footer</span>CGC Tools and Services</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Tailored</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Custom design</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Media Library</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Studio Environment</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Performer Service</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Tools Kit</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Stats and Staff</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Team</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Stats</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>CGC Contact</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Why CGC</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Because it is one service you can rely on. Because it's unique and flexible.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can't be wrong.</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'>Modal Translate</span>Change Language</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Change the content of the material in your preferred language</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Romanian</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>English</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>French</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Italian</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>German</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ <span class='msgctxt'></span>Help translate this material</td>
+<td class='tra'  lang='en-150' contenteditable="true" title="Add translated text here">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--- Custom Stuff --->
+<div>
+
+<p class="floatbottom"><a href="#"><svg class="svg-icon-up" viewBox="0 0 20 20">
+							<path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+						</svg></a></p>
+
+<p class="float"><a onclick="myFunction()" href="#"><svg class="svg-icon-print" viewBox="0 0 20 20">
+							<path d="M17.453,12.691V7.723 M17.453,12.691V7.723 M1.719,12.691V7.723 M18.281,12.691V7.723 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M7.309,13.312h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,13.312,7.309,13.312 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M16.625,6.066h-1.449V3.168c0-0.228-0.186-0.414-0.414-0.414H5.238c-0.228,0-0.414,0.187-0.414,0.414v2.898H3.375c-0.913,0-1.656,0.743-1.656,1.656v4.969c0,0.913,0.743,1.656,1.656,1.656h1.449v2.484c0,0.228,0.187,0.414,0.414,0.414h9.523c0.229,0,0.414-0.187,0.414-0.414v-2.484h1.449c0.912,0,1.656-0.743,1.656-1.656V7.723C18.281,6.81,17.537,6.066,16.625,6.066 M5.652,3.582h8.695v2.484H5.652V3.582zM14.348,16.418H5.652v-4.969h8.695V16.418z M17.453,12.691c0,0.458-0.371,0.828-0.828,0.828h-1.449v-2.484c0-0.228-0.186-0.414-0.414-0.414H5.238c-0.228,0-0.414,0.186-0.414,0.414v2.484H3.375c-0.458,0-0.828-0.37-0.828-0.828V7.723c0-0.458,0.371-0.828,0.828-0.828h13.25c0.457,0,0.828,0.371,0.828,0.828V12.691z M7.309,13.312h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,13.312,7.309,13.312M7.309,15.383h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,15.383,7.309,15.383 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555"></path>
+						</svg></a></p>
+</div>
+
+
+<div class="tab">
+
+   <div id="dinfo">
+   
+   <a href="#" class="close"><svg class="svg-icon-off" viewBox="0 0 20 20">
+							<path fill="none" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+						</svg></a>
+   
+     <div class="dinfobox">
+      <p>1. Type your translation in the light blue table (right column)</p>
+      <p>2. When done with your translation, click the print icon and save it as PDF file</p>
+      <p class="send"></p>
+      <p align="center"><br>Thank you for your contribution!<br></p>
+     </div>
+   
+   </div>
+
+
+
+
+</div>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+
+<!---/ Custom Stuff --->
+</body>
+</html>

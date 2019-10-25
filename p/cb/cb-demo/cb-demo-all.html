@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CB - Demo - Code Snippets</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.xcr::-webkit-scrollbar {width:11px;}
+.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);}
+.xcr::-webkit-scrollbar-thumb {background:#0CF;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #033;}
+* {box-sizing:border-box;}
+html {scroll-behavior: smooth;}
+.gr-1 {width: 8.33%;}
+.gr-2 {width: 16.66%;}
+.gr-3 {width: 25%;}
+.gr-4 {width: 33.33%;}
+.gr-5 {width: 41.66%;}
+.gr-5-half {width: 47.66%;}
+.gr-6 {width: 50%;}
+.gr-7 {width: 58.33%;}
+.gr-8 {width: 66.66%;}
+.gr-9 {width: 75%;}
+.gr-10 {width: 83.33%;}
+.gr-11 {width: 91.66%;}
+.gr-12 {width: 100%;}
+[class*="gr-"] {
+    float: left;
+    padding: 15px;
+    border: 0px solid #ccc;
+}
+[class*="no"] {
+    float: left;
+    padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.grow:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.tleft {text-align:left;}
+.tright {text-align:right;}
+.tcenter {text-align:center;}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.dotted {border-bottom:1px dashed #FC3;border-left:0;border-right:0;margin-bottom:10px;}
+img.imgresponsive,.imgresponsive img{display:block;width:100%;height:auto;margin:0 auto;}
+
+a, a:visited{color:#09C;text-decoration:none;}
+a:hover{color:#F39;text-decoration:none;}
+
+.redox{min-height:13vh;background: rgb(163,11,193);
+background: -moz-linear-gradient(-45deg,  rgba(163,11,193,1) 0%, rgba(11,161,191,1) 63%, rgba(13,199,224,1) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(163,11,193,1) 0%,rgba(11,161,191,1) 63%,rgba(13,199,224,1) 100%);
+background: linear-gradient(135deg,  rgba(163,11,193,1) 0%,rgba(11,161,191,1) 63%,rgba(13,199,224,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a30bc1', endColorstr='#0dc7e0',GradientType=1 );}
+
+body { background-color: #f1f1f1; color: #333;	font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }
+.bg-white{background-color:#fff;color:#555;-webkit-box-shadow:0 0 5px #999;box-shadow:0 0 5px #999;}
+h1.ttleheader{display:block;width:90%;height:auto;margin:20px auto 0 auto;padding-left:10px;font-weight:100;color:#fff;}
+
+
+textarea.formcode{display:block;width:100%;max-width:100%;height:300px;max-height:300px;background-color:#f7fdff;color:#555;font-size:14px;outline:none;box-shadow:inset 0 1px 3px #999;font-family:"Lucida Console", Monaco, monospace;}
+.frender{display:block;width:100%;max-width:100%;height:300px;max-height:300px;box-shadow:0 1px 3px #999;transition: ease-in-out .6s;}.frender:hover{display:block;width:100%;max-width:100%;height:700px;max-height:700px;box-shadow:0 1px 3px #999;}.d-none{display:none;}
+.butoane a,.butoane a:visited,.butoane a:hover, .brn,.hand{cursor:pointer;}	
+a.brn, a.brn:visited{padding:6px 12px;text-align:center;color:#fff;background-color:#09F;text-decoration:none;}a.brn:hover{background-color:#06C;color:#fff;text-decoration:none;}
+.svg-icon-down {width: 1.7em;height: 1.7em;margin-top:6px;margin-left:6px;margin-bottom:-10px;}
+.svg-icon-down  path,.svg-icon-down  polygon,.svg-icon-down  rect {fill: #4691f6;}
+.svg-icon-down  circle {stroke: #4691f6;stroke-width: 1;}
+a.svg-icon-down:hover{stroke: #555;stroke-width: 1;}
+
+.footer{background-color:#222;color:#888;margin-top:40px;}
+.footer a, .footer a:visited{font-size:15px;color:#666;text-decoration:none;}
+.footer a:hover{color:#F60;text-decoration:none;}
+.credits{font-size:14px;}
+.footer h3{font-weight:300;}
+.footer h3:after{content:"";display:block;width:1%;height:1px;background-color:#222;transition:all .3s;margin-top:7px;}
+.slot:hover h3:after{content:"";display:block;width:21%;height:1px;background-color:#F60;margin-top:7px;}
+
+.butoane{margin-top:-1px;}
+.see{margin-top:15px;}
+.tab #dinfo a.close{position:fixed;top:-910px;right:10px;z-index:100;}
+.tab #dinfo:target a.close{position:fixed;top:10px;right:10px;z-index:100;}
+
+.svg-icon-up {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.svg-icon-up path,
+.svg-icon-up polygon,
+.svg-icon-up rect {
+  fill: #4691f6;
+}
+
+.svg-icon-up circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+.svg-icon-up:hover path,
+.svg-icon-up:hover polygon,
+.svg-icon-up:hover rect {
+  fill: #555;
+}
+.svg-icon-off {
+  width: 2.5em;
+  height: 2.5em;
+  opacity:.8;
+}
+
+.svg-icon-off path,
+.svg-icon-off polygon,
+.svg-icon-off rect {
+  fill: #fff;
+}
+
+.svg-icon-off circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+.svg-icon-off {
+  width: 2.5em;
+  height: 2.5em;
+  opacity:1;
+}
+.tab #dinfo{display:block;width:100%;height:300px;position:fixed;top:-99999999px;left:0;opacity:0;-webkit-transition:all .5s;transition:all .5s;}
+.tab #dinfo:target{display:block;width:100%;height:100%;position:fixed;top:0;left:0;opacity:1;background-color:rgba(0,0,0,.80);z-index:10000;}
+.dinfobox{display:block;width:80%;padding:20px;background-color:#fff;margin:10% auto 20% auto;}
+html{scroll-behavior: smooth;}
+
+.light{background-color:#FBFEFF;}
+.boxed{margin:5px auto 7px auto;border:1px solid #f1f1f1;-webkit-transition:all .2s ;transition:all .2s;}
+.boxed:hover{margin:5px auto 7px auto;border:1px solid #ccc;-webkit-box-shadow:0 5px 13px -10px #999;box-shadow:0 5px 13px -10px #999;background-color:#FBFEFF;}
+.boxed code{padding:3px 6px;text-align:center;color:#C36;font-family:"Lucida Console", Monaco, monospace;}
+.boxed pre{display:block;width:98%;height:auto;margin:6px auto 5px 1px;padding:3px 6px;text-align:left;color:#C36;font-family:"Lucida Console", Monaco, monospace;background-color:#EDEFF1;border-left:4px solid #666; white-space:pre-wrap;}
+
+
+ul.unlisted  {list-style-position:inside; }
+.nav ul.unlisted { margin: 0; }
+.nav ul.unlisted li { display: inline;line-height: 28px;}
+.nav ul.unlisted li { display:inline; list-style:none;}
+
+span.goup{display:block;width:50px;height:40px;position:relative;padding:7px 8px 7px;text-align:center;margin:-20px auto 12px auto;background-color:#222;-webkit-border-radius:50px 50px 0 0;}
+/*** Icons ***/
+.unlisted .svg-icon-twt {width: 2.2em;height: 2.2em;margin-right:5px;}
+.unlisted .svg-icon-twt path,
+.unlisted .svg-icon-twt polygon,
+.unlisted .svg-icon-twt rect {fill: #555;}
+.unlisted .svg-icon-twt circle {stroke: #555;stroke-width: 1;}
+
+
+.unlisted .svg-icon-twt:hover path,
+.unlisted .svg-icon-twt:hover polygon,
+.unlisted .svg-icon-twt:hover rect {fill: #FF6600;}
+.unlisted .svg-icon-twt:hover circle {stroke: #FF6600;stroke-width: 1;}
+textarea.demotxt{display:block;width:100%;max-width:100%;height:300px;max-height:400px;font-size:14px;outline:none;box-shadow:inset 0 1px 3px #999;font-family:"Lucida Console", Monaco, monospace;}
+
+.svg-icon-ui {width: 1.3em;height: 1.3em;margin-top:-14px;margin-left:6px;margin-bottom:-10px;margin-right:8px;}
+.svg-icon-ui path,.svg-icon-ui polygon,.svg-icon-ui rect {fill: #4691f6;}
+.svg-icon-ui circle {stroke: #4691f6;stroke-width: 1;}
+
+a:hover .svg-icon-ui path,
+a:hover .svg-icon-ui polygon,
+a:hover .svg-icon-ui rect {fill: #FF6600;}
+a:hover .svg-icon-ui circle {stroke: #FF6600;stroke-width: 1;}
+
+[class*="svg-icon-ui"]{ white-space: nowrap;word-wrap: normal;direction: ltr;-webkit-font-feature-settings: 'liga';-webkit-font-smoothing: antialiased; vertical-align:middle;}
+@media only screen and (max-width: 928px) and (min-width: 300px) {
+	body { background-color: #f1f1f1; color: #333;	font: 14px/19px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .d-none{display:none;}
+  /* Typography */
+a { color: #105CB6; text-decoration: none; }
+a:hover, a:focus { color: #F39; text-decoration: none; }
+a:active { color: #105CB6; }
+
+h1 { font-size: 24px; line-height: 20px; margin: 10px 0; }
+h2 { font-size: 20px; line-height: 20px; margin: 10px 0; }
+h3 { font-size: 16px; line-height: 20px; margin: 10px 0; }
+h4 { font-size: 14px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 12px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 10px; line-height: 20px; margin: 10px 0; }
+.boxed code{padding:3px 6px;text-align:center;color:#C36;font-family:"Lucida Console", Monaco, monospace;}
+pre{display:block;width:98%;height:auto;margin:6px auto 5px 1px;padding:3px 6px;text-align:left;color:#C36;font-family:"Lucida Console", Monaco, monospace;background-color:#EDEFF1;border-left:4px solid #666;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;}
+}
+@media only screen and (max-width: 628px) and (min-width: 200px) {
+	[class*="gr-"] {width:100%;}
+	body { background-color: #f1f1f1; color: #333;	font: 13px/17px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }
+	}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="main" class="gr-12 no bg-white">
+
+<div class="gr-12 no redox">
+  <h1 class="ttleheader">Chaturbate Demo - Code Snippets</h1>
+</div>
+
+
+<div class="gr-12">
+<p>Markup codes showing the use of all Chaturbate's accepted HTML tags and use of inline-css</p>
+</div>
+
+
+
+<div class="gr-12 grow light">
+
+<div class="gr-6 box">
+
+
+<p><strong class="trn">Markup Code Box</strong></p>
+        <form id="txtlego" name="form1" method="post" action="">
+  <textarea class="formcode" name="code" wrap="soft" onclick="focus(this.code)" spellcheck="false">
+</textarea>
+  </form>
+  <p class="butoane text-light">
+<a class="brn" onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()"><span class="trn">Show</span></a>
+<a class="brn btn-sm btn-danger d-none" onclick="javascript:window.location.href=window.location.href"><span class="trn">delete</span></a>
+<a class="brn" onclick="myRESETit()" value="Reset form"><span class="trn">Default</span></a>
+<a href="#dinfo" class="see"><svg class="svg-icon-down" viewBox="0 0 20 20">
+							<path d="M10,2.172c-4.324,0-7.828,3.504-7.828,7.828S5.676,17.828,10,17.828c4.324,0,7.828-3.504,7.828-7.828S14.324,2.172,10,2.172M10,17.004c-3.863,0-7.004-3.141-7.004-7.003S6.137,2.997,10,2.997c3.862,0,7.004,3.141,7.004,7.004S13.862,17.004,10,17.004M10,8.559c-0.795,0-1.442,0.646-1.442,1.442S9.205,11.443,10,11.443s1.441-0.647,1.441-1.443S10.795,8.559,10,8.559 M10,10.619c-0.34,0-0.618-0.278-0.618-0.618S9.66,9.382,10,9.382S10.618,9.661,10.618,10S10.34,10.619,10,10.619 M14.12,8.559c-0.795,0-1.442,0.646-1.442,1.442s0.647,1.443,1.442,1.443s1.442-0.647,1.442-1.443S14.915,8.559,14.12,8.559 M14.12,10.619c-0.34,0-0.618-0.278-0.618-0.618s0.278-0.618,0.618-0.618S14.738,9.661,14.738,10S14.46,10.619,14.12,10.619 M5.88,8.559c-0.795,0-1.442,0.646-1.442,1.442s0.646,1.443,1.442,1.443S7.322,10.796,7.322,10S6.675,8.559,5.88,8.559 M5.88,10.619c-0.34,0-0.618-0.278-0.618-0.618S5.54,9.382,5.88,9.382S6.498,9.661,6.498,10S6.22,10.619,5.88,10.619"></path>
+						</svg></a>
+<a class="brn d-none" onclick="window.document.form1.style.code.value='';preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()"><span class="trn">-Default-</span></a>
+</p>
+<p class="trn">Default button, on click, removes the markup code from light-blue box</p>
+
+
+</div>
+
+<div class="gr-6 box">
+
+
+<p><strong class="trn">Render Box</strong></p>
+    <iframe id="preview" class="frame frender" src="about:blank" name="preview" frameborder=0></iframe>
+<div class="gr-12">
+<div class="no"><p class=""><span class="trn">That's how it looks rendered in browser. Optionally you can</span> <a class="hand" onclick="myPrint()"><span class="trn">Save as PDF</span></a></p></div></div>
+
+
+</div>
+
+</div>
+
+
+<!-- codes -->
+<div class="gr-12">
+<h3 class="slimmer">Markup Codes</h3>
+
+
+<div class="gr-12 boxed">
+<h3>Image-based Chaturbate Bio design by Sebastian</h3>
+<p>This is a backbone CB image-based bio design<br>
+Full code below optimized for CB implementation due to margin attributes (already setup)</p>
+<textarea spellcheck="false" class="demotxt xcr"><ul id="main" style="display:block;width:100%;min-width:300px;padding:0;height:auto;box-sizing:border-box;list-style:none;line-height:normal;margin:120px auto 50px -146px;"><li style="display:block;width:100%;min-width:300px;padding:0;height:auto;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;"><img src="https://via.placeholder.com/1000x450/66CCCC/F1F1F1/?text=1000x450" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;"/></li><li style="display:block;width:100%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;"><ul style="display:block;width:100%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;float:none;clear:left;"><li style="display:block;width:50%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;float:left;"><img src="https://via.placeholder.com/600x350/CC99FF/F1F1F1/?text=600x350" style="display:block;width:100%;height:auto;padding:0;margin:0 auto;float:none;clear:left;"/></li><li style="display:block;width:50%;height:auto;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;float:left;"><img src="https://via.placeholder.com/600x350/FFC4E1/777777/?text=600x350" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;"/></li><li style="display:block;width:100%;height:0px;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;opacity:0;overflow:hidden;">divider for clearfix - sebastian cgc</li></ul></li><li style="display:block;width:100%;padding:0;height:auto;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;"><img src="https://via.placeholder.com/1000x450/F7CE93/F1F1F1/?text=1000x450" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;"/></li><li style="display:block;width:100%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;"><ul style="display:block;width:100%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;float:none;clear:left;"><li style="display:block;width:33.33%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;float:left;"><img src="https://via.placeholder.com/500x550/D6F3A9/777777/?text=500x550" style="display:block;width:100%;height:auto;padding:0;margin:0 auto;float:none;clear:left;"/></li><li style="display:block;width:33.33%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;float:left;"><img src="https://via.placeholder.com/500x550/CFE7E7/777777/?text=500x550" style="display:block;width:100%;height:auto;padding:0;margin:0 auto;float:none;clear:left;"/></li><li style="display:block;width:33.33%;height:auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;float:left;"><img src="https://via.placeholder.com/500x550/FFFFB3/777777/?text=500x550" style="display:block;width:100%;height:auto;padding:0;margin:0 auto;float:none;clear:left;"/></li><li style="display:block;width:100%;height:0px;padding:0;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;opacity:0;overflow:hidden;">divider for clearfix - sebastian cgc</li></ul></li><li style="display:block;width:100%;min-width:300px;padding:0;height:auto;box-sizing:border-box;list-style:none;line-height:normal;margin:0 auto;"><img src="https://via.placeholder.com/1000x250/9933CC/F1F1F1/?text=1000x250" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;"/></li>
+</ul></textarea>
+<p><strong>How to use this markup code?</strong></p>
+<p>Replace the default URL image path with your self-hosted images and you're ready to go</p>
+<ul>
+<li><a href="cb-demo-imagebased.html" target="_blank"><svg class="svg-icon-ui" viewBox="0 0 20 20">
+							<path d="M17.237,3.056H2.93c-0.694,0-1.263,0.568-1.263,1.263v8.837c0,0.694,0.568,1.263,1.263,1.263h4.629v0.879c-0.015,0.086-0.183,0.306-0.273,0.423c-0.223,0.293-0.455,0.592-0.293,0.92c0.07,0.139,0.226,0.303,0.577,0.303h4.819c0.208,0,0.696,0,0.862-0.379c0.162-0.37-0.124-0.682-0.374-0.955c-0.089-0.097-0.231-0.252-0.268-0.328v-0.862h4.629c0.694,0,1.263-0.568,1.263-1.263V4.319C18.5,3.625,17.932,3.056,17.237,3.056 M8.053,16.102C8.232,15.862,8.4,15.597,8.4,15.309v-0.89h3.366v0.89c0,0.303,0.211,0.562,0.419,0.793H8.053z M17.658,13.156c0,0.228-0.193,0.421-0.421,0.421H2.93c-0.228,0-0.421-0.193-0.421-0.421v-1.263h15.149V13.156z M17.658,11.052H2.509V4.319c0-0.228,0.193-0.421,0.421-0.421h14.308c0.228,0,0.421,0.193,0.421,0.421V11.052z"></path>
+						</svg> View Online</a></li>
+    <li><a href="source.html" target="_blank"><svg class="svg-icon-ui" viewBox="0 0 20 20">
+							<path d="M17.498,11.697c-0.453-0.453-0.704-1.055-0.704-1.697c0-0.642,0.251-1.244,0.704-1.697c0.069-0.071,0.15-0.141,0.257-0.22c0.127-0.097,0.181-0.262,0.137-0.417c-0.164-0.558-0.388-1.093-0.662-1.597c-0.075-0.141-0.231-0.22-0.391-0.199c-0.13,0.02-0.238,0.027-0.336,0.027c-1.325,0-2.401-1.076-2.401-2.4c0-0.099,0.008-0.207,0.027-0.336c0.021-0.158-0.059-0.316-0.199-0.391c-0.503-0.274-1.039-0.498-1.597-0.662c-0.154-0.044-0.32,0.01-0.416,0.137c-0.079,0.106-0.148,0.188-0.22,0.257C11.244,2.956,10.643,3.207,10,3.207c-0.642,0-1.244-0.25-1.697-0.704c-0.071-0.069-0.141-0.15-0.22-0.257C7.987,2.119,7.821,2.065,7.667,2.109C7.109,2.275,6.571,2.497,6.07,2.771C5.929,2.846,5.85,3.004,5.871,3.162c0.02,0.129,0.027,0.237,0.027,0.336c0,1.325-1.076,2.4-2.401,2.4c-0.098,0-0.206-0.007-0.335-0.027C3.001,5.851,2.845,5.929,2.77,6.07C2.496,6.572,2.274,7.109,2.108,7.667c-0.044,0.154,0.01,0.32,0.137,0.417c0.106,0.079,0.187,0.148,0.256,0.22c0.938,0.936,0.938,2.458,0,3.394c-0.069,0.072-0.15,0.141-0.256,0.221c-0.127,0.096-0.181,0.262-0.137,0.416c0.166,0.557,0.388,1.096,0.662,1.596c0.075,0.143,0.231,0.221,0.392,0.199c0.129-0.02,0.237-0.027,0.335-0.027c1.325,0,2.401,1.076,2.401,2.402c0,0.098-0.007,0.205-0.027,0.334C5.85,16.996,5.929,17.154,6.07,17.23c0.501,0.273,1.04,0.496,1.597,0.66c0.154,0.047,0.32-0.008,0.417-0.137c0.079-0.105,0.148-0.186,0.22-0.256c0.454-0.453,1.055-0.703,1.697-0.703c0.643,0,1.244,0.25,1.697,0.703c0.071,0.07,0.141,0.15,0.22,0.256c0.073,0.098,0.188,0.152,0.307,0.152c0.036,0,0.073-0.004,0.109-0.016c0.558-0.164,1.096-0.387,1.597-0.66c0.141-0.076,0.22-0.234,0.199-0.393c-0.02-0.129-0.027-0.236-0.027-0.334c0-1.326,1.076-2.402,2.401-2.402c0.098,0,0.206,0.008,0.336,0.027c0.159,0.021,0.315-0.057,0.391-0.199c0.274-0.5,0.496-1.039,0.662-1.596c0.044-0.154-0.01-0.32-0.137-0.416C17.648,11.838,17.567,11.77,17.498,11.697 M16.671,13.334c-0.059-0.002-0.114-0.002-0.168-0.002c-1.749,0-3.173,1.422-3.173,3.172c0,0.053,0.002,0.109,0.004,0.166c-0.312,0.158-0.64,0.295-0.976,0.406c-0.039-0.045-0.077-0.086-0.115-0.123c-0.601-0.6-1.396-0.93-2.243-0.93s-1.643,0.33-2.243,0.93c-0.039,0.037-0.077,0.078-0.116,0.123c-0.336-0.111-0.664-0.248-0.976-0.406c0.002-0.057,0.004-0.113,0.004-0.166c0-1.75-1.423-3.172-3.172-3.172c-0.054,0-0.11,0-0.168,0.002c-0.158-0.312-0.293-0.639-0.405-0.975c0.044-0.039,0.085-0.078,0.124-0.115c1.236-1.236,1.236-3.25,0-4.486C3.009,7.719,2.969,7.68,2.924,7.642c0.112-0.336,0.247-0.664,0.405-0.976C3.387,6.668,3.443,6.67,3.497,6.67c1.75,0,3.172-1.423,3.172-3.172c0-0.054-0.002-0.11-0.004-0.168c0.312-0.158,0.64-0.293,0.976-0.405C7.68,2.969,7.719,3.01,7.757,3.048c0.6,0.6,1.396,0.93,2.243,0.93s1.643-0.33,2.243-0.93c0.038-0.039,0.076-0.079,0.115-0.123c0.336,0.112,0.663,0.247,0.976,0.405c-0.002,0.058-0.004,0.114-0.004,0.168c0,1.749,1.424,3.172,3.173,3.172c0.054,0,0.109-0.002,0.168-0.004c0.158,0.312,0.293,0.64,0.405,0.976c-0.045,0.038-0.086,0.077-0.124,0.116c-0.6,0.6-0.93,1.396-0.93,2.242c0,0.847,0.33,1.645,0.93,2.244c0.038,0.037,0.079,0.076,0.124,0.115C16.964,12.695,16.829,13.021,16.671,13.334 M10,5.417c-2.528,0-4.584,2.056-4.584,4.583c0,2.529,2.056,4.584,4.584,4.584s4.584-2.055,4.584-4.584C14.584,7.472,12.528,5.417,10,5.417 M10,13.812c-2.102,0-3.812-1.709-3.812-3.812c0-2.102,1.71-3.812,3.812-3.812c2.102,0,3.812,1.71,3.812,3.812C13.812,12.104,12.102,13.812,10,13.812"></path>
+						</svg> Test in Editor</a></li>                    
+</ul>
+</div>
+
+<div class="gr-12 boxed">
+<h3>Image-based Chaturbate Bio design by CiciWeb</h3>
+<p>This is a backbone CB image-based bio design<br>
+Full code below optimized for CB implementation due to margin attributes (already setup)</p>
+<textarea spellcheck="false" class="demotxt xcr"><ul id="main" style="display:block;width:100%;min-width:300px;float:none;clear:left;box-sizing:border-box;list-style:none;line-height:normal;padding:0;background-color:#222;margin:120px auto 50px -146px;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;"><li style="display:block;width:100%;min-width:300px;float:none;clear:left;box-sizing:border-box;list-style:none;line-height:normal;padding:0;background-color:#222;margin:0 auto;text-align:center;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_header.jpg" style="display:block;width:100%;height:auto;margin:0 auto;"/></li><li style="display:block;width:100%;min-width:300px;float:none;clear:left;box-sizing:border-box;list-style:none;line-height:normal;padding:0;background-color:#222;margin:0 auto;text-align:center;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_aboutme.jpg" style="display:block;width:100%;height:auto;margin:0 auto;"/></li><li style="display:block;width:100%;min-width:300px;float:none;clear:left;box-sizing:border-box;list-style:none;line-height:normal;padding:0;background-color:#222;margin:0 auto;text-align:center;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_rules.jpg" style="display:block;width:100%;height:auto;margin:0 auto;"/></li><li style="display:block;width:100%;min-width:300px;float:none;clear:left;box-sizing:border-box;list-style:none;line-height:normal;padding:0;background-color:#222;margin:0 auto;text-align:center;"><p style="display:block;width:100%;height:auto;margin:0 auto;padding:10px 0 10px;float:none;clear:left;box-sizing:border-box;background-color:#f1f1f1;border-bottom:5px solid #777;"><a href="#" style="display:block;width:33.33%;height:auto;margin:0 auto;padding:0;float:left;box-sizing:border-box;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_twtfol.png" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;"/></a><a href="#" style="display:block;width:33.33%;height:auto;margin:0 auto;padding:0;float:left;box-sizing:border-box;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_amawl.png" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;"/></a><a href="#" style="display:block;width:33.33%;height:auto;margin:0 auto;padding:0;float:left;box-sizing:border-box;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_cbwlist.png" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;"/></a><i style="display:block;width:100%;height:1px;float:none;clear:left;overflow:hidden;opacity:0;margin:0 auto;">custom design by CiciWeb from Camgirl Cloud</i></p></li><li style="display:block;width:100%;min-width:300px;float:none;clear:left;box-sizing:border-box;list-style:none;line-height:normal;padding:0;background-color:#222;margin:0 auto;text-align:center;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_toptippers.jpg" style="display:block;width:100%;height:auto;margin:0 auto;"/></li><li style="display:block;width:100%;min-width:300px;float:none;clear:left;box-sizing:border-box;list-style:none;line-height:normal;padding:0;background-color:#222;margin:0 auto;text-align:center;"><img src="https://ciciwebiasmin.files.wordpress.com/2019/01/cici_dmca.jpg" style="display:block;width:100%;height:auto;margin:0 auto;"/></li><li style="display:block;width:40px;height:auto;position:fixed;top:166px;left:0px;text-align:center;list-style:none;box-sizing: border-box;text-align:center;padding:8px 0 10px;"><a href="#" style="display:block;width:35px;height:35px;border-bottom:1px solid #000;"><img src="https://d31rb55u3y3kjs.cloudfront.net/c/u/520476279851687b6dabcc7189410390/2018/12/09124357/twtc.png" style="width:35px;height:35px;background-color:#ed018c;"></a><a href="#" style="display:block;width:35px;height:35px;border-bottom:1px solid #000;"><img src="https://d31rb55u3y3kjs.cloudfront.net/c/u/520476279851687b6dabcc7189410390/2018/12/09124348/amac.png" style="width:35px;height:35px;background-color:#ed018c;"></a><a href="#" style="display:block;width:35px;height:35px;border-bottom:1px solid #000;"><img src="https://d31rb55u3y3kjs.cloudfront.net/c/u/520476279851687b6dabcc7189410390/2018/12/09124349/cbwl.png" style="width:35px;height:35px;background-color:#ed018c;"></a><a href="#" style="display:block;width:35px;height:300px;background-color:#000"><img src="https://raw.githubusercontent.com/cssmfc/cssmfc.github.io/master/demos/cb/cb_design02/images/clte_acre_blkanim.gif" style="width:35px;height:300px;"></a></li></ul></textarea>
+<p><strong>How to use this markup code?</strong></p>
+<p>Replace the default URL image path with your self-hosted images and you're ready to go</p>
+<ul>
+<li><a href="cb-demo-imagebased_2.html" target="_blank"><svg class="svg-icon-ui" viewBox="0 0 20 20">
+							<path d="M17.237,3.056H2.93c-0.694,0-1.263,0.568-1.263,1.263v8.837c0,0.694,0.568,1.263,1.263,1.263h4.629v0.879c-0.015,0.086-0.183,0.306-0.273,0.423c-0.223,0.293-0.455,0.592-0.293,0.92c0.07,0.139,0.226,0.303,0.577,0.303h4.819c0.208,0,0.696,0,0.862-0.379c0.162-0.37-0.124-0.682-0.374-0.955c-0.089-0.097-0.231-0.252-0.268-0.328v-0.862h4.629c0.694,0,1.263-0.568,1.263-1.263V4.319C18.5,3.625,17.932,3.056,17.237,3.056 M8.053,16.102C8.232,15.862,8.4,15.597,8.4,15.309v-0.89h3.366v0.89c0,0.303,0.211,0.562,0.419,0.793H8.053z M17.658,13.156c0,0.228-0.193,0.421-0.421,0.421H2.93c-0.228,0-0.421-0.193-0.421-0.421v-1.263h15.149V13.156z M17.658,11.052H2.509V4.319c0-0.228,0.193-0.421,0.421-0.421h14.308c0.228,0,0.421,0.193,0.421,0.421V11.052z"></path>
+						</svg> View Online</a></li>
+    <li><a href="source.html" target="_blank"><svg class="svg-icon-ui" viewBox="0 0 20 20">
+							<path d="M17.498,11.697c-0.453-0.453-0.704-1.055-0.704-1.697c0-0.642,0.251-1.244,0.704-1.697c0.069-0.071,0.15-0.141,0.257-0.22c0.127-0.097,0.181-0.262,0.137-0.417c-0.164-0.558-0.388-1.093-0.662-1.597c-0.075-0.141-0.231-0.22-0.391-0.199c-0.13,0.02-0.238,0.027-0.336,0.027c-1.325,0-2.401-1.076-2.401-2.4c0-0.099,0.008-0.207,0.027-0.336c0.021-0.158-0.059-0.316-0.199-0.391c-0.503-0.274-1.039-0.498-1.597-0.662c-0.154-0.044-0.32,0.01-0.416,0.137c-0.079,0.106-0.148,0.188-0.22,0.257C11.244,2.956,10.643,3.207,10,3.207c-0.642,0-1.244-0.25-1.697-0.704c-0.071-0.069-0.141-0.15-0.22-0.257C7.987,2.119,7.821,2.065,7.667,2.109C7.109,2.275,6.571,2.497,6.07,2.771C5.929,2.846,5.85,3.004,5.871,3.162c0.02,0.129,0.027,0.237,0.027,0.336c0,1.325-1.076,2.4-2.401,2.4c-0.098,0-0.206-0.007-0.335-0.027C3.001,5.851,2.845,5.929,2.77,6.07C2.496,6.572,2.274,7.109,2.108,7.667c-0.044,0.154,0.01,0.32,0.137,0.417c0.106,0.079,0.187,0.148,0.256,0.22c0.938,0.936,0.938,2.458,0,3.394c-0.069,0.072-0.15,0.141-0.256,0.221c-0.127,0.096-0.181,0.262-0.137,0.416c0.166,0.557,0.388,1.096,0.662,1.596c0.075,0.143,0.231,0.221,0.392,0.199c0.129-0.02,0.237-0.027,0.335-0.027c1.325,0,2.401,1.076,2.401,2.402c0,0.098-0.007,0.205-0.027,0.334C5.85,16.996,5.929,17.154,6.07,17.23c0.501,0.273,1.04,0.496,1.597,0.66c0.154,0.047,0.32-0.008,0.417-0.137c0.079-0.105,0.148-0.186,0.22-0.256c0.454-0.453,1.055-0.703,1.697-0.703c0.643,0,1.244,0.25,1.697,0.703c0.071,0.07,0.141,0.15,0.22,0.256c0.073,0.098,0.188,0.152,0.307,0.152c0.036,0,0.073-0.004,0.109-0.016c0.558-0.164,1.096-0.387,1.597-0.66c0.141-0.076,0.22-0.234,0.199-0.393c-0.02-0.129-0.027-0.236-0.027-0.334c0-1.326,1.076-2.402,2.401-2.402c0.098,0,0.206,0.008,0.336,0.027c0.159,0.021,0.315-0.057,0.391-0.199c0.274-0.5,0.496-1.039,0.662-1.596c0.044-0.154-0.01-0.32-0.137-0.416C17.648,11.838,17.567,11.77,17.498,11.697 M16.671,13.334c-0.059-0.002-0.114-0.002-0.168-0.002c-1.749,0-3.173,1.422-3.173,3.172c0,0.053,0.002,0.109,0.004,0.166c-0.312,0.158-0.64,0.295-0.976,0.406c-0.039-0.045-0.077-0.086-0.115-0.123c-0.601-0.6-1.396-0.93-2.243-0.93s-1.643,0.33-2.243,0.93c-0.039,0.037-0.077,0.078-0.116,0.123c-0.336-0.111-0.664-0.248-0.976-0.406c0.002-0.057,0.004-0.113,0.004-0.166c0-1.75-1.423-3.172-3.172-3.172c-0.054,0-0.11,0-0.168,0.002c-0.158-0.312-0.293-0.639-0.405-0.975c0.044-0.039,0.085-0.078,0.124-0.115c1.236-1.236,1.236-3.25,0-4.486C3.009,7.719,2.969,7.68,2.924,7.642c0.112-0.336,0.247-0.664,0.405-0.976C3.387,6.668,3.443,6.67,3.497,6.67c1.75,0,3.172-1.423,3.172-3.172c0-0.054-0.002-0.11-0.004-0.168c0.312-0.158,0.64-0.293,0.976-0.405C7.68,2.969,7.719,3.01,7.757,3.048c0.6,0.6,1.396,0.93,2.243,0.93s1.643-0.33,2.243-0.93c0.038-0.039,0.076-0.079,0.115-0.123c0.336,0.112,0.663,0.247,0.976,0.405c-0.002,0.058-0.004,0.114-0.004,0.168c0,1.749,1.424,3.172,3.173,3.172c0.054,0,0.109-0.002,0.168-0.004c0.158,0.312,0.293,0.64,0.405,0.976c-0.045,0.038-0.086,0.077-0.124,0.116c-0.6,0.6-0.93,1.396-0.93,2.242c0,0.847,0.33,1.645,0.93,2.244c0.038,0.037,0.079,0.076,0.124,0.115C16.964,12.695,16.829,13.021,16.671,13.334 M10,5.417c-2.528,0-4.584,2.056-4.584,4.583c0,2.529,2.056,4.584,4.584,4.584s4.584-2.055,4.584-4.584C14.584,7.472,12.528,5.417,10,5.417 M10,13.812c-2.102,0-3.812-1.709-3.812-3.812c0-2.102,1.71-3.812,3.812-3.812c2.102,0,3.812,1.71,3.812,3.812C13.812,12.104,12.102,13.812,10,13.812"></path>
+						</svg> Test in Editor</a></li>                    
+</ul>
+</div>
+
+
+<div id="fullpagebg" class="gr-12 boxed">
+<h3>Full page background image for Chaturbate Bio</h3>
+<p>Markup code</p>
+<textarea spellcheck="false" class="demotxt xcr"><p id="main" style="display:block;width:100%!important;min-height:2000px;height:100%!important;z-index:-55;position:fixed;top:0;left:0;background-color:#93C;background-image:url(https://editbio.files.wordpress.com/2016/06/second_bg.png);background-repeat:repeat;background-size:cover;-webkit-background-size:cover;background-position:center;background-attachment:fixed;"></p></textarea>
+<p><strong>How to use this markup code?</strong></p>
+<p>Replace the default URL image path with your self-hosted images and you're ready to go</p>
+<ul>
+<li><a href="cb-demo-fullpagebg.html" target="_blank"><svg class="svg-icon-ui" viewBox="0 0 20 20">
+							<path d="M17.237,3.056H2.93c-0.694,0-1.263,0.568-1.263,1.263v8.837c0,0.694,0.568,1.263,1.263,1.263h4.629v0.879c-0.015,0.086-0.183,0.306-0.273,0.423c-0.223,0.293-0.455,0.592-0.293,0.92c0.07,0.139,0.226,0.303,0.577,0.303h4.819c0.208,0,0.696,0,0.862-0.379c0.162-0.37-0.124-0.682-0.374-0.955c-0.089-0.097-0.231-0.252-0.268-0.328v-0.862h4.629c0.694,0,1.263-0.568,1.263-1.263V4.319C18.5,3.625,17.932,3.056,17.237,3.056 M8.053,16.102C8.232,15.862,8.4,15.597,8.4,15.309v-0.89h3.366v0.89c0,0.303,0.211,0.562,0.419,0.793H8.053z M17.658,13.156c0,0.228-0.193,0.421-0.421,0.421H2.93c-0.228,0-0.421-0.193-0.421-0.421v-1.263h15.149V13.156z M17.658,11.052H2.509V4.319c0-0.228,0.193-0.421,0.421-0.421h14.308c0.228,0,0.421,0.193,0.421,0.421V11.052z"></path>
+						</svg> View Online</a></li>
+    <li><a href="source.html" target="_blank"><svg class="svg-icon-ui" viewBox="0 0 20 20">
+							<path d="M17.498,11.697c-0.453-0.453-0.704-1.055-0.704-1.697c0-0.642,0.251-1.244,0.704-1.697c0.069-0.071,0.15-0.141,0.257-0.22c0.127-0.097,0.181-0.262,0.137-0.417c-0.164-0.558-0.388-1.093-0.662-1.597c-0.075-0.141-0.231-0.22-0.391-0.199c-0.13,0.02-0.238,0.027-0.336,0.027c-1.325,0-2.401-1.076-2.401-2.4c0-0.099,0.008-0.207,0.027-0.336c0.021-0.158-0.059-0.316-0.199-0.391c-0.503-0.274-1.039-0.498-1.597-0.662c-0.154-0.044-0.32,0.01-0.416,0.137c-0.079,0.106-0.148,0.188-0.22,0.257C11.244,2.956,10.643,3.207,10,3.207c-0.642,0-1.244-0.25-1.697-0.704c-0.071-0.069-0.141-0.15-0.22-0.257C7.987,2.119,7.821,2.065,7.667,2.109C7.109,2.275,6.571,2.497,6.07,2.771C5.929,2.846,5.85,3.004,5.871,3.162c0.02,0.129,0.027,0.237,0.027,0.336c0,1.325-1.076,2.4-2.401,2.4c-0.098,0-0.206-0.007-0.335-0.027C3.001,5.851,2.845,5.929,2.77,6.07C2.496,6.572,2.274,7.109,2.108,7.667c-0.044,0.154,0.01,0.32,0.137,0.417c0.106,0.079,0.187,0.148,0.256,0.22c0.938,0.936,0.938,2.458,0,3.394c-0.069,0.072-0.15,0.141-0.256,0.221c-0.127,0.096-0.181,0.262-0.137,0.416c0.166,0.557,0.388,1.096,0.662,1.596c0.075,0.143,0.231,0.221,0.392,0.199c0.129-0.02,0.237-0.027,0.335-0.027c1.325,0,2.401,1.076,2.401,2.402c0,0.098-0.007,0.205-0.027,0.334C5.85,16.996,5.929,17.154,6.07,17.23c0.501,0.273,1.04,0.496,1.597,0.66c0.154,0.047,0.32-0.008,0.417-0.137c0.079-0.105,0.148-0.186,0.22-0.256c0.454-0.453,1.055-0.703,1.697-0.703c0.643,0,1.244,0.25,1.697,0.703c0.071,0.07,0.141,0.15,0.22,0.256c0.073,0.098,0.188,0.152,0.307,0.152c0.036,0,0.073-0.004,0.109-0.016c0.558-0.164,1.096-0.387,1.597-0.66c0.141-0.076,0.22-0.234,0.199-0.393c-0.02-0.129-0.027-0.236-0.027-0.334c0-1.326,1.076-2.402,2.401-2.402c0.098,0,0.206,0.008,0.336,0.027c0.159,0.021,0.315-0.057,0.391-0.199c0.274-0.5,0.496-1.039,0.662-1.596c0.044-0.154-0.01-0.32-0.137-0.416C17.648,11.838,17.567,11.77,17.498,11.697 M16.671,13.334c-0.059-0.002-0.114-0.002-0.168-0.002c-1.749,0-3.173,1.422-3.173,3.172c0,0.053,0.002,0.109,0.004,0.166c-0.312,0.158-0.64,0.295-0.976,0.406c-0.039-0.045-0.077-0.086-0.115-0.123c-0.601-0.6-1.396-0.93-2.243-0.93s-1.643,0.33-2.243,0.93c-0.039,0.037-0.077,0.078-0.116,0.123c-0.336-0.111-0.664-0.248-0.976-0.406c0.002-0.057,0.004-0.113,0.004-0.166c0-1.75-1.423-3.172-3.172-3.172c-0.054,0-0.11,0-0.168,0.002c-0.158-0.312-0.293-0.639-0.405-0.975c0.044-0.039,0.085-0.078,0.124-0.115c1.236-1.236,1.236-3.25,0-4.486C3.009,7.719,2.969,7.68,2.924,7.642c0.112-0.336,0.247-0.664,0.405-0.976C3.387,6.668,3.443,6.67,3.497,6.67c1.75,0,3.172-1.423,3.172-3.172c0-0.054-0.002-0.11-0.004-0.168c0.312-0.158,0.64-0.293,0.976-0.405C7.68,2.969,7.719,3.01,7.757,3.048c0.6,0.6,1.396,0.93,2.243,0.93s1.643-0.33,2.243-0.93c0.038-0.039,0.076-0.079,0.115-0.123c0.336,0.112,0.663,0.247,0.976,0.405c-0.002,0.058-0.004,0.114-0.004,0.168c0,1.749,1.424,3.172,3.173,3.172c0.054,0,0.109-0.002,0.168-0.004c0.158,0.312,0.293,0.64,0.405,0.976c-0.045,0.038-0.086,0.077-0.124,0.116c-0.6,0.6-0.93,1.396-0.93,2.242c0,0.847,0.33,1.645,0.93,2.244c0.038,0.037,0.079,0.076,0.124,0.115C16.964,12.695,16.829,13.021,16.671,13.334 M10,5.417c-2.528,0-4.584,2.056-4.584,4.583c0,2.529,2.056,4.584,4.584,4.584s4.584-2.055,4.584-4.584C14.584,7.472,12.528,5.417,10,5.417 M10,13.812c-2.102,0-3.812-1.709-3.812-3.812c0-2.102,1.71-3.812,3.812-3.812c2.102,0,3.812,1.71,3.812,3.812C13.812,12.104,12.102,13.812,10,13.812"></path>
+						</svg> Test in Editor</a></li>                    
+</ul>
+</div>
+
+
+
+
+
+
+</div>
+<!--/ codes -->
+
+
+<!-- footer -->
+<div class="gr-12 no footer grow">
+<div class="gr-12 tcenter no unlisted">
+<span class="goup"><a href="#"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+						</svg></a></span>
+                        </div>
+ <div class="gr-4 slot">
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="../cb-a.html">Back to &lt;a&gt; tag</a></li>
+      <li><a href="../code-bios-chaturbate.html">Chaturbate Category</a></li>
+    </ul>
+ </div>
+ 
+ <div class="gr-4 slot">
+  <h3>Camgirl.Cloud</h3>
+  <ul>
+     <li><a href="https://camgirl.cloud/editor/?gallery=chaturbate" target="_blank">Chaturbate Templates</a></li>
+     <li><a href="https://camgirl.cloud/support/" target="_blank">Support Forum</a></li>
+     <li><a href="https://camgirl.cloud/contact/" target="_blank">Contact Us</a></li>
+  </ul>
+ </div>
+ 
+ <div class="gr-4 nav slot">
+  <h3>Social</h3>
+  <ul class="unlisted">
+     <li><a href="https://twitter.com/CamgirlCloud" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
+						</svg></a></li>
+     <li><a href="https://www.facebook.com/groups/camgirl.cloud/" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z"></path>
+						</svg></a></li>
+     <li><a href="https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M9.62,8.236h0.179c0.396,0,0.716-0.318,0.716-0.711V6.368c0-0.393-0.32-0.711-0.716-0.711H9.62c-0.396,0-0.716,0.318-0.716,0.711v1.157C8.904,7.917,9.224,8.236,9.62,8.236 M9.44,6.324c0-0.147,0.121-0.267,0.269-0.267c0.148,0,0.269,0.12,0.269,0.267v1.245c0,0.147-0.12,0.267-0.269,0.267c-0.148,0-0.269-0.12-0.269-0.267V6.324z M11.41,8.236c0.357,0,0.671-0.312,0.671-0.312v0.267h0.537V5.657h-0.537v1.957c0,0-0.18,0.222-0.358,0.222c-0.18,0-0.18-0.134-0.18-0.134V5.657h-0.536V7.88C11.007,7.88,11.052,8.236,11.41,8.236 M7.517,8.191h0.626V6.812l0.716-1.957H8.277L7.83,6.146l-0.447-1.29H6.756l0.76,1.957V8.191z M11.052,11.139c-0.116,0-0.207,0.068-0.269,0.135v1.794c0.057,0.061,0.141,0.119,0.269,0.119c0.269,0,0.269-0.299,0.269-0.299v-1.451C11.32,11.437,11.275,11.139,11.052,11.139 M10,0.469c-5.264,0-9.531,4.267-9.531,9.531c0,5.264,4.267,9.531,9.531,9.531c5.264,0,9.531-4.268,9.531-9.531C19.531,4.736,15.264,0.469,10,0.469 M10,18.665c-4.786,0-8.665-3.879-8.665-8.665c0-4.785,3.879-8.665,8.665-8.665c4.786,0,8.665,3.88,8.665,8.665C18.665,14.786,14.786,18.665,10,18.665 M13.289,8.792c0,0-1.642-0.085-3.289-0.085c-1.642,0-3.289,0.085-3.289,0.085c-0.742,0-1.343,0.573-1.343,1.28c0,0-0.134,0.831-0.134,1.664c0,0.831,0.134,1.664,0.134,1.664c0,0.708,0.601,1.28,1.343,1.28c0,0,1.616,0.086,3.289,0.086c1.615,0,3.289-0.086,3.289-0.086c0.741,0,1.343-0.572,1.343-1.28c0,0,0.134-0.84,0.134-1.664c0-0.84-0.134-1.664-0.134-1.664C14.632,9.365,14.03,8.792,13.289,8.792 M8.054,10.242H7.382v3.372H6.756v-3.372H6.084V9.688h1.969V10.242z M9.754,13.614H9.217v-0.257c0,0-0.313,0.299-0.671,0.299c-0.357,0-0.402-0.342-0.402-0.342v-2.646H8.68v2.475c0,0,0,0.129,0.179,0.129c0.179,0,0.358-0.214,0.358-0.214v-2.39h0.537V13.614z M11.856,12.974c0,0,0,0.683-0.491,0.683c-0.302,0-0.485-0.16-0.583-0.283v0.241h-0.581V9.688h0.581v1.273c0.089-0.094,0.308-0.292,0.583-0.292c0.357,0,0.491,0.298,0.491,0.683V12.974z M13.96,11.395v0.854h-1.118v0.64c0,0,0,0.299,0.268,0.299c0.27,0,0.27-0.299,0.27-0.299v-0.299h0.581v0.47c0,0-0.09,0.598-0.805,0.598c-0.717,0-0.851-0.598-0.851-0.598v-1.664c0,0,0-0.726,0.851-0.726C14.005,10.669,13.96,11.395,13.96,11.395 M13.109,11.139c-0.268,0-0.268,0.298-0.268,0.298v0.384h0.537v-0.384C13.379,11.437,13.379,11.139,13.109,11.139"></path>
+						</svg></a></li> 
+        <li><a href="https://www.instagram.com/CGC_AWARDS/" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M9.969,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.195,0,9.406-4.211,9.406-9.406C19.375,4.805,15.164,0.594,9.969,0.594 M9.969,18.552c-4.723,0-8.551-3.829-8.551-8.552s3.829-8.551,8.551-8.551S18.521,5.277,18.521,10S14.691,18.552,9.969,18.552 M12.534,5.724H7.403c-0.944,0-1.71,0.766-1.71,1.71v5.131c0,0.944,0.766,1.71,1.71,1.71h5.131c0.944,0,1.71-0.766,1.71-1.71V7.435C14.244,6.49,13.479,5.724,12.534,5.724M11.679,7.007h1.283V8.29h-1.283V7.007z M9.969,8.29c0.944,0,1.71,0.766,1.71,1.71s-0.766,1.71-1.71,1.71s-1.71-0.766-1.71-1.71S9.024,8.29,9.969,8.29 M13.39,12.565c0,0.472-0.384,0.854-0.855,0.854H7.403c-0.472,0-0.855-0.383-0.855-0.854V9.573h0.898C7.423,9.712,7.403,9.854,7.403,10c0,1.417,1.149,2.565,2.565,2.565c1.416,0,2.565-1.148,2.565-2.565c0-0.146-0.02-0.288-0.043-0.427h0.898V12.565z"></path>
+						</svg></a></li>                 
+                                          
+  </ul>
+ </div>
+ 
+ <div class="gr-12 credits tcenter">a project by <a href="https://camgirl.cloud/">camgirl.cloud</a></div>
+
+</div>
+<!-- /footer -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="tab">
+
+   <div id="dinfo">
+   
+   <a href="#" class="close"><svg class="svg-icon-off" viewBox="0 0 20 20">
+							<path fill="none" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+						</svg></a>
+   
+     <div class="dinfobox">
+      <p>1. <span class="trn">Paste markup codes showed on page inside the Markup Code Box (left box)</span></p>
+        <p>2. <span class="trn">Click on Show button</span></p>
+        <p>3. <span class="trn">View the rendered markup inside the Render Box (right box)</span></p>
+        <hr>
+        <p><span class="trn">Show button allows you to start rendering the markup code</span><br><span class="trn">Default button is used as reset the Markup Code box, all input will be lost</span><br>
+        <span class="trn">Print this page as pdf - well, you don't need much but its there, just in case. Please note, the print page will only print content from Render Box.</span><br></p>
+     </div>
+   
+   </div>
+
+
+
+
+</div>
+
+<script>
+function myRESETit() {
+  document.getElementById("txtlego").reset();
+}
+function myPrint() {
+ window.frames["preview"].focus();
+window.frames["preview"].print();
+}
+</script>
+</body>
+</html>

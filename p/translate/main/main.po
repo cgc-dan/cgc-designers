@@ -1,0 +1,344 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Project 1.1 - Index\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/forum/developer-corner/"
+"cgc-web-designer/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-10-22 14:36+0300\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_GB\n"
+
+#: index.html:1
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: index.html:2
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: index.html:3
+msgid "About"
+msgstr ""
+
+#: index.html:4
+msgid "Platform"
+msgstr ""
+
+#: index.html:5
+msgid "Why"
+msgstr ""
+
+#: index.html:6
+msgctxt "About section"
+msgid "Quick Info"
+msgstr ""
+
+#: index.html:7
+msgid "What is all about?"
+msgstr ""
+
+#: index.html:8
+msgctxt ""
+msgid "You can join the"
+msgstr ""
+
+#: index.html:9
+msgctxt ""
+msgid "CGC Freelancer Program"
+msgstr ""
+
+#: index.html:10
+msgctxt ""
+msgid ""
+"which offers the right environment and opportunity for both experienced and "
+"non-experienced graphic/web designers to work from home or take advantage of "
+"this platform and learn to code custom projects."
+msgstr ""
+
+#: index.html:11
+msgctxt ""
+msgid ""
+"Camgirl Cloud (CGC) is an online service for editing custom templates for "
+"major adult-orientated streaming platforms like Chaturbate, MyFreeCams, "
+"Cam4, Camsoda, Niteflirt"
+msgstr ""
+
+#: index.html:12
+msgctxt ""
+msgid ""
+"The purpose of this material is to help you learn fast how to do your own "
+"projects, no matter if is a MyFreeCams custom profile or a Chaturbate bio, "
+"the content of this environment will cover all aspects you need to know."
+msgstr ""
+
+#: index.html:13
+msgctxt ""
+msgid ""
+"Yes, we know about the existence of other websites full of tutorials about "
+"editing HTML / CSS markup but not all of them will work with what your "
+"project needs."
+msgstr ""
+
+#: index.html:14
+msgctxt "Platform section"
+msgid "KIT STRUCTURE"
+msgstr ""
+
+#: index.html:15
+msgctxt ""
+msgid ""
+"Because CGC is providing editable templates for multiple services, this "
+"material is divided in multiple categories."
+msgstr ""
+
+#: index.html:16
+msgctxt ""
+msgid ""
+"To make it simpler and faster for you to learn. Access the info you need."
+msgstr ""
+
+#: index.html:17
+msgctxt "Bios-Profile section"
+msgid "Bios/Profile"
+msgstr ""
+
+#: index.html:18
+msgctxt ""
+msgid "Learn to code:"
+msgstr ""
+
+#: index.html:19
+msgctxt ""
+msgid "Chaturbate custom bio design"
+msgstr ""
+
+#: index.html:20
+msgctxt ""
+msgid "MyFreeCams custom profile design"
+msgstr ""
+
+#: index.html:21
+msgctxt ""
+msgid "CAM4 bio"
+msgstr ""
+
+#: index.html:22
+msgctxt ""
+msgid "Camsoda bio code"
+msgstr ""
+
+#: index.html:23
+msgctxt ""
+msgid "Niteflirt bio code"
+msgstr ""
+
+#: index.html:24
+msgctxt ""
+msgid "Camgirl Cloud profile design"
+msgstr ""
+
+#: index.html:25
+msgctxt ""
+msgid "Image based"
+msgstr ""
+
+#: index.html:26
+msgctxt "can be replaced with Start with:"
+msgid "Dive into:"
+msgstr ""
+
+#: index.html:27
+msgctxt "Photoshop extension file"
+msgid "PSD"
+msgstr ""
+
+#: index.html:28
+msgctxt ""
+msgid "Canvas"
+msgstr ""
+
+#: index.html:29
+msgctxt ""
+msgid "Other"
+msgstr ""
+
+#: index.html:30
+msgctxt ""
+msgid "You might want to know:"
+msgstr ""
+
+#: index.html:31
+msgctxt ""
+msgid "OBS"
+msgstr ""
+
+#: index.html:32
+msgctxt ""
+msgid "GDevelop game engine"
+msgstr ""
+
+#: index.html:33
+msgctxt ""
+msgid "Bootstrap"
+msgstr ""
+
+#: index.html:34
+msgctxt ""
+msgid "Start Here"
+msgstr ""
+
+#: index.html:35
+msgctxt ""
+msgid "Let's Talk about Why"
+msgstr ""
+
+#: index.html:36
+msgctxt ""
+msgid "Why you should embrace the DIY concept? Why learn to do it yourself?"
+msgstr ""
+
+#: index.html:37
+msgctxt ""
+msgid "Because you need to be independent"
+msgstr ""
+
+#: index.html:38
+msgctxt ""
+msgid "Because you, should ask yourself the same question we've asked ourself"
+msgstr ""
+
+#: index.html:39
+msgctxt ""
+msgid "What does have in common comic books, games and Camgirl Cloud services"
+msgstr ""
+
+#: index.html:40
+msgctxt ""
+msgid "Action, interaction and control."
+msgstr ""
+
+#: index.html:41
+msgctxt ""
+msgid "Reach the same conclusion and you're ready to move forward."
+msgstr ""
+
+#: index.html:42
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: index.html:43
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: index.html:44
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: index.html:45
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: index.html:46
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: index.html:47
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: index.html:48
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: index.html:49
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: index.html:50
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: index.html:51
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: index.html:52
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: index.html:53
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: index.html:54
+msgctxt ""
+msgid ""
+"Because it is one service you can rely on. Because it's unique and flexible."
+msgstr ""
+
+#: index.html:55
+msgctxt ""
+msgid ""
+"Because over +17k registered members, studio owners, web cam performers, "
+"affiliates and web designers can't be wrong."
+msgstr ""
+
+#: index.html:56
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: index.html:57
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: index.html:58
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: index.html:59
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: index.html:60
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: index.html:61
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: index.html:62
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: index.html:63
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""

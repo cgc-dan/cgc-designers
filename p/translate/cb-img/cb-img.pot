@@ -1,0 +1,424 @@
+# Copyright (C) 2020 Dan Nita
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML-CSS - Learn 2 Code - Image HTML tag\n"
+"Report-Msgid-Bugs-To: https://camgirl.cloud/support/forum/developer-corner/cgc-web-designer/\n"
+"POT-Creation-Date: 2019-11-10 05:20:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: DAN N <CSSMFC@BITRIX24.COM>\n"
+"Language-Team: LANGUAGE <CSSMFC@BITRIX24.COM>\n"
+
+#: cb-img.html:1
+msgctxt ""
+msgid "LEARN 2 CODE"
+msgstr ""
+
+#: cb-img.html:2
+msgctxt ""
+msgid "powered by camgirl.cloud"
+msgstr ""
+
+#: cb-img.html:3
+msgctxt "Nav bar"
+msgid "About"
+msgstr ""
+
+#: cb-img.html:4
+msgctxt ""
+msgid "Platform"
+msgstr ""
+
+#: cb-img.html:5
+msgctxt ""
+msgid "Why"
+msgstr ""
+
+#: cb-img.html:6
+msgctxt "Page Title"
+msgid "img"
+msgstr ""
+
+#: cb-img.html:7
+msgctxt "Second Nav"
+msgid "Markup"
+msgstr ""
+
+#: cb-img.html:8
+msgid "Code snippets"
+msgstr ""
+
+#: cb-img.html:9
+msgctxt ""
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-img.html:10
+msgctxt ""
+msgid "Demos and Examples"
+msgstr ""
+
+#: cb-img.html:11
+msgctxt "About section"
+msgid "Designing Chaturbate Bios"
+msgstr ""
+
+#: cb-img.html:12
+msgctxt ""
+msgid "HTML Tag - Image"
+msgstr ""
+
+#: cb-img.html:13
+msgctxt ""
+msgid "&lt;img&gt; HTML tag, defines image elements"
+msgstr ""
+
+#: cb-img.html:14
+msgctxt ""
+msgid "On Chaturbate this HTML element is used often, by default, &lt;img&gt; elements are considered blocks"
+msgstr ""
+
+#: cb-img.html:15
+msgctxt "Table"
+msgid "TAG"
+msgstr ""
+
+#: cb-img.html:16
+msgctxt ""
+msgid "HTML MARKUP"
+msgstr ""
+
+#: cb-img.html:17
+msgctxt ""
+msgid "DEFINES"
+msgstr ""
+
+#: cb-img.html:18
+msgctxt ""
+msgid "HTML tag used to define and render image element"
+msgstr ""
+
+#: cb-img.html:19
+msgctxt "Markup"
+msgid "can be used in conjunction with inline css and it is not recommended to hold other block elements"
+msgstr ""
+
+#: cb-img.html:20
+msgctxt ""
+msgid "Basic markup"
+msgstr ""
+
+#: cb-img.html:21
+msgctxt ""
+msgid "Extended markup"
+msgstr ""
+
+#: cb-img.html:22
+msgctxt ""
+msgid "HTML Markup Code:"
+msgstr ""
+
+#: cb-img.html:23
+msgctxt ""
+msgid "Will render:"
+msgstr ""
+
+#: cb-img.html:24
+msgctxt "Render source"
+msgid "Test markup codes and see how your browser is rendering them. Use"
+msgstr ""
+
+#: cb-img.html:25
+msgctxt ""
+msgid "button to see how to use the source editor and rendering tool"
+msgstr ""
+
+#: cb-img.html:26
+msgctxt ""
+msgid "Markup Code Box"
+msgstr ""
+
+
+#: cb-img.html:27
+msgctxt ""
+msgid "Show"
+msgstr ""
+
+#: cb-img.html:28
+msgctxt ""
+msgid "Default"
+msgstr ""
+
+#: cb-img.html:29
+msgctxt ""
+msgid "Render Box"
+msgstr ""
+
+#: cb-img.html:30
+msgctxt ""
+msgid "That\'s how it looks rendered in browser. Optionally you can"
+msgstr ""
+
+#: cb-img.html:31
+msgctxt ""
+msgid "Save as PDF"
+msgstr ""
+
+#: cb-img.html:32
+msgctxt ""
+msgid "Default button, on click, removes the markup code from light-blue box"
+msgstr ""
+
+#: cb-img.html:33
+msgctxt "Codes"
+msgid "Markup Codes using"
+msgstr ""
+
+#: cb-img.html:34
+msgctxt ""
+msgid "HTML tag"
+msgstr ""
+
+#: cb-img.html:35
+msgctxt ""
+msgid "Images/graphic elements have a powerful visual impact and you should take advantage of this known fact."
+msgstr ""
+
+#: cb-img.html:36
+msgctxt ""
+msgid "&lt;img&gt; tag and how to style them to look more appealing using inline-CSS"
+msgstr ""
+
+#: cb-img.html:37
+msgctxt ""
+msgid "Basic html for &lt;img&gt; elements with some inline-css"
+msgstr ""
+
+#: cb-img.html:38
+msgctxt ""
+msgid "Other styling using inline-css"
+msgstr ""
+
+#: cb-img.html:39
+msgctxt ""
+msgid "Box reflect css, inline-css accepted by Chaturbate platform"
+msgstr ""
+
+#: cb-img.html:40
+msgctxt ""
+msgid "As you can see, css can work its magic and can be applied to other HTML elements too."
+msgstr ""
+
+#: cb-img.html:41
+msgctxt ""
+msgid "Box shadow css, inline-css accepted by Chaturbate platform"
+msgstr ""
+
+#: cb-img.html:42
+msgctxt ""
+msgid "Clip path css, inline-css accepted by Chaturbate platform"
+msgstr ""
+
+#: cb-img.html:43
+msgctxt "Reference"
+msgid "Inline-css can be added to:"
+msgstr ""
+
+#: cb-img.html:44
+msgctxt ""
+msgid "ref. tag"
+msgstr ""
+
+#: cb-img.html:45
+msgctxt "How to use..."
+msgid "How to use..."
+msgstr ""
+
+#: cb-img.html:46
+msgctxt ""
+msgid "Paste markup codes showed on page inside the Markup Code Box (left box)"
+msgstr ""
+
+#: cb-img.html:47
+msgctxt ""
+msgid "Click on Show button"
+msgstr ""
+
+#: cb-img.html:48
+msgctxt ""
+msgid "View the rendered markup inside the Render Box (right box)"
+msgstr ""
+
+#: cb-img.html:49
+msgctxt ""
+msgid "Show button allows you to start rendering the markup code"
+msgstr ""
+
+#: cb-img.html:50
+msgctxt ""
+msgid "Default button is used as reset the Markup Code box, all input will be lost"
+msgstr ""
+
+#: cb-img.html:51
+msgctxt ""
+msgid "Print this page as pdf - well, you don\'t need much but its there, just in case. Please note, the print page will only print content from Render Box."
+msgstr ""
+
+#: cb-img.html:52
+msgctxt "Code Snippets"
+msgid "Code Snippets"
+msgstr ""
+
+#: cb-img.html:53
+msgctxt "Editing Tips"
+msgid "Editing Tips"
+msgstr ""
+
+#: cb-img.html:54
+msgctxt ""
+msgid "Our suggestions for fast editing and viable markup rendering"
+msgstr ""
+
+#: cb-img.html:55
+msgctxt ""
+msgid "As much as possible try to use percent values for width of the image elements and not fixed values expressed in pixels"
+msgstr ""
+
+#: cb-img.html:56
+msgctxt ""
+msgid "Optimized graphics. Avoid using huge images of the output requires a smaller icon element."
+msgstr ""
+
+#: cb-img.html:57
+msgctxt ""
+msgid "Use of gifs. Avoid using many animated images like gifs because some ad blockers might prevent showing them. You want your Chaturbate bio look like a Christmas Tree? Use with moderation and visual balance."
+msgstr ""
+
+
+#: cb-img.html:58
+msgctxt ""
+msgid "Use of"
+msgstr ""
+
+#: cb-img.html:59
+msgctxt ""
+msgid "All links (on page or external URLs) are set up to open on another page (with a countdown) so there\'s no need to use"
+msgstr ""
+
+#: cb-img.html:60
+msgctxt "Ads"
+msgid "Available Advertising Space. Contact us and rent this space for your banner or textual ad."
+msgstr ""
+
+#: cb-img.html:61
+msgctxt "Footer"
+msgid "CGC Tools and Services"
+msgstr ""
+
+#: cb-img.html:62
+msgctxt ""
+msgid "CGC Tailored"
+msgstr ""
+
+#: cb-img.html:63
+msgctxt ""
+msgid "CGC Custom design"
+msgstr ""
+
+#: cb-img.html:64
+msgctxt ""
+msgid "CGC Media Library"
+msgstr ""
+
+#: cb-img.html:65
+msgctxt ""
+msgid "CGC Studio Environment"
+msgstr ""
+
+#: cb-img.html:66
+msgctxt ""
+msgid "CGC Performer Service"
+msgstr ""
+
+#: cb-img.html:67
+msgctxt ""
+msgid "CGC Tools Kit"
+msgstr ""
+
+#: cb-img.html:68
+msgctxt ""
+msgid "CGC Stats and Staff"
+msgstr ""
+
+#: cb-img.html:69
+msgctxt ""
+msgid "CGC Team"
+msgstr ""
+
+#: cb-img.html:70
+msgctxt ""
+msgid "CGC Stats"
+msgstr ""
+
+#: cb-img.html:71
+msgctxt ""
+msgid "CGC Contact"
+msgstr ""
+
+#: cb-img.html:72
+msgctxt ""
+msgid "Why CGC"
+msgstr ""
+
+#: cb-img.html:73
+msgctxt ""
+msgid "Because it is one service you can rely on. Because it\'s unique and flexible."
+msgstr ""
+
+#: cb-img.html:74
+msgctxt ""
+msgid "Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can\'t be wrong."
+msgstr ""
+
+#: cb-img.html:75
+msgctxt "Modal Translate"
+msgid "Change Language"
+msgstr ""
+
+#: cb-img.html:76
+msgctxt ""
+msgid "Change the content of the material in your preferred language"
+msgstr ""
+
+#: cb-img.html:77
+msgctxt ""
+msgid "Romanian"
+msgstr ""
+
+#: cb-img.html:78
+msgctxt ""
+msgid "English"
+msgstr ""
+
+#: cb-img.html:79
+msgctxt ""
+msgid "French"
+msgstr ""
+
+#: cb-img.html:80
+msgctxt ""
+msgid "Italian"
+msgstr ""
+
+#: cb-img.html:81
+msgctxt ""
+msgid "German"
+msgstr ""
+
+#: cb-img.html:82
+msgctxt ""
+msgid "Help translate this material"
+msgstr ""
