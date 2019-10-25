@@ -23,8 +23,6 @@ We've declined collaborations with some entities (websites, services) from this 
 
 **Quick navigation:**
 * [Home Page](https://cgc-dan.github.io/cgc-designers/)
-* [Videos](https://cgc-dan.github.io/cgc-designers/assets/videos/)
-* [Demos & Code Samples](https://cgc-dan.github.io/cgc-designers/assets/demo/)
 
 **Need to get in touch with us?**
-feel free to use the [contact form](https://camgirl.cloud/contact/) from our main website or on [twitter](https://twitter.com/CSSMFC)
+feel free to use the [contact form](https://camgirl.cloud/contact/) from our main website or on [twitter](https://twitter.com/CamgirlCloud)
