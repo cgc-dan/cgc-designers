@@ -1,3 +1,3 @@
 # These are supported funding
 
-custom: ['https://blockchain.com/btc/payment_request?address=1Lv6V1DXprnG1U4Mg4JZWQzpKB7VT6Zi4d&amount=0.00012112&message=SPONSOR', 'https://blockchain.com/btc/payment_request?address=1Lv6V1DXprnG1U4Mg4JZWQzpKB7VT6Zi4d&amount=0.00015112&message=Email']
+custom: ['https://blockchain.com/btc/payment_request?address=1Lv6V1DXprnG1U4Mg4JZWQzpKB7VT6Zi4d&amount=0.00012112&message=SPONSOR',BTC], [ 'https://blockchain.com/btc/payment_request?address=1Lv6V1DXprnG1U4Mg4JZWQzpKB7VT6Zi4d&amount=0.00015112&message=SPONSOR%20VIP',BTC+]
