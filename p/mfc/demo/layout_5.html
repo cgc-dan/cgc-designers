@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Layout 5</title>
+<style>
+a:link,a:visited{color:#09C;text-decoration:none;}a:hover{color:#F39;text-decoration:none;}
+body{background-color:#f1f1f1; color:#333;font:15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:100%;margin:0 auto; }.profile_section_content {color:#666666;padding:5px;margin:5px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 0 0 #777777;box-shadow:0 0 0 #777777;}.profile_section_background {background-color:transparent;background-color:#;filter:alpha(opacity=100);opacity:1;}.img_radius_shadow {-webkit-border-radius:0;border-radius:0;-webkit-box-shadow:0 0 0 #777777; box-shadow:0 0 0 #777777;}.profile_section_content .heading {padding:5px;background-color:#808080;color:#FFFFFF;font-family:sans-serif;font-weight:normal;font-style:normal;font-size:14px;-webkit-box-shadow:0 0 0 #777777;box-shadow:0 0 0 #777777;-webkit-text-shadow:0 0 0 #777777;text-shadow:0 0 0 #777777;}.content {padding:5px;}.my_mfc_news_feed {width:100%;height:330px;}#about_me_label {display:none;}#avatar_holder,#status_container,#blurb_container,#unix_last_broadcast_container,#unix_last_updated_container {display:none;}#header_bar,#footer_bar,#profile_main_photo,#tags_container,#about_me_label,#cam_score_container,#profile_friends .heading,#friends_container,#profile_header,#profile_about_me > .heading,#username_container,#gender_container,#body_type_container,#ethnicity_container,#hair_container,#eyes_container,#weight_container,#height_container,#age_container,#city_container,#country_container,#sexual_preference_container,#smoke_container,#drink_container,#drugs_container,#marital_status_container,#occupation_container,#school_container,#favorite_food_container,#pets_container,#automobile_container {display:none;}#about_me_container span#about_me_label,#profile_friends .heading,#profile_friends #friends_container,#profile_friends #favorite_models_container,#profile_about_me #tags_container,#profile_schedule,#profile_about_me div#occupation_container {display:none;}#about_me_value{}.xcr::-webkit-scrollbar {width:10px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#936;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+/*** Layout Customization ***/
+#main{display:block;height:auto;width:90%!important;margin:0 auto!important;float:none;box-sizing:border-box;clear:left;padding:0;}
+.alldesign{background-color:#fff;-webkit-box-shadow:0 0 5px #999;box-shadow:0 0 5px #999;}
+.myheader h2{font-size:3.33em;font-weight:100;}
+.myfooter{background-color:#222;color:#f1f1f1;-webkit-box-shadow:0 0 5px #999;box-shadow:0 0 5px #999;}
+
+/*** Reset Custom for MFC Default ***/frame{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}iframe{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}embade{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}.profile_row #profile_about_me{}#photo_gallery_previews {display:block;width:90%;position:relative;margin:0 auto;background-color:rgba(255,255,255,.80);border:1px solid #ccc;margin:25px auto;padding:10px 17px;color:#ccc;border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;-webkit-border-radius:7px;font-family: sans-serif;}.user_comment_textarea_small,.user_comment_textarea_small:focus {width:850px;height:100px;-webkit-transition:width .4s ease-in-out;transition:width .4s ease-in-out;padding:12px;margin:10px auto;background:rgba(255,255,255,.50);border:1px solid #ccc;color:#444;}textarea:focus {-webkit-transition:height .4s ease-in-out;transition:height .4s ease-in-out;}.user_comment_textarea_big {width:850px;height:150px;padding:15px;background:rgba(255,255,255,.80);color:#555;margin:10px auto;font-family:sans-serif;outline:none;outline-style:none;font-size:18px;}.wall_post_avatar img {background-color:#f1f1f1;margin-top:1px;margin-left:-5px;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;border:2px solid rgba(255,255,255,0.0);width:70px;height:70px;}#no_profile_avatar {display:none;}.wall_post_avatar:hover img {background-color:#939;}.wall_post_info {width:700px;margin-left:42px;border-bottom:1px dotted #666;}.img_radius_shadow {-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}div.wall_post {display:block;margin-top:10px;font-size:18px;background-color:rgba(255,255,255,0.70);border:1px solid #f1f1f1;margin:25px auto;padding:10px 17px;color:#666;border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;-webkit-border-radius:7px;transition:all .9s;-moz-transition:all .9s;-ms-transition:all .9s;-o-transition:all .9s;-webkit-transition:all .9s;font-family:sans-serif;}div#profile_about_me.profile_subsection {text-indent:2px;background:transparent rgba(0,0,0,0.0);background-repeat:no-repeat;background-position:top right;}.wall_post a,.wall_post a:visited {color:#444;text-decoration:none;}.wall_post a:hover {color:#93C;text-decoration:none;}div#comments {padding:10px 10px;margin-top:30px;background:none;}form#new_comment.hidden {padding:10px;background:rgba(0,0,0,0.0);border:0 solid #fff;border-radius:8px;-moz-border-radius:8px;-ms-border-radius:8px;-o-border-radius:8px;-webkit-border-radius:8px;height:auto;margin-top:60px;}#craziest_thing_label.label {display:block;}#be_anywhere_container,#hobbies_container,#talents_container,#perfect_mate_container,#perfect_date_container,#turn_ons_container,#five_things_container,#know_me_container,#for_fun_container,#favorite_songs_container,#favorite_movies_container,#craziest_thing_container,#favorite_books_container,#meaning_life_container,#know_me_container {display:block;background-color:rgba(255,255,255,0.80);color:#666;border-radius:5px;-webkit-border-radius:5px;margin:10px auto 4px auto;font-family:sans-serif;padding:5px 7px 12px;}p{font-family:sans-serif;font-weight:300;}#profile_about_me {padding:0;margin:0 auto;}.photo_gallery_count{color:#777;}#rate_label,#average_rating_label,#admirers_label,#friends_label,#favorite_models_label {color:#848080;font-family:sans-serif;font-weight:300;}#about_me_container,#about_me_value {visibility:visible!important;font-family:sans-serif;}#profile_friends {display:block;width:90%;margin:10px auto 30px auto!important;color:#ccc;padding:10px 13px;background-color:rgba(255,255,255,0.80);border:1px solid #ccc;font-size:15px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}input[type="submit"],.post_comment_btn,.preview_comment_btn {padding:11px 22px;text-decoration:none;border:1px solid #ccc;background-color:#111111;color:#444;font-size:16px;text-align:center;}input[type="submit"]:hover,.post_comment_btn:hover,.preview_comment_btn:hover {padding:11px 22px;text-decoration:none;background-color:#96C;color:#444;}/***Reset***/ .profile_section_content .heading {display:none;}.wall_post_time,.convert-time {display:none;}#profile_main_photo,#tags_container,#about_me_label {display:none;}#profile_interests_content .label {display:block;width:96%;height:auto;margin:4px auto 7px 3px;padding:3px 15px;}
+@media only screen and (max-width: 728px) and (min-width: 300px){
+body{ background-color: #f1f1f1; color: #333;	font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }[class*="gr-"]{width:100%;}.myheader h2{font-size:1.33em;font-weight:100;}}
+.line {width:100%;height:0%;float:none;clear:left;padding:0;}
+/** delete this line - demo purpose only **/
+[class*="gr-"]:hover{background-color:#E6F9FF;}
+#main:hover{background-color:#fff;}
+.myfooter:hover{background-color:#222;color:#FC3;}
+
+.tb #pop{display:none;width:100%;height:100%;position:fixed;top:0;left:0;z-index:10000!important;background-color:rgba(0,0,0,0.80);-webkit-animation:fadeInScale 1.2s ease-in-out;-moz-animation:fadeInScale 1.2s ease-in-out;-o-animation:fadeInScale 1.2s ease-in-out;-ms-animation:fadeInScale 1.2s ease-in-out;animation:fadeInScale 1.2s ease-in-out;}.tb #pop:target{display:block;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}.wrapping,.wrapping:hover{display:block;width:80%;height:auto;overflow:auto;padding:0;margin:3% auto;background-color:#f1f1f1;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}.dvider{opacity:0;font-size:1px;overflow:hidden;}.ttle{color:#06C;font-size:22px;font-weight:normal;}.close{text-align:right;}.close a, .close a:visited{display:block;overflow:hidden;width:32px;height:42px;padding:5px 7px 11px;margin:-8px 6px auto 2px;color:#fff;background-color:#09C;font-size:20px;-webkit-clip-path: polygon(100% 0, 100% 100%, 49% 89%, 0 100%, 0 0);clip-path: polygon(100% 0, 100% 100%, 49% 89%, 0 100%, 0 0);text-decoration:none;}.close a:hover{background-color:#09F;color:#fff;overflow:hidden;text-decoration:none;}.close span.led:before{content:'\002B';display:block;width:20px;height:20px;transform:rotate(45deg);text-align:center;text-decoration:none;}.wrapping p{display:block;text-align:left;font-size:17px;margin:0 auto;line-height:normal;color:#555;font-weight:100;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}#pop p,.ttle{color:#555;}.cntnt a,.cntnt a:visited{color:#09C!important;}.cntnt a:hover{color:#F63!important;}.credits-wrapper{font-size:15px;font-weight:100;}
+@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+@keyframes fadeInScale {0% { transform: scale(0.6);}100% { transform: scale(1);}}
+.svg-icon-burger {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon-burger path,
+.svg-icon-burger polygon,
+.svg-icon-burger rect {
+  fill: #fff;
+}
+
+.svg-icon-burger circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+.svg-icon-copy {
+  width: 1.5em;
+  height: 1.5em;
+  margin:6px auto -6px 1px;
+}
+.svg-icon-copy:hover path,
+.svg-icon-copy:hover polygon,
+.svg-icon-copy:hover rect {
+  fill: #09C;
+}
+
+.svg-icon-copy:hover circle {
+  stroke: #09C;
+  stroke-width: 1;
+}
+
+.open{padding:6px 12px;text-align:center;position:fixed;top:15px;right:12px;background-color:#09C;z-index:9999;}.open:hover{background-color:#222;}.btn-light{padding:3px 7px;text-align:center;margin-left:12px;}.btn-light:hover{}
+textarea{display:block;width:97%;height:120px;max-width:100%;max-height:120px; outline:none;margin:7px 3px 6px 1px;}
+#pop [class*="gr-"]:hover{background-color:#f1f1f1;}
+</style>
+</head>
+
+<body>
+
+
+<div id="main" class="gr-12 no alldesign">
+
+<div class="gr-12 mymenu tcenter">menu</div>
+
+  <div class="gr-12 myheader tcenter">
+    <h2>Heading h2 - Title - 100% full width</h2>
+  </div>
+
+
+
+
+
+  
+  <div class="gr-12 tcenter">
+     <p>100% width box</p>
+  </div>
+  
+
+
+
+<div class="line">
+  
+  <div class="gr-6 tcenter">
+     <p>50% width box left</p>
+  </div>
+  
+   <div class="gr-6 tcenter">
+     <p>50% width box right</p>
+  </div>
+  
+</div>
+
+
+<div class="line">
+  
+  <div class="gr-4 tcenter">
+     <p>33% width box left</p>
+  </div>
+  
+  <div class="gr-4 tcenter">
+     <p>33% width box center</p>
+  </div>
+  
+   <div class="gr-4 tcenter">
+     <p>33% width box right</p>
+  </div>
+  
+</div>
+
+
+  <div class="gr-12 tcenter">
+     <p>100% width box</p>
+  </div>
+  
+  
+<div class="line">
+  
+  <div class="gr-3 tcenter">
+     <p>25% width box 1</p>
+  </div>
+  
+    <div class="gr-3 tcenter">
+     <p>25% width box 2</p>
+  </div>
+  
+   <div class="gr-3 tcenter">
+     <p>25% width box 3</p>
+  </div>
+  
+  <div class="gr-3 tcenter">
+     <p>25% width box 4</p>
+  </div>
+  
+</div>
+
+  
+
+  <div class="gr-12 tcenter">
+     <p>100% width box</p>
+  </div>
+  
+  
+ <div class="line"> 
+  <div class="gr-12 myfooter">
+  
+  <div class="gr-6 tcenter">
+     <p>50% width box left</p>
+  </div>
+  
+    <div class="gr-6 tcenter">
+     <p>50% width box right</p>
+  </div>
+  
+  
+  
+</div>
+
+</div>
+</div> 
+
+
+
+
+
+
+
+<a href="#pop" class="open"><svg class="svg-icon-burger" viewBox="0 0 20 20">
+							<path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+						</svg></a>
+
+
+
+<div class="tb">
+<div id="pop">
+<div class="gr-1 divider"><p>Camgirl Live Editor - Divider</p></div>
+   <div class="gr-8 wrapping xcr">
+   <div class="gr-11 ttle">Codes</div>
+   <div class="gr-1 close no tright"><a href="#close" title="Close"><span class="led"></span></a></div>
+   <div class="gr-12 credits-wrapper cntnt">
+     <p class="sm-only">Want to test the markup codes in <a href="../source.html" target="_blank">Editor tool</a> ? Here are the source markups</p>
+       <p class="sm-only">HTML markup <a class="btn btn-sm btn-light" href="#!" onclick="myFunction()">
+    <svg class="svg-icon-copy" viewBox="0 0 20 20">
+							<path d="M15.475,6.692l-4.084-4.083C11.32,2.538,11.223,2.5,11.125,2.5h-6c-0.413,0-0.75,0.337-0.75,0.75v13.5c0,0.412,0.337,0.75,0.75,0.75h9.75c0.412,0,0.75-0.338,0.75-0.75V6.94C15.609,6.839,15.554,6.771,15.475,6.692 M11.5,3.779l2.843,2.846H11.5V3.779z M14.875,16.75h-9.75V3.25h5.625V7c0,0.206,0.168,0.375,0.375,0.375h3.75V16.75z"></path>
+						</svg>
+  </a></p>
+       <textarea spellcheck="false" id="htmlCODE"><div id="main" class="gr-12 no alldesign">
+
+<div class="gr-12 mymenu tcenter">menu</div>
+
+  <div class="gr-12 myheader tcenter">
+    <h2>Heading h2 - Title - 100% full width</h2>
+  </div>
+
+
+
+
+
+  
+  <div class="gr-12 tcenter">
+     <p>100% width box</p>
+  </div>
+  
+
+
+
+<div class="line">
+  
+  <div class="gr-6 tcenter">
+     <p>50% width box left</p>
+  </div>
+  
+   <div class="gr-6 tcenter">
+     <p>50% width box right</p>
+  </div>
+  
+</div>
+
+
+<div class="line">
+  
+  <div class="gr-4 tcenter">
+     <p>33% width box left</p>
+  </div>
+  
+  <div class="gr-4 tcenter">
+     <p>33% width box center</p>
+  </div>
+  
+   <div class="gr-4 tcenter">
+     <p>33% width box right</p>
+  </div>
+  
+</div>
+
+
+  <div class="gr-12 tcenter">
+     <p>100% width box</p>
+  </div>
+  
+  
+<div class="line">
+  
+  <div class="gr-3 tcenter">
+     <p>25% width box 1</p>
+  </div>
+  
+    <div class="gr-3 tcenter">
+     <p>25% width box 2</p>
+  </div>
+  
+   <div class="gr-3 tcenter">
+     <p>25% width box 3</p>
+  </div>
+  
+  <div class="gr-3 tcenter">
+     <p>25% width box 4</p>
+  </div>
+  
+</div>
+
+  
+
+  <div class="gr-12 tcenter">
+     <p>100% width box</p>
+  </div>
+  
+  
+ <div class="line"> 
+  <div class="gr-12 myfooter">
+  
+  <div class="gr-6 tcenter">
+     <p>50% width box left</p>
+  </div>
+  
+    <div class="gr-6 tcenter">
+     <p>50% width box right</p>
+  </div>
+  
+  
+  
+</div>
+
+</div>
+</div></textarea>
+       <p class="sm-only">CSS markup <a class="btn btn-sm btn-light" href="#!" onclick="myFunction2()">
+    <svg class="svg-icon-copy" viewBox="0 0 20 20">
+							<path d="M15.475,6.692l-4.084-4.083C11.32,2.538,11.223,2.5,11.125,2.5h-6c-0.413,0-0.75,0.337-0.75,0.75v13.5c0,0.412,0.337,0.75,0.75,0.75h9.75c0.412,0,0.75-0.338,0.75-0.75V6.94C15.609,6.839,15.554,6.771,15.475,6.692 M11.5,3.779l2.843,2.846H11.5V3.779z M14.875,16.75h-9.75V3.25h5.625V7c0,0.206,0.168,0.375,0.375,0.375h3.75V16.75z"></path>
+						</svg>
+  </a></p>
+       <textarea spellcheck="false" id="cssCODE">a:link,a:visited{color:#09C;text-decoration:none;}a:hover{color:#F39;text-decoration:none;}
+body{background-color:#f1f1f1; color:#333;font:15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:100%;margin:0 auto; }.profile_section_content {color:#666666;padding:5px;margin:5px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 0 0 #777777;box-shadow:0 0 0 #777777;}.profile_section_background {background-color:transparent;background-color:#;filter:alpha(opacity=100);opacity:1;}.img_radius_shadow {-webkit-border-radius:0;border-radius:0;-webkit-box-shadow:0 0 0 #777777; box-shadow:0 0 0 #777777;}.profile_section_content .heading {padding:5px;background-color:#808080;color:#FFFFFF;font-family:sans-serif;font-weight:normal;font-style:normal;font-size:14px;-webkit-box-shadow:0 0 0 #777777;box-shadow:0 0 0 #777777;-webkit-text-shadow:0 0 0 #777777;text-shadow:0 0 0 #777777;}.content {padding:5px;}.my_mfc_news_feed {width:100%;height:330px;}#about_me_label {display:none;}#avatar_holder,#status_container,#blurb_container,#unix_last_broadcast_container,#unix_last_updated_container {display:none;}#header_bar,#footer_bar,#profile_main_photo,#tags_container,#about_me_label,#cam_score_container,#profile_friends .heading,#friends_container,#profile_header,#profile_about_me > .heading,#username_container,#gender_container,#body_type_container,#ethnicity_container,#hair_container,#eyes_container,#weight_container,#height_container,#age_container,#city_container,#country_container,#sexual_preference_container,#smoke_container,#drink_container,#drugs_container,#marital_status_container,#occupation_container,#school_container,#favorite_food_container,#pets_container,#automobile_container {display:none;}#about_me_container span#about_me_label,#profile_friends .heading,#profile_friends #friends_container,#profile_friends #favorite_models_container,#profile_about_me #tags_container,#profile_schedule,#profile_about_me div#occupation_container {display:none;}#about_me_value{}.xcr::-webkit-scrollbar {width:10px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#936;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+/*** Layout Customization ***/
+#main{display:block;height:auto;width:90%!important;margin:0 auto!important;float:none;box-sizing:border-box;clear:left;padding:0;}
+.alldesign{background-color:#fff;-webkit-box-shadow:0 0 5px #999;box-shadow:0 0 5px #999;}
+.myheader h2{font-size:3.33em;font-weight:100;}
+.myfooter{background-color:#222;color:#f1f1f1;-webkit-box-shadow:0 0 5px #999;box-shadow:0 0 5px #999;}
+
+/*** Reset Custom for MFC Default ***/frame{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}iframe{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}embade{display:block;width:99%;height:450px;margin-top:5px;margin-bottom:5px;}.profile_row #profile_about_me{}#photo_gallery_previews {display:block;width:90%;position:relative;margin:0 auto;background-color:rgba(255,255,255,.80);border:1px solid #ccc;margin:25px auto;padding:10px 17px;color:#ccc;border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;-webkit-border-radius:7px;font-family: sans-serif;}.user_comment_textarea_small,.user_comment_textarea_small:focus {width:850px;height:100px;-webkit-transition:width .4s ease-in-out;transition:width .4s ease-in-out;padding:12px;margin:10px auto;background:rgba(255,255,255,.50);border:1px solid #ccc;color:#444;}textarea:focus {-webkit-transition:height .4s ease-in-out;transition:height .4s ease-in-out;}.user_comment_textarea_big {width:850px;height:150px;padding:15px;background:rgba(255,255,255,.80);color:#555;margin:10px auto;font-family:sans-serif;outline:none;outline-style:none;font-size:18px;}.wall_post_avatar img {background-color:#f1f1f1;margin-top:1px;margin-left:-5px;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease;border:2px solid rgba(255,255,255,0.0);width:70px;height:70px;}#no_profile_avatar {display:none;}.wall_post_avatar:hover img {background-color:#939;}.wall_post_info {width:700px;margin-left:42px;border-bottom:1px dotted #666;}.img_radius_shadow {-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}div.wall_post {display:block;margin-top:10px;font-size:18px;background-color:rgba(255,255,255,0.70);border:1px solid #f1f1f1;margin:25px auto;padding:10px 17px;color:#666;border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;-webkit-border-radius:7px;transition:all .9s;-moz-transition:all .9s;-ms-transition:all .9s;-o-transition:all .9s;-webkit-transition:all .9s;font-family:sans-serif;}div#profile_about_me.profile_subsection {text-indent:2px;background:transparent rgba(0,0,0,0.0);background-repeat:no-repeat;background-position:top right;}.wall_post a,.wall_post a:visited {color:#444;text-decoration:none;}.wall_post a:hover {color:#93C;text-decoration:none;}div#comments {padding:10px 10px;margin-top:30px;background:none;}form#new_comment.hidden {padding:10px;background:rgba(0,0,0,0.0);border:0 solid #fff;border-radius:8px;-moz-border-radius:8px;-ms-border-radius:8px;-o-border-radius:8px;-webkit-border-radius:8px;height:auto;margin-top:60px;}#craziest_thing_label.label {display:block;}#be_anywhere_container,#hobbies_container,#talents_container,#perfect_mate_container,#perfect_date_container,#turn_ons_container,#five_things_container,#know_me_container,#for_fun_container,#favorite_songs_container,#favorite_movies_container,#craziest_thing_container,#favorite_books_container,#meaning_life_container,#know_me_container {display:block;background-color:rgba(255,255,255,0.80);color:#666;border-radius:5px;-webkit-border-radius:5px;margin:10px auto 4px auto;font-family:sans-serif;padding:5px 7px 12px;}p{font-family:sans-serif;font-weight:300;}#profile_about_me {padding:0;margin:0 auto;}.photo_gallery_count{color:#777;}#rate_label,#average_rating_label,#admirers_label,#friends_label,#favorite_models_label {color:#848080;font-family:sans-serif;font-weight:300;}#about_me_container,#about_me_value {visibility:visible!important;font-family:sans-serif;}#profile_friends {display:block;width:90%;margin:10px auto 30px auto!important;color:#ccc;padding:10px 13px;background-color:rgba(255,255,255,0.80);border:1px solid #ccc;font-size:15px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}input[type="submit"],.post_comment_btn,.preview_comment_btn {padding:11px 22px;text-decoration:none;border:1px solid #ccc;background-color:#111111;color:#444;font-size:16px;text-align:center;}input[type="submit"]:hover,.post_comment_btn:hover,.preview_comment_btn:hover {padding:11px 22px;text-decoration:none;background-color:#96C;color:#444;}/***Reset***/ .profile_section_content .heading {display:none;}.wall_post_time,.convert-time {display:none;}#profile_main_photo,#tags_container,#about_me_label {display:none;}#profile_interests_content .label {display:block;width:96%;height:auto;margin:4px auto 7px 3px;padding:3px 15px;}
+@media only screen and (max-width: 728px) and (min-width: 300px){
+body{ background-color: #f1f1f1; color: #333;	font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }[class*="gr-"]{width:100%;}.myheader h2{font-size:1.33em;font-weight:100;}}
+.line {width:100%;height:0%;float:none;clear:left;padding:0;}</textarea>
+       <p>Make sure that you do remember to wrapp the css markup between &lt;style&gt; and &lt;/style&gt; tags, folowed by the HTML markup code</p>
+   </div>
+   </div>
+<div class="gr-1 divider"><p>Camgirl Live Editor - Divider</p></div>
+</div>
+</div>
+</div>
+
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("htmlCODE");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+function myFunction2() {
+  var copyText = document.getElementById("cssCODE");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+</body>
+</html>

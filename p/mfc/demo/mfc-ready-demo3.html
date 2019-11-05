@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>demo-widget</title>
+<style>
+body{background-color:#222;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
+body{margin:0 auto;width:90%;}
+section{display:block;width:90%;height:auto;margin:10px auto 13px auto;background-color:#333;box-shadow:0 5px 6px #000;color:#777;padding:15px;}section p{font: 17px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;line-height:normal;font-weight:normal;text-shadow:0 0 4px #000;}section h3{font-size:24px;font-family:-apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;line-height:normal;font-weight:normal;color:#ccc;text-shadow:0 0 4px #000;font-weight:100;}
+textarea{display:block;width:95%;height:300px;margin:6px auto 10px 3px; outline:none;background-color:#111;color:#999;}mark{padding-left:3px;padding-right:3px;background-color:#F90;color:#fff;font-family:"Lucida Console", Monaco, monospace}
+code{display:block;width:80%;height:auto;margin:5px auto 7px 3px;padding:5px 7px;background-color:#111;color:#F90;box-shadow:inset 0 3px 7px #000;-webkit-box-shadow:inset 0 3px 7px #000;border-left:4px solid #099;}.hr{display:block;width:100%;height:1px;background-color:#444;box-shadow:0 1px 6px #222;float:none;clear:left;margin:10px auto 11px auto;overflow:hidden;}.credits{text-align:center;}.credits p{font-size:14px;}
+
+/** Demo start **/
+
+.hideit{padding:20px;}
+.hideit #wrap{display:block;width:100px;height:100px;position:fixed;bottom:30px;right:36px;overflow:hidden;z-index:10000;transition:all 0.5s;}
+.hideit #wrap .closed{display:none;text-align:right;}
+.closed a{display:block;width:20px;height:20px;text-align:center;opacity:0.2;}
+.closed a:hover{display:block;width:20px;height:20px;text-align:center;opacity:1;}
+.closed img{opacity:0.4;}
+.closed:hover img{width:20px;height:20px;opacity:1;}
+.hideit #wrap:target{display:block;width:450px;height:300px;position:fixed;bottom:30px;right:33px;overflow:hidden;background-color:#f1f1f1;z-index:10000;border-radius:7px;box-shadow:0 2px 11px #000;}
+.hideit #wrap:target .closed{display:block;}
+.coinfo{display:block;width:90%;height:200px;overflow:hidden;margin:0 auto;}
+#wrap:target > .coinfo{display:block;width:90%;height:200px;overflow:auto;margin:0 auto;background-color:#fff;opacity:1;padding:10px;}.coinfo p{line-height:normal;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}.goreadall{display:block;text-align:center;margin:10px auto 12px auto;}img.viewz{display:block;width:100px;height:100px;opacity:1;float:left;}
+.flaire{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:99;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/circle1.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:circle infinite 12s;animation:circle infinite 12s;}
+.flaire2{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:999;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/flair_2.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:flair infinite 19s;animation:flair infinite 19s;}
+.flaire3{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:999;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/flair_4.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:dots infinite 25s;animation:flair infinite 25s;transition:all .3s;}
+#izyter{display:block;width:150px;height:150px;}#izyter:hover .flaire3{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:999;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/flair_4b.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:dots infinite 25s;animation:flair infinite 25s;}.goreadall a,.goreadall a:visited,.goreadall a:active {padding:7px 12px;background-color:#099;color:#f1f1f1;text-decoration:none;}.goreadall a:hover{background-color:#222;color:#fff;text-decoration:none;}
+@keyframes circle{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes circle{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes dots{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes dots{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes flair{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+@-webkit-keyframes flair{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<h3>About</h3>
+<p>Coded this small piece of markup for my own service in order to offer discounts</p>
+<p>I've removed my content from codepen version so it is easy to customize and add your own content</p>
+<p>The "modal" is using <mark>:target</mark> selector for the show/hide content ... pure CSS, no programming language</p>
+<p>If you plan to use it on your own webpage, I'd suggest downloading the images and host tem on your own service, just in case the current host is deleting them</p>
+<p>This was inspired from a video streaming site. Don't worry, no resources or markup was used from their platform, its all manually coded by me :)</p>
+<p>It can be used on MyFreeCams too </p>
+</section>
+
+<section>
+<h3>The CSS markup</h3>
+<textarea spellcheck="false">.hideit{padding:20px;}
+.hideit #wrap{display:block;width:100px;height:100px;position:fixed;bottom:30px;right:36px;overflow:hidden;z-index:10000;transition:all 0.5s;}
+.hideit #wrap .closed{display:none;text-align:right;}
+.closed a{display:block;width:20px;height:20px;text-align:center;opacity:0.2;}
+.closed a:hover{display:block;width:20px;height:20px;text-align:center;opacity:1;}
+.closed img{opacity:0.4;}
+.closed:hover img{width:20px;height:20px;opacity:1;}
+.hideit #wrap:target{display:block;width:450px;height:300px;position:fixed;bottom:30px;right:33px;overflow:hidden;background-color:#f1f1f1;z-index:10000;border-radius:7px;box-shadow:0 2px 11px #000;}
+.hideit #wrap:target .closed{display:block;}
+.coinfo{display:block;width:90%;height:200px;overflow:hidden;margin:0 auto;}
+#wrap:target > .coinfo{display:block;width:90%;height:200px;overflow:auto;margin:0 auto;background-color:#fff;opacity:1;padding:10px;}.coinfo p{font-size:15px;line-height:normal;font-family:Tahoma, Geneva, sans-serif;color:#555;}.goreadall{display:block;text-align:center;margin:10px auto 12px auto;}img.viewz{display:block;width:100px;height:100px;opacity:1;float:left;}
+.flaire{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:99;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/circle1.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:circle infinite 12s;animation:circle infinite 12s;}
+.flaire2{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:999;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/flair_2.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:flair infinite 19s;animation:flair infinite 19s;}
+.flaire3{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:999;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/flair_4.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:dots infinite 25s;animation:flair infinite 25s;transition:all .3s;}
+#izyter{display:block;width:150px;height:150px;}#izyter:hover .flaire3{display:block;position:fixed;bottom:30px;right:33px;overflow:hidden;z-index:999;width:140px;height:140px;background-image: url('https://camgirlbioeditor.files.wordpress.com/2018/05/flair_4b.png');background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-animation:dots infinite 25s;animation:flair infinite 25s;}.goreadall a,.goreadall a:visited,.goreadall a:active {padding:7px 12px;background-color:#099;color:#f1f1f1;text-decoration:none;}.goreadall a:hover{background-color:#222;color:#fff;text-decoration:none;}
+@keyframes circle{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes circle{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes dots{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes dots{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes flair{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+@-webkit-keyframes flair{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}</textarea>
+</section>
+
+<section>
+<h3>The HTML markup</h3>
+<textarea spellcheck="false"><div class="hideit">
+<div id="close">
+<div id="wrap">
+<a href="#close" class="closed"><img src="https://camgirlbioeditor.files.wordpress.com/2018/05/times.png" alt="Close"/></a>
+<div class="coinfo">
+<a href="#wrap"><img class="viewz" src="https://camgirlbioeditor.files.wordpress.com/2018/05/gift2.png" alt="Gift"/></a>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="goreadall"><a href="#" target="_blank" rel="noopener">Button</a></div>
+</div>
+</div>
+</div>
+<div id="izyter">
+<div class="flaire"></div>
+<div class="flaire3"></div>
+<div class="flaire2"></div>
+</div></textarea>
+</section>
+
+<section>
+<h3>Image resources</h3>
+<p>As I've mentioned above, if you plan to use this, download and host the images on your service</p>
+<p><strong>Images from HTML markup:</strong></p>
+<p>Gift image - PNG with transparent background - 100x100
+<code>https://camgirlbioeditor.files.wordpress.com/2018/05/gift2.png</code></p>
+<p>Close image (little "x" from right corner) - PNG with transparent background - 20x20
+<code>https://camgirlbioeditor.files.wordpress.com/2018/05/times.png</code></p>
+
+<p><strong>Images from CSS markup:</strong></p>
+<p>Circle 1 - PNG with transparent background - 140x140
+<code>https://camgirlbioeditor.files.wordpress.com/2018/05/circle1.png</code></p>
+<p>Flair 2 - PNG with transparent background - 140x140
+<code>https://camgirlbioeditor.files.wordpress.com/2018/05/flair_2.png</code></p>
+<p>Flair 4 - PNG with semi-transparent background - 140x140
+<code>https://camgirlbioeditor.files.wordpress.com/2018/05/flair_4.png</code></p>
+<p>Flair 4b / visible on hover - PNG with semi-transparent background - 140x140
+<code>https://camgirlbioeditor.files.wordpress.com/2018/05/flair_4b.png</code></p>
+</section>
+
+<div class="hideit">
+<div id="close">
+<div id="wrap">
+<a href="#close" class="closed"><img src="https://camgirlbioeditor.files.wordpress.com/2018/05/times.png" alt="Close"/></a>
+<div class="coinfo">
+<a href="#wrap"><img class="viewz" src="https://camgirlbioeditor.files.wordpress.com/2018/05/gift2.png" alt="Gift"/></a>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="goreadall"><a href="#" target="_blank" rel="noopener">Button</a></div>
+</div>
+</div>
+</div>
+<div id="izyter">
+<div class="flaire"></div>
+<div class="flaire3"></div>
+<div class="flaire2"></div>
+</div>
+
+
+
+
+<section class="credits">
+<div class="hr"></div>
+<p>developed by Dan N</p>
+</section>
+
+
+</body>
+</html>

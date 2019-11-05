@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>demo-widget</title>
+<style>
+body{background-color:#222;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
+section{width:90%;height:auto;margin:30px auto 12px auto;background-color:#444;color:#ccc;font-size:19px;padding:16px;box-shadow:4px 4px 4px #000;}
+textarea{display:block;width:96%;height:270px;margin:8px auto 12px 3px;background-color:#111;color:#777;border:1px solid #525F6D;}
+.scr::-webkit-scrollbar {width:10px;}.scr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);}.scr::-webkit-scrollbar-thumb {background:#525F6D;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.7);}.scr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}
+abbr{border-bottom:1px dotted #ccc;cursor:help;}
+.text-center{font-size:15px;text-align:center;}
+
+.grab, .some, .freebies{font-size:12px;text-shadow:0 0 4px #000;color:#777;}
+
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#f44295;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.7);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing: border-box;}html{}.clegrid-1 {width: 8.33%;}.clegrid-2 {width: 16.66%;}.clegrid-3 {width: 25%;}.clegrid-4 {width: 33.33%;}.clegrid-5 {width: 41.66%;}.clegrid-5-half {width: 47.66%;}.clegrid-6 {width: 50%;}.clegrid-7 {width: 58.33%;}.clegrid-8 {width: 66.66%;}.clegrid-9 {width: 75%;}.clegrid-10 {width: 83.33%;}.clegrid-11 {width: 91.66%;}.clegrid-12 {width: 100%;}[class*="clegrid-"] {float: left;padding: 15px;border: 0px solid #ccc;}[class*="no"] {float: left;padding: 0;}[class*="padd20"]{display:block;padding:20px;}.cledan202:after {content: "";clear: both;display: inline-table;}
+.imgresponsive img, img.responsive{display:block;width:100%;height:auto;margin:0 auto;}
+
+h1.headerz{display:block;line-height:normal;padding:8px 0 11px;margin:0 auto;color:#f44295;font-weight:normal;font-size:4.333vw;text-align:center;}.boxt{background-color:rgba(0, 0, 0, 0.50);margin:20px auto 22px auto;}
+h1.headerz:before,h1.headerz:after{display:inline-block;width:1%;height:1px;background-color:#222;vertical-align:middle;}
+#videos:hover h1.headerz:before,
+#videos:hover h1.headerz:after,
+#tippers:hover h1.headerz:before,
+#tippers:hover h1.headerz:after,
+.boxt:hover h1.headerz:before,
+.boxt:hover h1.headerz:after,
+.box:hover h1.headerz:before,
+.box:hover h1.headerz:after,
+h1.headerz:hover:before,h1.headerz:hover:after{display:inline-block;width:15%;height:1px;background-color:#f44295;vertical-align:middle;transition: all 0.5s;}h1.headerz:before{content:'';margin-right:12px;}h1.headerz:after{content:'';margin-left:12px;}
+
+.phto {margin:30px auto 33px auto;perspective: 1000px;}.phto .kin {display: block;width: 100%;height: 100%;margin:0 auto;background-color:rgba(0, 0, 0, 0.80);transform-style: preserve-3d;transition: all 0.5s;}.phto:hover .kin {transform: rotateX(80deg);transform-origin: bottom;}.phto .kin:after {content: ' ';position: absolute;left: 0;bottom:0;width: 100%; height: 30px;background-color:rgba(0, 0, 0, 0.45);background-image:url('');background-size:100% auto;background-repeat:no-repeat;background-position:center;transform: rotateX(90deg);transform-origin: bottom;}.phto .kin div {color: white;text-transform: uppercase;position: absolute;bottom: 100%;left: 0; width: 100%;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;text-align: center;transform: rotateX(-89.99deg);transform-origin: bottom;z-index: 1;}.phto .kin:before { content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 100%;box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);transition: all 0.5s;opacity: 0.35;transform: rotateX(95deg) translateZ(-80px) scale(0.75);transform-origin: top;}.phto:hover .kin:before {opacity: 1;box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.45);transform: rotateX(0) translateZ(-60px) scale(0.85); background-color:rgba(0, 0, 0, 0.45);}.phto .kin div{background-color:rgba(0, 0, 0, 0.45);top:-100%;opacity:0;}.phto:hover .kin div {background-color:rgba(0, 0, 0, 0.45);top:-100%;opacity:1;}.phto:hover .kin img{box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.0);transition: all 0.5s;opacity: 0.55;transform: rotateX(-4deg) translateZ(1px) scale(0.99);transform-origin:bottom;}.phto:hover .kin img:after{content:"";display:block;width:100%;height:30px;box-shadow:0 30px 1px rgba(0, 0, 0, 0.0);}.phto:hover .kin a:before, .phto:hover .kin a:visited:before{content:'+';padding:6px 9px;margin-right:16px;margin-left:-33px;text-align:center;background-color:#bf2f72;background-image:url('');background-size:31px auto;background-repeat:no-repeat;background-position:0 0;color:rgba(0, 0, 0, 0.0);border-radius:7px 0 0 7px;font-size:13px;margin-top:-1px;text-shadow:none;transition: all 0.5s;}.phto:hover .kin a:hover:before{content:'+';padding:6px 9px;margin-right:16px;margin-left:-33px;text-align:center;background-color:#333;background-image:url('');background-size:31px auto;background-repeat:no-repeat;background-position:1px -30px;color:rgba(0, 0, 0, 0.0);border-radius:7px 0 0 7px;box-shadow:0 0 8px #000;font-size:14px;}.phto:hover .kin a, .phto:hover .kin a:visited{padding:6px 11px;text-align:center;background-color:#333;color:#fff;border-top:1px solid #333;text-shadow:0 1px 2px #000;}.phto:hover .kin a:hover{padding:6px 11px;text-align:center;background-color:#111;color:#fff;box-shadow:0 0 8px #000;}p.dan{display:block;width:90%;height:40px;overflow:hidden;line-height:normal;text-transform:none;margin:0 auto;text-align:center;}p.kinotitle{display:block;width:100%;height:auto;padding:7px 12px;margin:0 auto;text-align:center;}
+
+*{text-decoration:none;}
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+* html .clearfix {height:1%;}
+</style>
+</head>
+
+<body>
+
+<div class="cledan202">
+
+<div id="videos" class="clegrid-12">
+<h1 class="headerz">Demo</h1>
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="#">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="https://www.myfreecams.com/php/tip.php?&request=tip&broadcaster_id=26056267">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="https://www.myfreecams.com/php/tip.php?&request=tip&broadcaster_id=26056267">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="https://www.myfreecams.com/php/tip.php?&request=tip&broadcaster_id=26056267">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="https://www.myfreecams.com/php/tip.php?&request=tip&broadcaster_id=26056267">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="https://www.myfreecams.com/php/tip.php?&request=tip&broadcaster_id=26056267">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="clegrid-12">
+
+<section>
+<h3>Info</h3>
+<p>This pen was created/adapted for <abbr title="MyFreeCams">MFC</abbr> custom section</p>
+<p>Below you can see both markup codes</p>
+<p>In order to add this a custom section to your MFC profile page you'll need to use both codes</p>
+<h4>Editing/ customization</h4>
+<p>The section is using 6 video placeholders with image thumbnail (preview), title and tip button</p>
+<p>Optional, the profile owner can replace the <mark>#</mark> hashtag sign between double quotes with external link like MFC Share</p>
+
+</section>
+
+<section>
+<h3>The CSS markup</h3>
+
+<textarea spellcheck="false" class="scr">.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#f44295;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.7);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing: border-box;}html{}.clegrid-1 {width: 8.33%;}.clegrid-2 {width: 16.66%;}.clegrid-3 {width: 25%;}.clegrid-4 {width: 33.33%;}.clegrid-5 {width: 41.66%;}.clegrid-5-half {width: 47.66%;}.clegrid-6 {width: 50%;}.clegrid-7 {width: 58.33%;}.clegrid-8 {width: 66.66%;}.clegrid-9 {width: 75%;}.clegrid-10 {width: 83.33%;}.clegrid-11 {width: 91.66%;}.clegrid-12 {width: 100%;}[class*="clegrid-"] {float: left;padding: 15px;border: 0px solid #ccc;}[class*="no"] {float: left;padding: 0;}[class*="padd20"]{display:block;padding:20px;}.cledan202:after {content: "";clear: both;display: inline-table;}
+.imgresponsive img, img.responsive{display:block;width:100%;height:auto;margin:0 auto;}
+
+h1.headerz{display:block;line-height:normal;padding:8px 0 11px;margin:0 auto;color:#f44295;font-weight:normal;font-size:4.333vw;text-align:center;}.boxt{background-color:rgba(0, 0, 0, 0.50);margin:20px auto 22px auto;}
+h1.headerz:before,h1.headerz:after{display:inline-block;width:1%;height:1px;background-color:#222;vertical-align:middle;}
+#videos:hover h1.headerz:before,
+#videos:hover h1.headerz:after,
+#tippers:hover h1.headerz:before,
+#tippers:hover h1.headerz:after,
+.boxt:hover h1.headerz:before,
+.boxt:hover h1.headerz:after,
+.box:hover h1.headerz:before,
+.box:hover h1.headerz:after,
+h1.headerz:hover:before,h1.headerz:hover:after{display:inline-block;width:15%;height:1px;background-color:#f44295;vertical-align:middle;transition: all 0.5s;}h1.headerz:before{content:'';margin-right:12px;}h1.headerz:after{content:'';margin-left:12px;}
+
+.phto {margin:30px auto 33px auto;perspective: 1000px;}.phto .kin {display: block;width: 100%;height: 100%;margin:0 auto;background-color:rgba(0, 0, 0, 0.80);transform-style: preserve-3d;transition: all 0.5s;}.phto:hover .kin {transform: rotateX(80deg);transform-origin: bottom;}.phto .kin:after {content: ' ';position: absolute;left: 0;bottom:0;width: 100%; height: 30px;background-color:rgba(0, 0, 0, 0.45);background-image:url('https://s26.pixxxels.org/5ks6fk8o9/onsale_pink.png');background-size:100% auto;background-repeat:no-repeat;background-position:center;transform: rotateX(90deg);transform-origin: bottom;}.phto .kin div {color: white;text-transform: uppercase;position: absolute;bottom: 100%;left: 0; width: 100%;font: bold 13px/36px Tahoma, Geneva, sans-serif;text-align: center;transform: rotateX(-89.99deg);transform-origin: bottom;z-index: 1;}.phto .kin:before { content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 100%;box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);transition: all 0.5s;opacity: 0.35;transform: rotateX(95deg) translateZ(-80px) scale(0.75);transform-origin: top;}.phto:hover .kin:before {opacity: 1;box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.45);transform: rotateX(0) translateZ(-60px) scale(0.85); background-color:rgba(0, 0, 0, 0.45);}.phto .kin div{background-color:rgba(0, 0, 0, 0.45);top:-100%;opacity:0;}.phto:hover .kin div {background-color:rgba(0, 0, 0, 0.45);top:-100%;opacity:1;}.phto:hover .kin img{box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.0);transition: all 0.5s;opacity: 0.55;transform: rotateX(-4deg) translateZ(1px) scale(0.99);transform-origin:bottom;}.phto:hover .kin img:after{content:"";display:block;width:100%;height:30px;box-shadow:0 30px 1px rgba(0, 0, 0, 0.0);}.phto:hover .kin a:before, .phto:hover .kin a:visited:before{content:'+';padding:6px 9px;margin-right:16px;margin-left:-33px;text-align:center;background-color:#bf2f72;background-image:url('https://s26.pixxxels.org/iyw2k40kp/icns.png');background-size:31px auto;background-repeat:no-repeat;background-position:0 0;color:rgba(0, 0, 0, 0.0);border-radius:7px 0 0 7px;font-size:13px;margin-top:-1px;text-shadow:none;transition: all 0.5s;}.phto:hover .kin a:hover:before{content:'+';padding:6px 9px;margin-right:16px;margin-left:-33px;text-align:center;background-color:#333;background-image:url('https://s26.pixxxels.org/iyw2k40kp/icns.png');background-size:31px auto;background-repeat:no-repeat;background-position:1px -30px;color:rgba(0, 0, 0, 0.0);border-radius:7px 0 0 7px;box-shadow:0 0 8px #000;font-size:14px;}.phto:hover .kin a, .phto:hover .kin a:visited{padding:6px 11px;text-align:center;background-color:#333;color:#fff;border-top:1px solid #333;text-shadow:0 1px 2px #000;}.phto:hover .kin a:hover{padding:6px 11px;text-align:center;background-color:#111;color:#fff;box-shadow:0 0 8px #000;}p.dan{display:block;width:90%;height:40px;overflow:hidden;line-height:normal;text-transform:none;margin:0 auto;text-align:center;}p.kinotitle{display:block;width:100%;height:auto;padding:7px 12px;margin:0 auto;text-align:center;}
+*{text-decoration:none;}
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+* html .clearfix {height:1%;}
+</textarea>
+</section>
+
+<section>
+<h3>The HTML markup</h3>
+<textarea spellcheck="false" class="scr"><div class="cledan202">
+
+<div id="videos" class="clegrid-12">
+<h1 class="headerz">Demo</h1>
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="#">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="#">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="#7">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="#">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="#">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+<div class="clegrid-4 phto">
+	  <div class="kin imgresponsive"><img src="https://blacknrg.files.wordpress.com/2017/02/c1bd05beae6dd39d59fdc115196847a9.png"/>
+	      <div><p class="kinotitle">Add Title Here</p>
+          <p><a href="#">This is a Button</a></p>
+          <p class="dan">Optional information can be added here or simply remove the text</p>
+          </div>
+	  </div>
+</div>
+
+
+</div>
+
+</div></textarea>
+</section>
+
+
+
+<section class="text-center">
+<p>Responsive CSS markup for mobile device is missing from this pen. Feel free to develop your own ideas or improve this project</p>
+<p>Currently used as widget component for a customized MFC profile design</p>
+<p>the idea for this hover effect comes from this pen : https://codepen.io/pirrera/pen/tKFhI</p>
+<p class="grab some freebies">connect the dots https://camgirl.cloud </p>
+</section>
+
+</div>
+
+
+</body>
+</html>

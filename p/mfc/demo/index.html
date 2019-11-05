@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MyFreeCams - Demo - Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.xcr::-webkit-scrollbar {width:11px;}
+.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);}
+.xcr::-webkit-scrollbar-thumb {background:#0CF;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #033;}
+* {box-sizing:border-box;}
+html {scroll-behavior: smooth;}
+.gr-1 {width: 8.33%;}
+.gr-2 {width: 16.66%;}
+.gr-3 {width: 25%;}
+.gr-4 {width: 33.33%;}
+.gr-5 {width: 41.66%;}
+.gr-5-half {width: 47.66%;}
+.gr-6 {width: 50%;}
+.gr-7 {width: 58.33%;}
+.gr-8 {width: 66.66%;}
+.gr-9 {width: 75%;}
+.gr-10 {width: 83.33%;}
+.gr-11 {width: 91.66%;}
+.gr-12 {width: 100%;}
+[class*="gr-"] {
+    float: left;
+    padding: 15px;
+    border: 0px solid #ccc;
+}
+[class*="no"] {
+    float: left;
+    padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.grow:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.tleft {text-align:left;}
+.tright {text-align:right;}
+.tcenter {text-align:center;}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.dotted {border-bottom:1px dashed #FC3;border-left:0;border-right:0;margin-bottom:10px;}
+img.imgresponsive,.imgresponsive img{display:block;width:100%;height:auto;margin:0 auto;}
+
+a, a:visited{color:#09C;text-decoration:none;}
+a:hover{color:#F39;text-decoration:none;}
+
+.redox{min-height:13vh;background: rgb(163,11,193);
+background: -moz-linear-gradient(-45deg,  rgba(163,11,193,1) 0%, rgba(11,161,191,1) 63%, rgba(13,199,224,1) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(163,11,193,1) 0%,rgba(11,161,191,1) 63%,rgba(13,199,224,1) 100%);
+background: linear-gradient(135deg,  rgba(163,11,193,1) 0%,rgba(11,161,191,1) 63%,rgba(13,199,224,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a30bc1', endColorstr='#0dc7e0',GradientType=1 );}
+
+body { background-color: #f1f1f1; color: #333;	font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }
+.bg-white{background-color:#fff;color:#555;-webkit-box-shadow:0 0 5px #999;box-shadow:0 0 5px #999;}
+h1.ttleheader{display:block;width:90%;height:auto;margin:20px auto 0 auto;padding-left:10px;font-weight:100;color:#fff;}
+
+
+textarea.formcode{display:block;width:100%;max-width:100%;height:300px;max-height:300px;background-color:#f7fdff;color:#555;font-size:14px;outline:none;box-shadow:inset 0 1px 3px #999;font-family:"Lucida Console", Monaco, monospace;}
+.frender{display:block;width:100%;max-width:100%;height:300px;max-height:300px;box-shadow:0 1px 3px #999;transition: ease-in-out .6s;}.frender:hover{display:block;width:100%;max-width:100%;height:700px;max-height:700px;box-shadow:0 1px 3px #999;}.d-none{display:none;}
+.butoane a,.butoane a:visited,.butoane a:hover, .brn,.hand{cursor:pointer;}	
+a.brn, a.brn:visited{padding:6px 12px;text-align:center;color:#fff;background-color:#09F;text-decoration:none;}a.brn:hover{background-color:#06C;color:#fff;text-decoration:none;}
+.svg-icon-down {width: 1.7em;height: 1.7em;margin-top:6px;margin-left:6px;margin-bottom:-10px;}
+.svg-icon-down  path,.svg-icon-down  polygon,.svg-icon-down  rect {fill: #4691f6;}
+.svg-icon-down  circle {stroke: #4691f6;stroke-width: 1;}
+a.svg-icon-down:hover{stroke: #555;stroke-width: 1;}
+
+.footer{background-color:#222;color:#888;margin-top:40px;}
+.footer a, .footer a:visited{font-size:15px;color:#666;text-decoration:none;}
+.footer a:hover{color:#F60;text-decoration:none;}
+.credits{font-size:14px;}
+.footer h3{font-weight:300;}
+.footer h3:after{content:"";display:block;width:1%;height:1px;background-color:#222;transition:all .3s;margin-top:7px;}
+.slot:hover h3:after{content:"";display:block;width:21%;height:1px;background-color:#F60;margin-top:7px;}
+
+.butoane{margin-top:-1px;}
+.see{margin-top:15px;}
+.tab #dinfo a.close{position:fixed;top:-910px;right:10px;z-index:100;}
+.tab #dinfo:target a.close{position:fixed;top:10px;right:10px;z-index:100;}
+
+.svg-icon-up {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.svg-icon-up path,
+.svg-icon-up polygon,
+.svg-icon-up rect {
+  fill: #4691f6;
+}
+
+.svg-icon-up circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+.svg-icon-up:hover path,
+.svg-icon-up:hover polygon,
+.svg-icon-up:hover rect {
+  fill: #555;
+}
+.svg-icon-off {
+  width: 2.5em;
+  height: 2.5em;
+  opacity:.8;
+}
+
+.svg-icon-off path,
+.svg-icon-off polygon,
+.svg-icon-off rect {
+  fill: #fff;
+}
+
+.svg-icon-off circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+.svg-icon-off {
+  width: 2.5em;
+  height: 2.5em;
+  opacity:1;
+}
+.tab #dinfo{display:block;width:100%;height:300px;position:fixed;top:-99999999px;left:0;opacity:0;-webkit-transition:all .5s;transition:all .5s;}
+.tab #dinfo:target{display:block;width:100%;height:100%;position:fixed;top:0;left:0;opacity:1;background-color:rgba(0,0,0,.80);z-index:10000;}
+.dinfobox{display:block;width:80%;padding:20px;background-color:#fff;margin:10% auto 20% auto;}
+html{scroll-behavior: smooth;}
+
+.light{background-color:#FBFEFF;}
+.boxed{margin:5px auto 7px auto;border:1px solid #f1f1f1;-webkit-transition:all .2s ;transition:all .2s;}
+.boxed:hover{margin:5px auto 7px auto;border:1px solid #ccc;-webkit-box-shadow:0 5px 13px -10px #999;box-shadow:0 5px 13px -10px #999;background-color:#FBFEFF;}
+.boxed code{padding:3px 6px;text-align:center;color:#C36;font-family:"Lucida Console", Monaco, monospace;}
+.boxed pre{display:block;width:98%;height:auto;margin:6px auto 5px 1px;padding:3px 6px;text-align:left;color:#C36;font-family:"Lucida Console", Monaco, monospace;background-color:#EDEFF1;border-left:4px solid #666; white-space:pre-wrap;}
+
+
+ul.unlisted  {list-style-position:inside; }
+.nav ul.unlisted { margin: 0; }
+.nav ul.unlisted li { display: inline;line-height: 28px;}
+.nav ul.unlisted li { display:inline; list-style:none;}
+
+span.goup{display:block;width:50px;height:40px;position:relative;padding:7px 8px 7px;text-align:center;margin:-20px auto 12px auto;background-color:#222;-webkit-border-radius:50px 50px 0 0;}
+/*** Icons ***/
+.unlisted .svg-icon-twt {width: 2.2em;height: 2.2em;margin-right:5px;}
+.unlisted .svg-icon-twt path,
+.unlisted .svg-icon-twt polygon,
+.unlisted .svg-icon-twt rect {fill: #555;}
+.unlisted .svg-icon-twt circle {stroke: #555;stroke-width: 1;}
+
+
+.unlisted .svg-icon-twt:hover path,
+.unlisted .svg-icon-twt:hover polygon,
+.unlisted .svg-icon-twt:hover rect {fill: #FF6600;}
+.unlisted .svg-icon-twt:hover circle {stroke: #FF6600;stroke-width: 1;}
+textarea.demotxt{display:block;width:100%;max-width:100%;height:300px;max-height:400px;font-size:14px;outline:none;box-shadow:inset 0 1px 3px #999;font-family:"Lucida Console", Monaco, monospace;}
+
+.svg-icon-ui {width: 1.3em;height: 1.3em;margin-top:-14px;margin-left:6px;margin-bottom:-10px;margin-right:8px;}
+.svg-icon-ui path,.svg-icon-ui polygon,.svg-icon-ui rect {fill: #4691f6;}
+.svg-icon-ui circle {stroke: #4691f6;stroke-width: 1;}
+
+a:hover .svg-icon-ui path,
+a:hover .svg-icon-ui polygon,
+a:hover .svg-icon-ui rect {fill: #FF6600;}
+a:hover .svg-icon-ui circle {stroke: #FF6600;stroke-width: 1;}
+
+[class*="svg-icon-ui"]{ white-space: nowrap;word-wrap: normal;direction: ltr;-webkit-font-feature-settings: 'liga';-webkit-font-smoothing: antialiased; vertical-align:middle;}
+.send{display:block;width:100%;height:40px;margin:10px auto 12px 0px;background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='100%' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Created with Dan N - https://dandesign.camgirl.cloud/ --%3E%3Cg%3E%3Ctitle%3Ebackground%3C/title%3E%3Crect x='-1' y='-1' width='100%' height='26' id='canvas_background' fill='none'/%3E%3C/g%3E%3Cg%3E%3Ctitle%3ELayer 1%3C/title%3E%3Ctext fill='%23000000' stroke-width='0' x='21.22896' y='13.4655' id='svg_1' font-size='26' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(0.5481149178565747,0,0,0.4969260853789845,1.204665143913714,6.9935734772781535) ' stroke='%23000' opacity='0.6'%3EIf you have suggestions, questions or feedback, feel free to contact us. Thank You!%3C/text%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position: center center;}
+.send:hover{display:block;width:100%;height:40px;margin:10px auto 12px 0px;background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='100%' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Created with Dan N - https://dandesign.camgirl.cloud/ --%3E%3Cg%3E%3Ctitle%3Ebackground%3C/title%3E%3Crect x='-1' y='-1' width='100%' height='26' id='canvas_background' fill='none'/%3E%3C/g%3E%3Cg%3E%3Ctitle%3ELayer 1%3C/title%3E%3Ctext fill='%23000000' stroke-width='0' x='21.22896' y='13.4655' id='svg_1' font-size='26' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(0.5481149178565747,0,0,0.4969260853789845,1.204665143913714,6.9935734772781535) ' stroke='%230000' opacity='1'%3EIf you have suggestions, questions or feedback, feel free to contact us. Thank You!%3C/text%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position: center center;}
+/**
+.send{display:block;width:100%;height:40px;margin:10px auto 12px 0px;background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='500' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Created with Dan N - https://dandesign.camgirl.cloud/ --%3E%3Cg%3E%3Ctitle%3Ebackground%3C/title%3E%3Crect x='-1' y='-1' width='500' height='26' id='canvas_background' fill='none'/%3E%3C/g%3E%3Cg%3E%3Ctitle%3ELayer 1%3C/title%3E%3Ctext fill='%23000000' stroke-width='0' x='21.22896' y='13.4655' id='svg_1' font-size='26' font-family='Helvetica, Arial, sans-serif' text-anchor='start' xml:space='preserve' transform='matrix(0.5481149178565747,0,0,0.4969260853789845,1.204665143913714,6.9935734772781535) ' stroke='%23000' opacity='1'%3EIf you have suggestions, questions or feedback, feel free to contact us. Thank You!%3C/text%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position: center center;}
+**/
+@media only screen and (max-width: 928px) and (min-width: 300px) {
+	body { background-color: #f1f1f1; color: #333;	font: 14px/19px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .d-none{display:none;}
+  /* Typography */
+a { color: #105CB6; text-decoration: none; }
+a:hover, a:focus { color: #F39; text-decoration: none; }
+a:active { color: #105CB6; }
+
+h1 { font-size: 24px; line-height: 20px; margin: 10px 0; }
+h2 { font-size: 20px; line-height: 20px; margin: 10px 0; }
+h3 { font-size: 16px; line-height: 20px; margin: 10px 0; }
+h4 { font-size: 14px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 12px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 10px; line-height: 20px; margin: 10px 0; }
+.boxed code{padding:3px 6px;text-align:center;color:#C36;font-family:"Lucida Console", Monaco, monospace;}
+pre{display:block;width:98%;height:auto;margin:6px auto 5px 1px;padding:3px 6px;text-align:left;color:#C36;font-family:"Lucida Console", Monaco, monospace;background-color:#EDEFF1;border-left:4px solid #666;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;}
+}
+@media only screen and (max-width: 628px) and (min-width: 200px) {
+	[class*="gr-"] {width:100%;}
+	body { background-color: #f1f1f1; color: #333;	font: 13px/17px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }
+	}
+h1.ttleheader{padding:3rem 0 3.7rem;}
+.border2 p{font-size:18px/22px;color:#fff;font-weight:100;}
+.border2 .btn a:link,.border2 .btn a:visited{padding:5px 12px;text-align:center;color:#fff;background-color:#939;border-radius:5px;}.border2 .btn a:hover{color:#fff;background-color:#936;}.mag{line-height:30px;margin:0 auto -40px auto;}.lead{font-size:19px;font-family:-apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-weight:100;}h2{font-size:22px;font-family:-apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-weight:100;}.carbon{background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;}
+</style>
+</head>
+
+<body>
+
+
+<div id="main" class="gr-12 no bg-white">
+
+<div class="gr-12 no redox">
+  <h1 class="ttleheader">MyFreeCams Demo - Code Snippets - Index</h1>
+</div>
+
+
+<div class="gr-12 tcenter">
+<p>MyFreeCams resources - Quick navigation</p>
+</div>
+
+
+
+<div class="gr-12 grow light">
+
+<div class="gr-4 box">
+<p><strong>Code Snippets - Backbone Layouts</strong></p>
+<ul>
+<li><a href="layout_1.html" target="_blank">Layout design 1</a></li>
+<li><a href="layout_2.html" target="_blank">Layout design 2</a></li>
+<li><a href="layout_3.html" target="_blank">Layout design 3</a></li>
+<li><a href="layout_4.html" target="_blank">Layout design 4</a></li>
+<li><a href="layout_5.html" target="_blank">Layout design 5</a></li>
+<li><a href="layout_6.html" target="_blank">Layout design 6</a></li>
+</ul>
+
+</div>
+
+<div class="gr-4 box">
+<p><strong>Ready Made</strong></p>
+<ul>
+<li><a href="mfc-ready-demo1.html" target="_blank">Mellany Custom MFC design</a></li>
+<li><a href="mfc-ready-demo2.html" target="_blank">Demo widget - videos</a></li>
+<li><a href="mfc-ready-demo3.html" target="_blank">Show/Hide Modal-like box</a></li>
+<li><a href="mfc-ready-demo4.html" target="_blank">Tip Menu widget</a></li>
+</ul>
+
+</div>
+
+<div class="gr-4 box">
+<p><strong>Tutorials</strong></p>
+<ul>
+<li><a href="install-mfc-design.html" target="_blank">Install a MFC custom Profile</a></li>
+<li><a href="mfc-tips.html" target="_blank">Add tip links or buttons</a></li>
+</ul>
+<p><strong>Tools</strong></p>
+<ul>
+<li><a href="mfc-banner-generator.html" target="_blank">MFC Banner Generator</a></li>
+<li><a href="../source.html" target="_blank">Source Editor tool</a></li>
+</ul>
+</div>
+
+</div>
+
+
+<!-- codes -->
+<div class="gr-12 tcenter">
+  <a class="send" href="https://camgirl.cloud/support/forum/developer-corner/"></a>
+</div>
+<!--/ codes -->
+
+
+<!-- cgc bnr --->
+<div class="gr-12 tcenter imgresponsive grow redox mag">
+<div class="gr-12 tleft border2">
+  <p>Why CAMGIRL.CLOUD?<br/>
+Because it is one service you can rely on. Because it's unique and flexible.<br/>
+Because over +17k registered members, studio owners, web cam performers, affiliates and web designers can't be wrong.</p>
+  </div>
+  
+ <div class="gr-8 tleft border2">
+  <p>Design your own MyFreeCams profile page like a professional web designer. <strong>Camgirl.Cloud</strong> - providing the best solutions for camgirls and studio owners.</p>
+ </div>
+ <div class="gr-4 tright border2">
+  <p class="btn"><a href="https://camgirl.cloud/editor/?gallery=myfreecams" target="_blank">EDITOR TOOL</a></p>
+ </div>
+ 
+</div>
+<!--/ cgc bnr --->
+
+
+<!-- footer -->
+<div class="gr-12 no footer grow">
+<div class="gr-12 tcenter no unlisted">
+<span class="goup"><a href="#"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+						</svg></a></span>
+                        </div>
+ <div class="gr-4 slot">
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="../code-myfreecams.html">MyFreeCams Category</a></li>
+      <li><a href="../source.html">Seource Editor tool</a></li>
+      <li><a href="../sitemap.html">Sitemap</a></li>
+    </ul>
+ </div>
+ 
+ <div class="gr-4 slot">
+  <h3>Camgirl.Cloud</h3>
+  <ul>
+     <li><a href="https://camgirl.cloud/editor/?gallery=myfreecams" target="_blank">MyFreeCams Templates</a></li>
+     <li><a href="https://camgirl.cloud/support/" target="_blank">Support Forum</a></li>
+     <li><a href="https://camgirl.cloud/contact/" target="_blank">Contact Us</a></li>
+  </ul>
+ </div>
+ 
+ <div class="gr-4 nav slot">
+  <h3>Social</h3>
+  <ul class="unlisted">
+     <li><a href="https://twitter.com/CamgirlCloud" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
+						</svg></a></li>
+     <li><a href="https://www.facebook.com/groups/camgirl.cloud/" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z"></path>
+						</svg></a></li>
+     <li><a href="https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M9.62,8.236h0.179c0.396,0,0.716-0.318,0.716-0.711V6.368c0-0.393-0.32-0.711-0.716-0.711H9.62c-0.396,0-0.716,0.318-0.716,0.711v1.157C8.904,7.917,9.224,8.236,9.62,8.236 M9.44,6.324c0-0.147,0.121-0.267,0.269-0.267c0.148,0,0.269,0.12,0.269,0.267v1.245c0,0.147-0.12,0.267-0.269,0.267c-0.148,0-0.269-0.12-0.269-0.267V6.324z M11.41,8.236c0.357,0,0.671-0.312,0.671-0.312v0.267h0.537V5.657h-0.537v1.957c0,0-0.18,0.222-0.358,0.222c-0.18,0-0.18-0.134-0.18-0.134V5.657h-0.536V7.88C11.007,7.88,11.052,8.236,11.41,8.236 M7.517,8.191h0.626V6.812l0.716-1.957H8.277L7.83,6.146l-0.447-1.29H6.756l0.76,1.957V8.191z M11.052,11.139c-0.116,0-0.207,0.068-0.269,0.135v1.794c0.057,0.061,0.141,0.119,0.269,0.119c0.269,0,0.269-0.299,0.269-0.299v-1.451C11.32,11.437,11.275,11.139,11.052,11.139 M10,0.469c-5.264,0-9.531,4.267-9.531,9.531c0,5.264,4.267,9.531,9.531,9.531c5.264,0,9.531-4.268,9.531-9.531C19.531,4.736,15.264,0.469,10,0.469 M10,18.665c-4.786,0-8.665-3.879-8.665-8.665c0-4.785,3.879-8.665,8.665-8.665c4.786,0,8.665,3.88,8.665,8.665C18.665,14.786,14.786,18.665,10,18.665 M13.289,8.792c0,0-1.642-0.085-3.289-0.085c-1.642,0-3.289,0.085-3.289,0.085c-0.742,0-1.343,0.573-1.343,1.28c0,0-0.134,0.831-0.134,1.664c0,0.831,0.134,1.664,0.134,1.664c0,0.708,0.601,1.28,1.343,1.28c0,0,1.616,0.086,3.289,0.086c1.615,0,3.289-0.086,3.289-0.086c0.741,0,1.343-0.572,1.343-1.28c0,0,0.134-0.84,0.134-1.664c0-0.84-0.134-1.664-0.134-1.664C14.632,9.365,14.03,8.792,13.289,8.792 M8.054,10.242H7.382v3.372H6.756v-3.372H6.084V9.688h1.969V10.242z M9.754,13.614H9.217v-0.257c0,0-0.313,0.299-0.671,0.299c-0.357,0-0.402-0.342-0.402-0.342v-2.646H8.68v2.475c0,0,0,0.129,0.179,0.129c0.179,0,0.358-0.214,0.358-0.214v-2.39h0.537V13.614z M11.856,12.974c0,0,0,0.683-0.491,0.683c-0.302,0-0.485-0.16-0.583-0.283v0.241h-0.581V9.688h0.581v1.273c0.089-0.094,0.308-0.292,0.583-0.292c0.357,0,0.491,0.298,0.491,0.683V12.974z M13.96,11.395v0.854h-1.118v0.64c0,0,0,0.299,0.268,0.299c0.27,0,0.27-0.299,0.27-0.299v-0.299h0.581v0.47c0,0-0.09,0.598-0.805,0.598c-0.717,0-0.851-0.598-0.851-0.598v-1.664c0,0,0-0.726,0.851-0.726C14.005,10.669,13.96,11.395,13.96,11.395 M13.109,11.139c-0.268,0-0.268,0.298-0.268,0.298v0.384h0.537v-0.384C13.379,11.437,13.379,11.139,13.109,11.139"></path>
+						</svg></a></li> 
+        <li><a href="https://www.instagram.com/CGC_AWARDS/" target="_blank"><svg class="svg-icon-twt" viewBox="0 0 20 20">
+							<path fill="none" d="M9.969,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.195,0,9.406-4.211,9.406-9.406C19.375,4.805,15.164,0.594,9.969,0.594 M9.969,18.552c-4.723,0-8.551-3.829-8.551-8.552s3.829-8.551,8.551-8.551S18.521,5.277,18.521,10S14.691,18.552,9.969,18.552 M12.534,5.724H7.403c-0.944,0-1.71,0.766-1.71,1.71v5.131c0,0.944,0.766,1.71,1.71,1.71h5.131c0.944,0,1.71-0.766,1.71-1.71V7.435C14.244,6.49,13.479,5.724,12.534,5.724M11.679,7.007h1.283V8.29h-1.283V7.007z M9.969,8.29c0.944,0,1.71,0.766,1.71,1.71s-0.766,1.71-1.71,1.71s-1.71-0.766-1.71-1.71S9.024,8.29,9.969,8.29 M13.39,12.565c0,0.472-0.384,0.854-0.855,0.854H7.403c-0.472,0-0.855-0.383-0.855-0.854V9.573h0.898C7.423,9.712,7.403,9.854,7.403,10c0,1.417,1.149,2.565,2.565,2.565c1.416,0,2.565-1.148,2.565-2.565c0-0.146-0.02-0.288-0.043-0.427h0.898V12.565z"></path>
+						</svg></a></li>                 
+                                          
+  </ul>
+ </div>
+ 
+ <div class="gr-12 credits tcenter">a project by <a href="https://camgirl.cloud/">camgirl.cloud</a></div>
+
+</div>
+<!-- /footer -->
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

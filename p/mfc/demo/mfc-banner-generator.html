@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="camgirl, learn to code, learn html, learn css, edit bio, edit profile"/>
+<meta name="description" content="Learn to code your own Chaturbate MyFreeCams Camsoda Niteflirt bio"/>
+<meta name="subject" content="Learn to code your projects">
+<meta name="copyright"content="Camgirl Cloud">
+<meta name="language" content="EN">
+<meta name="designer" content="Camgirl Cloud">
+<meta name="copyright" content="Camgirl Cloud">
+<meta name="owner" content="Camgirl Cloud">
+<meta name="rating" content="Education">
+<meta http-equiv="Expires" content="0">
+<meta name="Classification" content="Education, teaching, vocational training, youth">
+<meta name="geo.region" content="US">
+    <link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="resources/script.js"></script>
+
+    <title>MyFreeCams Banner Generator</title>
+    
+    
+    <style>
+	html{scroll-behavior: smooth;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";margin:0 auto;width:100%;}
+.redox{background: rgb(163,11,193);
+background: -moz-linear-gradient(-45deg,  rgba(163,11,193,1) 0%, rgba(11,161,191,1) 63%, rgba(13,199,224,1) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(163,11,193,1) 0%,rgba(11,161,191,1) 63%,rgba(13,199,224,1) 100%);
+background: linear-gradient(135deg,  rgba(163,11,193,1) 0%,rgba(11,161,191,1) 63%,rgba(13,199,224,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a30bc1', endColorstr='#0dc7e0',GradientType=1 );}
+#generator-form{margin: 10px;text-align:left;}
+#form-corpus{margin:0 auto;}
+#generator-result{margin:0 auto;background-color:transparent;padding:1rem;}
+#preview{background-color:#F7F8F9;padding:1.3rem;box-shadow:0 0 5px #999;}
+.control-label{text-align:left!important;font-weight:400;}
+.svg-icon-question {width: 1.7em;height: 1.7em;margin-top:-7px;}
+
+.svg-icon-question path,
+.svg-icon-question polygon,
+.svg-icon-question rect {fill: #4691f6;}
+.svg-icon-question circle {stroke: #4691f6;stroke-width: 1;}
+.svg-icon-question:hover path,
+.svg-icon-question:hover polygon,
+.svg-icon-question:hover rect {fill: #333333;}
+.svg-icon-question:hover circle {stroke: #333333;stroke-width: 1;}
+
+.see{position:fixed;top:10px;right:12px;z-index:9999;background-color:#06F;border-radius:4px;transition:all .3s;}
+.see:hover{background-color:#939;}
+.svg-icon-burger {width: 2em;height: 2em;}
+
+.svg-icon-burger path,
+.svg-icon-burger polygon,
+.svg-icon-burger rect {fill: #f1f1f1;}
+.svg-icon-burger circle {stroke: #f1f1f1;stroke-width: 1;}
+.svg-icon-burger:hover path,
+.svg-icon-burger:hover polygon,
+.svg-icon-burger:hover rect {fill: #ffffff;}
+.svg-icon-burger:hover circle {stroke: #ffffff;stroke-width: 1;}
+
+.txt-left{text-align:left;}
+.non{background-color:transparent;}
+.infor{font-size:13px;font-weight:100;}
+.leonard{background-color:#09C;color:#fff;padding:2rem;}
+.logo {display:block;width:100px;height:50px;-webkit-transition:all .3s;transition:all .3s;margin:0 auto;-webkit-filter:grayscale(100%) invert(0%);opacity:.7;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMDBweCIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTAwIDUwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgNTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPiAgPGltYWdlIGlkPSJpbWFnZTAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIHg9IjAiIHk9IjAiCiAgICBocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUdRQUFBQXlDQVlBQUFDcU5YNitBQUFBQkdkQlRVRUFBTEdQQy94aEJRQUFBQ0JqU0ZKTgpBQUI2SmdBQWdJUUFBUG9BQUFDQTZBQUFkVEFBQU9wZ0FBQTZtQUFBRjNDY3VsRThBQUFBQm1KTFIwUUEvd0QvQVArZ3ZhZVRBQUFBCkNYQklXWE1BQUptRUFBQ1poQUc0T2EyMUFBQVNrMGxFUVZSNDJ1MmNlNVRjVlpISFA3Zm5WNVAzSk9rT1NTU0lFQ0RDaHNBR0FZRVYKQkFJS3V5cm9xaXpJWm5GQmVTaWc5Rkh4eUVaUVpIMzlZQ0dJd2tGRUZFT1dnQWl1S004REFnR0NBUUtSa1BBUThpQ3Y3cnhuaHRTdgorKzRmZFgvcDN6UTlqOHdqNERuVU9YMTYrdDdmN3o2cWJ0V3QrdDY2NDd6M3ZFdnZISXJlN2dIMGhjb3VCbWdCVGdXK0JOd094TURHCnZDOVczKzd4OVlaY2J6UkVSQ0pWVFJxVU95Q25xcFdCSG5qWnhhT0JBNEZqZ1JMd1IrQXc0UDNBWThERHdNcThMdzdvT0VTa0NhaXEKcW05UTE1QlBYVkZ2QmZKRjRHNVZYVnBYUGhUWUJWZ0hyRTBIS1NLRGdaMkFGWDBWVnRuRmVlQWZnRThDdzRCWmVWOThLRk8vRDNBVwowQXo4SC9CVTNoZFg5Z1BUZHdiV3FHcDdLSFBBR0dBMHNFeFZXK3ZlZVM5d3ZLcGV0eU1FOGxOZ1grREh3SDJxdWlWVE54SDRSMnpWCnZxcXFyNHZJU09BYndCdkFBOEI2SUFjMFpUNnArZHlncXNzYkNHSUk4QUhnWTBBZXVEZnZpN2QySWJoamc5QUE3Z0RtNVgxeFhZTzUKVEFCR2hwOEpVTWw4cXNBbzRHamdQY0FQVkhXRGlPd0s3QllFOG95cXZwSnBieGh3REZBRW5sZlZjd1pjSUtIamk0QUxnTG5BdGNBTApxcm9rMURVRnhvMEZYZ1plQThZRG53ZjJDeFBOQVlPQXdlRjdLT0NBeGNEUGdKdFZ0UnFZT3huNE9EQUplQkRUaW0ybW9PemlRY0JrCjRJMjhMNzVSSjVnVGdYOEppK0d1YzVneDd4YS9CUkhKQVovRHRHa1M0SUZXNEUyZ1BYeW40MXdBM0FDc0F0NEg3QUdzQm42ZmFyeUkKN0JIR2NDWndLSENGcW41M2UvbmFhNEdFUVh3RW1JSFo3amVBaDhMZ1g4QzBZQ1J3TUVIZEFRV09CdzdvUWZObnFlcTFWVGR6OG5xMgpuZ2M4QS95MDBaNVFkdkdGd05lQVB3UFQ4NzY0c2NFekp3Rkh0OUI4WGVUUC9ZdUluQmtFM3gzTkIvNkFMWnF4d0RMZ1NXQURwajM3CllOYmljTXhjendXK282cjM5SWFuZmZLeVFxZjNpTWpIZ1E4RHh3RW5oK3FOUVVpck1IWGZLNVMzaHMvUWJwcS96RFc3UDNwdW1neHIKSHNqN0MyYVhYYnhQMmNXN0FRL21mYkU5OCt3d1RQaWo2dWRVZHZGVVlHemVGMmV2Yy9ITEVZV2RYYk5iR3hGZDFvTXB0Z0o3VTF0QQpMd0VyZ0UrSE9iV0U4b1hBcmNCRHFucFhYM2phRjVQVmhObnlxcXFXUXRsT3dIdkRCQTRDcG1IcTNSbDV6RXcxcE1RbDA3M2VzNnlkCkpXdTIwT29jN2w1c3BVN1ArMktIaVpkZFhBWXV6L3ZpcFpteU1jQnM0QWpndkR3Ny94cjIzTlBKd1ZNaUgvMnl0K1BDelBEOXdEeE0KZzVhcTZwckFnd0ptNXNxOWNXRDZHb2NNQVFvaWNoQXdITmlLMmQxMlRMV2Z4VmJSU014Y3JRZVdZaDdRUHRqKzBSVWR1STdTMmxFTQpIcmFGMXZXaC9YR1lDY3dLNDF4Z0pYQmkyY1Z6OHI2NEtKVXBNRFhNY3d1TUhMckt2VG9NV3l6ZFVSdG1lcmRpaTJ3VUlKaXBlamJNCnJ6Mk1aUmNSYVFZMll4YWgxRnVHOWtVZ0ZVeDkxNGJ2WVlINW84SWtTcGl0dlFiYklNdUJRUjhFcG1PZWxldW1qdzg4azV1LytLanEKL3BzVVhkeE04MUhBbDRHdmxGMDhQdStMbHdTVGRCYnduNkhkbndEVHlpNytJSEFKY0Rkd1BWUWZnK2F4VDduSDlzQjNLeEFYeGxjRwpiZ0tlQ0x6S1l4b2FZVnBRQ1hOZGo1bm9MY0NtVU5Zcjk3N1hBbEZWQW9NVHpOWjJTaUl5Qm5OQnAyRXJkbGRNUzdvbXo3N3pXREwxCktBNVlNTjUvMHdNdmwxMDhFL2dVTUtQczRnOWhnZUFmOHI3NGVObkZtNEVueWk1K0ZGdlY3d1dPeS92aWc4Ym1QK2ZtOGRKVXpCdnEKanBxQkQ0V3hQbzJacU4rcTZ0cmU4cXduMU8vUWlZaWtLMmtQelB1YWhybTZlY3pFZ2FsNjZsSjJSU05lWk0yUkc2bmMxRklyV3dZOAppamtQeDRTeTQ4c3VQZ2c0SWZSeFdDaC9DZGdXSTZ4a1kyNHhxNC9Fekd0M2xFSXZrOExuRThDM1JXUUJKcHpIc0wya3ZMM1JlRmZVCks0R0lpQURuQUZQQ29DcVkxN1FUdHFJbWg3K2JxV2xDVzJCa0daZ1krdDRGTTNXcFoxSEJ6TnRnaDJzQ2NwdG8yNjFNNGxLQjVIMXgKYTluRjZ3TERXZ056ZHdXdUFuYkh6RTBTMml4bjJ1WlZWdVEyMGI0SGdNUGg4VW5vYnhCbW9nanZiOEgydWdyd0toYU5Id0JNQ0o5cAptRmxhQXl3VWtkY3cwOTBhMnBrSVBBOWNvOEdVREtoQXdvU1hBZitLclVxSHJmWWN0WDFoSXhZOExjRlcwMkw4TmhmeVNtd3ZPUlZvCnhiRW9NRFVDL29wQkl5T0JTaFZjbGR3MnBwWmRIQVVodmhENjJ6VXdmU1MyNlc0T0RIMERjeVMyYVlQaVhkVVdTQ1c4dXpIMHQyK1kKMCt2QTNuaWFnRWN3TCtwdzRBRWNsMkdhY2hqbXdvOEZDcGdINThNQ3FZYS9GMkhZMm5aclRxOEVFakNxMjBUa05zenJHWXB0NklQRApaTGVFeVNvVnR1SVlqK09FME4rM2dFTXdFd0J3Q3haTVhoS1krR1NZOERwZzVRZ0dEUmxGSmJ2NUp4Z1VzZ0xUdXFiQWlQU2JNSWJtCnNDQzI0VzBUR09xSDAveHlFTnhPUVdCUFloREllN0FOZkgvZ2xMRFE3Z011QWs3Rk13WFA3L0RjU0JQTm9ZMldzRGlhTURPOEVkT1MKVmR1cEdIMFRTRVl3WUc3ZVd5akVLYnVUWTE5TWEyN1ZSRitSU0Q2S1FTMGpnRjhCTjJMN3pVaGdEbWIzcXg2L0NuaGtJbU5HRDZlNgpOVzAzNzR1VVhTellocjJCMmlwTUJaTEdFS09vdWVFQWpLT2xiU0k3UFFwRUhuOHd0cSs5akpuUzAwTjdONGEyVGczalBFa1QvWjVFCk1oSEgvamoyeHN6UnE0MHd0NzdTZ0p5SDJCYkRhS0JkRTcxalcza2t4MktCMmtqZ0Y4QnNIRThESndiRzNSdnFLc0J6T09aL3hPL1QKNG1qYnZleml1Um5ZWkFHcEJ0Wk1wSy83TzhMYzBiYjBwVUdzM09ONEpqL3pmZmRISDh6UzBhR3ZlekdjYlFvd0I4Y1FQSlZRTmxzaQorYXdtZWcvQlFSQ1JYWURSSXJLMnQ1clFHZlVKeTlvZWlxTG9HSWU3R2JPOXM0SHZBaHVxdnJvcGw4czlHUmgzRFBBRjRFTGc2NGxMCkhpN3B6S1ltOU93SzFVWEFQWGxmZkhGNyt5NjdlR2ZnbUNaeUIxZmRzQnZ5MFpsdGtZOCtoS0hWUHdDdXc4elRFQndIVTJVRXBtRVgKQVNjQnF6MytjMG1TM0RmUWZPck83ZXdYaXFMb0U4QXNqeC9yOGJjbUpLZDcvSWFFWkRrdzBYcy9DVU4zMTJLZTBpdkFiWU1xZ3hibgovWmVmVjZvL3d5TGlyNVZkZkViWnhZVWVDa0xLTHY0VUp1QVBLTlZiUmxlL09COWxFZkJieklONlgraDNGakNKS2hNVGt1VmhmR2Q0Ci9LMGVQeGE0SmN6ajcxc2dVUlNkaHUwTlk3Q29mWG9UVFZWZ3MwKzhkODRkQWF5Z3lvMFNTUTdQTG5qdVZOVzE3WlgyQ3NBWVgzd08KY3dabVlXYmw0b0RlZGlXTWoyQmFPQTJMR3k0YTQ0dVBBSGp2dmFxdURadjBMaEpKamlvMzRGa0JmTmduM2dPYm1taXFZTkgvTlpoSApOU2ZNWjhCb3dFeVdSRElLdU5qano4ZGdsSXVBYTVNazhWRVVEVStTWkhNUTJGeGdicElrRjBna2s3RjQ0bEpOOU1GT0dEMEVPQXF6Ci84M0FuTHd2UHB5cDN4OExHZ2RqVVBoOWVWOHNkVExHb3pGQm42ZUpMcFJJTGdjTzAwUVBDV01ibmlUSjVpaUtISGJPY1drUXpKVU8KZDdFbXV2N3ZRaUFTU1JPMm1qL3A4YjhBcms2U1pFR1lwRXVTeEllL0Q4VGMzc09USkhsRElqa0M4L092MUVUYnV1b2pJTG1IQitHVQpzVDNnRUN4V2VBeUQ2Ri9yWnB4RGdQT0J4elRSaHlXUzhkaVp5c21hNkZNTnhyc2Zsa3h4dXNQZER2eWJKdHF2eVJRREpaQkJtTnU0CndPT2ZUWkprYTZQbm9paTZDbGljSk1uVjRiM2hRRTRUM2RqVHZzTDV5SkdZTUo3SE5HSlJUOStYU0ZxQXFpYTZPZnorTWpCSkV6MnYKa3pFTE1OWGg5Z04rclltMjk3U3ZudEJBQ2NRQmFLS2ROaDVGVVFSOEZMZy9TWkkrVFNwRTcrT0FVdDNCVlcvR1BoaVk1dkYvU3BJawo2ZUs1YnVmWUc5cGhibTg5bVR6SUpVbnlqc3Vma2toeUhsL3RRaDREUnYzaVpZbklVQkdaS1NKTFJhUTE4MWtwSXY4YlVtSVFrWnlJCjVFVmtnbk51dkhQdUtSSFpLQ0tIWnRwcUVwRmhJdkoxRVZFUmlUTjlER3JROXkwaTBpWWlYd2lwT1lqSWFTS3lTRVEyaGJvMkVWa3YKSWsrSnlIRWlNa2hFRUpITFJPUk9FV2tSa2ZlSnlBSVJXWU5qdVhOdXBZaXNGcEZsSW5KM1NHSkkrMXdvSXNlK1l3V0NaUXVlQ3Z3WApac3VuWXVEaCtSajAvanNSR2FLcVZWVXRCOGpoU0N3cWZ4dzRPMjFJVlNzaHJXZ1VGaXllSWlMalZMVlZWZCtzRThaazRKOHg3R3lvCnF2cHd2bThvZ0ozeEg0bzVDcC9DOXBpN2dmZUhDSHMwTUZwVk4yS283empnKzlqWnpXY3dCT0h6R0VCNWMwQWd3QkRmN2s0N2UwVjkKaGs1RUpCOEcvVEZWclk5a254T1JCekc4YXlybS9hVDB1Y0NjRzREN1JhUWxNQ2FsUWNCZG1OZDBPdEFvS2VFcldKN1hzTXhjenNlQwp6RzgzZVA0QkVUa1FXd0JuVXp0Z0E0TmR0Z0tQcStyamRYTmNncUhDRTREbEdHUXpJTGErUHpSa0N1WjJ6bXRVcWFxck1XRXN6RXl3CmdHbkliMVIxUG9hVTFrZkJFUWIyWFFHY2xWbWRhUnVqc055dm1YVEVzU1poTG5CbmRCeHdlU2QxanNiSHlxblFoQUdtL2hCSWdZNm8KNjF0SVZaOVIxUTJab2xPd3c1MG53Ky9mQWFjMWVIVUVGcWUwWUhBNGRXMnNWdFg3UTMzcUhEUmpKcXl6c1N4TEUvcm95SHdmUGhORgpaSGNSU2IvM3duSytscENCOGdlSytnUHRqYWlsWGZhVVRnYnV5aHg5L2dJeld6dXI2b3JNYzROVXRSck9YYzdGQkpmU09jRFZHY1ptClRVZ0hjeEl5UW5MVU5Fa2JwT2drb2U0YWFpZC9WY3gwamdEK1kwY2trZmVIaHFTVDdDNkRKR1hPWHRpSjRJL1RNbFY5QWtzaFBhWHUKOGJUTnk0RkRSR1JTYU9OdzdJQnBWdDF6bmRGdDJJYitUUGg4UDVSbkYxRjJEL29uREFVNEFzdTgvQ0h3WFJFWjBRLzg2cEw2UTBQYQpxYVhGOUlRK2c1bVZFMFVrRldhYThQQnBNb0pLU1ZVWGlzaDg0RHdzRGVoYzRNNDZNNWoyWCtXdHR2NUd6TFJ1eGNEQy9ScU1LOVd5CnhSbVRCb0NJL0EvbUJJekQwbndHalBwRElLOWpTRzZuRzU2SVhBdGNxYXAveFRidk5ZR3g2VHRwZnRPZUlySzNxamFDUG1ZQ3NVVHkKRXh5SFlUbkNBSGp2Y2M2bFdySU9PNDdkUnFwNlcyWXNoMkh1THJ4VnN4eG1vdXBwS0xid0JqeUs3cnZKcXZJQ25uWThGemFxbGtoTwp4UE5GUEswU3lTUThVNmx5bEtxK1gxVW5oczllSk95TDV6azhweHVYOFIybW4zQTduaEp3TzU1blZmVzVHaGRkalZXZWUvQ2NFUURPCitySHNoT2RrUEErRlo3UHZkZnlkSlk4TG4renY5UU1oa0Q1cmlGWjBxMFJTQkdaSkpDZGdaK0liUTlzVHNNRHNTazMwYnhMSmJHQysKVm1yM0tiYTE0OVZMSkRjQmwwZ2tGMklyZFhpbXZpS1IzQXo4Q0xzR2thVVdqMDhEdFI5Z2dkMVNpZVJwVFBNOHRzb1B4ZmFTbjRkbgowMnhMcUozRE45TDBIS1pWNlFKdUJxNlJTRjZtbzVaRndBeE5kUDdiSmhBQVRmUVdpV1FSNXBxbVdZa1Z6SzI5VkJPOU80QnhMMkxICnBaM1JMR0RQSUlnL1lCdDNsbjZESmNMVm41VmM3M0R6dzFoV1NpU0hZcW1sZTFGTFdTMWpaekkvejBEN2QyTlppV0RwUTFkZ1NRLzEKVk1ZV1FqbjgvaEdXbUZHdmhUbDZrZnFUcGJjTlhIeVhHbE9mTmFUazRtYnNldGVTZ2k5MmtHNnJ1MnA0RzFyQXNqL0dGWHh4Y2QyNwpnekdOZWczTFNCL1NSTTVYcWVZY0xobk4wTG40czlvYTlMa3Zkc2J1QVhLNHBoeHU0VWovMWFXbGNCL0VRVFZIenVkdzVSYi9sZm1aCmQ5UDBvYUU1M0ZRSFdzRzNBNjZKM0tBcTFjakRnb0l2cmlpNWVBS3d2NE1vUjA0OS90blIvb0lWTnJlWjQ1VmtIeDgwME1HYkl4bjkKT1A2MGhtYy9PMHdnbUN0NEZRYkVkVGlMYUVNUEFNN0FJdDJmbGx4OFVzRVhzOG5LSjJPd3lrK3dpUHlCaW9VR1RSN2ZYbUxMODRWTQpHaytHcmc5Q1hnMVF4UStwNHE4dnViZ0UvQkpZN0tHMVF0VlZZRmpKeGNPQWt3dStXTWIybjBlQlpWWDg2VmdRT0FXb1ZLaitGZHU3CjRwS0xEOFp1aDcza0lhbFFqWUM5U2k3K1ljRVhaN1hacmE2UFludVNBd2FYS0YyRWk2Y1grbkRKdEQ4RWtycUtqWUt6Sm1CNHdSZFgKbFZ5OEVuTjViOGpVZnhiNERvYjZ6aXY0NHZRZTl2a21jRnI5eEVzdW5naXNLdmppcCt2S3I4T1E2SzlpbTNhKzRJdHpzTGlIa290bgpBSnNLdm5oRitBM3dGK0RzZ2k4K2tXbm5JT0Rxa292VDNMSzQ0SXUveWRSZmpsMk51TGkzek93ditMMHpTTUZuNm42T0JZWHA0UGNECkJoZDhjUzRHWlRmUmM2cFF1em1icFNyZ1N5NnV6MjZmUSswbVY3WEJlSnZwR0gvc2hpVlBQNVY5cU9DTDh6QVBjaFNtdVMxaExpNlkKN2lhNndORjZRanZ5UHpuOEdaaFJjdkdVZ3FYMWZCWkxhQVp6VFE4c3VmalgxS0wrMTRGdkZueXhVV3JnQ09ES2tvdlhodWNkOEcwcwpLR3hFMjNzcW1lSll6V1JNWnNuRktSNG1XTVIrVnNuRmg0Zm5obUgzRVEvZHpyNDYwQTRUU01FWHRlVGlSN0FZNFRrTUx6b3pWQS9HCjBOVC9wdWFtdHRHNUM5bUczYUJkUWsyelhzZmdrVWFVd2pNOXBXeEthaU5LNDVyYnNBUnRDV1V6TUN0d2RYY2RkRWI5SlpCS3dSZmIKZXZEY3I0QWZsK3p1K09xTTF4VUJhd3ErdUxBSGJZQWRFTTByK0dLSFpPZVNpOGRoaks4ZnkyQzJUeUFic0hpbnc0SW8rR0sxWkhmaQp0MkJDV0Y3SXBCcVZYUHcwbG5uWmErb1BnVlNBNFNXNzA5ZEs3WTdJNGdZVGVySGs0cVhZQ3ZwU3Bpb0J4cFJjUENuemZoVjRwUk9UCkpjQUJ3WHRLL3lQRWNzSmxIMkJxeWNVcENEZ0syMmgvMjlNSkZYeHhUY25GSzRCdmxWeDhCN1hyRGljQVN3dSt1S1ZrR2ZqMS9HdW0KajRGaGY2RzllMk5SYjRVYUZQOXhMUHF0cHllQmZ3ZitsQ25iak5uZSt6TUNhY095RXhzbHU3VmdaeWh0MUFUeUxRelYzUTM0UGJWYgpWSU9CT3dxK2VQMTJ6dXNid0owWXNsd05ZL29id1RPanNSUFNveU9JcnVqZFNQMGRSanNrKy8xZDZqbjlQNVhrTDN3QlFaR29BQUFBCkZuUkZXSFJEY21WaGRHbHZiaUJVYVcxbEFEQTBMekkwTHpFM21FK2pwZ0FBQUNWMFJWaDBaR0YwWlRwamNtVmhkR1VBTWpBeE9TMHcKT0MweU9GUXhNRG96TURveE5pMHdOem93TUpxRlpuVUFBQUFsZEVWWWRHUmhkR1U2Ylc5a2FXWjVBREl3TVRrdE1EZ3RNamhVTVRBNgpNekE2TVRZdE1EYzZNRERyMk43SkFBQUFJSFJGV0hSVGIyWjBkMkZ5WlFCTllXTnliMjFsWkdsaElFWnBjbVYzYjNKcmN5Qk5XTHVSCktpUUFBQUFBU1VWT1JLNUNZSUk9IiAvPgo8L3N2Zz4K");background-repeat:no-repat;background-size:100px auto;background-position:top center;
+}.credits{color:#777;font-size:12px;}.credits a,.credits a:visited,.credits a:active,.credits a:hover,.credits a:focus{color:#777;text-decoration:none;font-size:12px;}.credits:hover .logo,.credits a:hover{-webkit-filter: none;opacity:1;color:#09C;}
+</style>
+  </head>
+
+  <body onload="generateBanner()">
+  
+
+ 
+<div class="container-fluid mt-0 mb-5 p-0">
+
+ <div class="container-fluid redox text-light w-100 pb-3">
+ <h2 class="display-3">Create your own Tip Banners</h2>
+ <div class="see"><a class="btn bg-transparent btn-sm border-0 trn shadow-none" href="#dazoptions" data-toggle="modal" data-target="#dazoptions" role="button"><svg class="svg-icon-burger" viewBox="0 0 20 20">
+							<path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+						</svg></a></div>  
+ </div>
+ 
+ <div class="col-md-12 mt-3 mb-3">
+   <div class="row">
+  <div id="form-corpus" class="col-md-6 bg-light">
+    <form id="generator-form" class="form-horizontal">
+		<fieldset>
+
+		<!-- Form Name -->
+		<legend>MyFreeCams Banner Genarator</legend>
+
+                <!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="name">Title</label>  
+			<div class="col-md-10">
+				<input id="name" name="name" type="text" placeholder="title" class="form-control input-md" required>
+				<span class="help-block infor">Website Name will show in url as <em>title="website name"</em></span>  
+			</div>
+		</div>
+                
+                <div class="form-group">
+			<label class="col-md-2 control-label" for="website">Tip URL</label>  
+			<div class="col-md-10">
+				<input id="website" name="website" type="text" placeholder="http://mfc.im/Username/t" class="form-control input-md" required>
+				<span class="help-block infor">Tip URL <a class="btn bg-transparent btn-sm border-0 trn shadow-none" href="#dazinfo" data-toggle="modal" data-target="#dazinfo" role="button"><svg class="svg-icon-question" viewBox="0 0 20 20">
+							<path d="M10,2.172c-4.324,0-7.828,3.504-7.828,7.828S5.676,17.828,10,17.828c4.324,0,7.828-3.504,7.828-7.828S14.324,2.172,10,2.172M10,17.004c-3.863,0-7.004-3.141-7.004-7.003S6.137,2.997,10,2.997c3.862,0,7.004,3.141,7.004,7.004S13.862,17.004,10,17.004M10,8.559c-0.795,0-1.442,0.646-1.442,1.442S9.205,11.443,10,11.443s1.441-0.647,1.441-1.443S10.795,8.559,10,8.559 M10,10.619c-0.34,0-0.618-0.278-0.618-0.618S9.66,9.382,10,9.382S10.618,9.661,10.618,10S10.34,10.619,10,10.619 M14.12,8.559c-0.795,0-1.442,0.646-1.442,1.442s0.647,1.443,1.442,1.443s1.442-0.647,1.442-1.443S14.915,8.559,14.12,8.559 M14.12,10.619c-0.34,0-0.618-0.278-0.618-0.618s0.278-0.618,0.618-0.618S14.738,9.661,14.738,10S14.46,10.619,14.12,10.619 M5.88,8.559c-0.795,0-1.442,0.646-1.442,1.442s0.646,1.443,1.442,1.443S7.322,10.796,7.322,10S6.675,8.559,5.88,8.559 M5.88,10.619c-0.34,0-0.618-0.278-0.618-0.618S5.54,9.382,5.88,9.382S6.498,9.661,6.498,10S6.22,10.619,5.88,10.619"></path>
+						</svg></a></span>  
+			</div>
+		</div>
+                
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="banner_img">Image url</label>  
+			<div class="col-md-10">
+				<input id="banner_img" name="banner_img" type="text" placeholder="url" class="form-control input-md" required>
+				<span class="help-block infor">Banner image URL, your hosted image</span>  
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="width">Width</label>  
+			<div class="col-md-10">
+				<input id="width" name="width" type="text" placeholder="300" class="form-control input-md" required>
+				<span class="help-block infor">Preview Width in pixels. You can change the banner size by adding a value to <em>width=''</em></span>  
+			</div>
+		</div>		
+
+		<!-- Button -->
+		<div class="form-group">
+			<label class="col-md-12 control-label non" for="Generate"></label>
+			<div class="col-md-12">
+				<button id="Generate" name="Generate" class="btn btn-primary">Generate My Banner</button>
+			</div>
+		</div>
+		
+		</fieldset>
+	</form>
+  </div>
+	
+	<div id="generator-result" class="col-md-6">
+		<img src="img/ani_tp03.gif">
+	</div>
+    
+    
+    </div>
+</div>    
+</div>
+
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+<!-- / Modal Info -->
+<div class="modal fade dazinfo" tabindex="-1" role="dialog" aria-labelledby="dazinfo" aria-hidden="true" id="dazinfo">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title lead trn" id="TranslateModal">Need Help?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="trn">How to use...</p>
+       <p>1. Type the Title of your link in the first field<br>
+       2. Grab your MyFreeCams tip URL it should look like this <mark>https://mfc.im/<strong>Username</strong>/t </mark><br>
+       3. Paste your hosted image url in the next field<br>
+       4. Type the size of your preview image...300 pixels is pretty visible.<br>
+       5. If you want to resize the image, in the generated code you'll see <mark>width=''</mark> between quotes you can add any value expressed in pixels or percent values like so: 300 or 100%<br>
+       <strong>Example:</strong><br>
+       <pre><code>&lt;a title='Tip Me' target='_self' href='http://mfc.im/<strong class="text-danger">Username</strong>/t'&gt;&lt;img width='300' src='your-image-url-here'&gt;&lt;/a&gt;</code></pre><br>
+       <pre><code>&lt;a title='Tip Me' target='_self' href='http://mfc.im/<strong class="text-danger">Username</strong>/t'&gt;&lt;img width='100%' src='your-image-url-here'&gt;&lt;/a&gt;</code></pre>
+      </div>
+      <div class="modal-footer"><p><a class="btn btn-sm btn-primary" href="mfc-tips.html" target="_blank"><span class="trn">More info about MFC Tip URLs</span></a></p></div>
+    </div>
+  </div>
+</div>
+
+<!-- / Modal Info-->
+
+
+
+
+<!-- / Modal Options -->
+<div class="modal fade dazoptions" tabindex="-1" role="dialog" aria-labelledby="dazoptions" aria-hidden="true" id="dazoptions">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title lead trn" id="TranslateModal">Resources</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="trn">Default images. You can right click on the images below, download them on your machine, upload your favorite one online, grab the full URL path and... from here it's up to you.</p>
+        <div class="col-md-12 row pre-scrollable">
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/ani_tp02.gif"/></p>
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/ani_tp03.gif"/></p>
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/tp_05.png"/></p>
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/cgc_tip01.png"/></p>
+         <p class="col-md-12 text-center"><img class="img-fluid" src="img/club_main.gif"/></p>
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/camgirl_cloud01.png"/></p>
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/camgirl_cloud02.png"/></p>
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/camgirl_cloud03.png"/></p>
+         <p class="col-md-6 text-center"><img class="img-fluid" src="img/camgirl_cloud04.png"/></p>
+         </div>
+         <p class="alert alert-warning">Please do not hotlink...Github is not a image hosting platform</p> 
+      </div>
+      <div class="modal-footer"><p><a class="btn btn-sm btn-primary" href="https://cssmfc.github.io/camgirl/" target="_blank"><span class="trn">Other Graphic Resources</span></a> <a class="btn btn-sm btn-primary" href="mfc-tips.html" target="_blank"><span class="trn">More info about MFC Tip URLs</span></a></p></div>
+    </div>
+  </div>
+</div>
+
+<!-- / Modal Options -->
+
+
+<div class="col-sm-12 text-center credits pt-5 m-auto pl-0 pr-0 pb-0 mt-5">
+<a href="https://camgirl.cloud/" target="_blank" class="mt-5">
+   <div class="logo"></div>
+   <p class="small">CAMGIRL CLOUD</p>
+   </a>
+</div>
+
+
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+
+  </body>
+</html>

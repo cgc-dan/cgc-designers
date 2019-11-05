@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>demo-widget</title>
+<style>
+body { background-color: #f1f1f1; color: #333;	font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;width:90%;margin:0 auto; }
+
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background-color:#ca879d;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}
+
+#tipmenu{background-image:url('');background-repeat:no-repeat;background-size:cover;background-position:center;background-attachment:fixed;background-color:#fff;box-shadow:0 0 5px #999;margin:2% auto 1% auto;}
+#tipmenu h1{display:block;text-align:center;font-family:-apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-weight:100;font-size:3.33em;}
+.tprequest{color:#8b0404;border-bottom:1px solid #ca879d;}.tprequest p{display:block;line-height:normal;margin:0 auto;color:#8b0404;font-size:17px;}.buy a, .buy a:visited{display:block;padding:8px 11px;text-align:center;background-color:#e12965;color:#fff;-webkit-box-shadow:inset 0 7px 22px #8b0404;box-shadow:inset 0 7px 22px #8b0404;font-size:.7em;text-transform:uppercase;text-decoration:none;}.buy a:hover{background-color:#900;color:#fff;-webkit-box-shadow:inset 0 11px 27px #000;box-shadow:inset 0 11px 27px #000;}
+
+
+
+
+
+.divider{height:0px;overflow:hidden;opacity:0;}
+#main:hover{background-color:#fff;}
+.myfooter:hover{background-color:#222;color:#FC3;}
+
+
+.tb #pop{display:none;width:100%;height:100%;position:fixed;top:0;left:0;z-index:10000!important;background-color:rgba(0,0,0,0.80);-webkit-animation:fadeInScale 1.2s ease-in-out;-moz-animation:fadeInScale 1.2s ease-in-out;-o-animation:fadeInScale 1.2s ease-in-out;-ms-animation:fadeInScale 1.2s ease-in-out;animation:fadeInScale 1.2s ease-in-out;}.tb #pop:target{display:block;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}.wrapping,.wrapping:hover{display:block;width:80%;height:auto;overflow:auto;padding:0;margin:3% auto;background-color:#f1f1f1;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}.dvider{opacity:0;font-size:1px;overflow:hidden;}.ttle{color:#06C;font-size:22px;font-weight:normal;}.close{text-align:right;}.close a, .close a:visited{display:block;overflow:hidden;width:32px;height:42px;padding:5px 7px 11px;margin:-8px 6px auto 2px;color:#fff;background-color:#09C;font-size:20px;-webkit-clip-path: polygon(100% 0, 100% 100%, 49% 89%, 0 100%, 0 0);clip-path: polygon(100% 0, 100% 100%, 49% 89%, 0 100%, 0 0);text-decoration:none;}.close a:hover{background-color:#09F;color:#fff;overflow:hidden;text-decoration:none;}.close span.led:before{content:'\002B';display:block;width:20px;height:20px;transform:rotate(45deg);text-align:center;text-decoration:none;}.wrapping p{display:block;text-align:left;font-size:17px;margin:0 auto;line-height:normal;color:#555;font-weight:100;font: 15px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}#pop p,.ttle{color:#555;}.cntnt a,.cntnt a:visited{color:#09C!important;}.cntnt a:hover{color:#F63!important;}.credits-wrapper{font-size:15px;font-weight:100;}
+@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+@keyframes fadeInScale {0% { transform: scale(0.6);}100% { transform: scale(1);}}
+.svg-icon-burger {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon-burger path,
+.svg-icon-burger polygon,
+.svg-icon-burger rect {
+  fill: #fff;
+}
+
+.svg-icon-burger circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+.svg-icon-copy {
+  width: 1.5em;
+  height: 1.5em;
+  margin:6px auto -6px 1px;
+}
+.svg-icon-copy:hover path,
+.svg-icon-copy:hover polygon,
+.svg-icon-copy:hover rect {
+  fill: #09C;
+}
+
+.svg-icon-copy:hover circle {
+  stroke: #09C;
+  stroke-width: 1;
+}
+
+.open{padding:6px 12px;text-align:center;position:fixed;top:15px;right:12px;background-color:#09C;z-index:9999;}.open:hover{background-color:#222;}.btn-light{padding:3px 7px;text-align:center;margin-left:12px;}.btn-light:hover{}
+textarea{display:block;width:97%;height:120px;max-width:100%;max-height:120px; outline:none;margin:7px 3px 6px 1px;}
+#pop [class*="gr-"]:hover{background-color:#f1f1f1;}
+</style>
+</head>
+
+<body>
+
+
+
+<div id="main">
+
+
+<div id="tipmenu" class="gr-12">
+
+<div class="gr-12">
+<h1>My Tip Menu</h1>
+  <div class="gr-12">
+    
+    <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+<a href="#pop" class="open"><svg class="svg-icon-burger" viewBox="0 0 20 20">
+							<path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+						</svg></a>
+
+
+
+<div class="tb">
+<div id="pop">
+<div class="gr-1 divider"><p>Camgirl Live Editor - Divider</p></div>
+   <div class="gr-8 wrapping xcr">
+   <div class="gr-11 ttle">Codes</div>
+   <div class="gr-1 close no tright"><a href="#close" title="Close"><span class="led"></span></a></div>
+   <div class="gr-12 credits-wrapper cntnt">
+     <p class="sm-only">Want to test the markup codes in <a href="../source.html" target="_blank">Editor tool</a> ? Here are the source markups</p>
+       <p class="sm-only">HTML markup <a class="btn btn-sm btn-light" href="#!" onclick="myFunction()">
+    <svg class="svg-icon-copy" viewBox="0 0 20 20">
+							<path d="M15.475,6.692l-4.084-4.083C11.32,2.538,11.223,2.5,11.125,2.5h-6c-0.413,0-0.75,0.337-0.75,0.75v13.5c0,0.412,0.337,0.75,0.75,0.75h9.75c0.412,0,0.75-0.338,0.75-0.75V6.94C15.609,6.839,15.554,6.771,15.475,6.692 M11.5,3.779l2.843,2.846H11.5V3.779z M14.875,16.75h-9.75V3.25h5.625V7c0,0.206,0.168,0.375,0.375,0.375h3.75V16.75z"></path>
+						</svg>
+  </a></p>
+       <textarea spellcheck="false" id="htmlCODE"><div id="main">
+
+
+<div id="tipmenu" class="gr-12">
+
+<div class="gr-12">
+<h1>My Tip Menu</h1>
+  <div class="gr-12">
+    
+    <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+     <div class="gr-12 tprequest no">
+      <div class="gr-9"><p>Add your tip request here</p></div>
+      <div class="gr-3 tcenter buy"><p><a href="#">200 tokens</a></p></div>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+
+
+</div></textarea>
+       <p class="sm-only">CSS markup <a class="btn btn-sm btn-light" href="#!" onclick="myFunction2()">
+    <svg class="svg-icon-copy" viewBox="0 0 20 20">
+							<path d="M15.475,6.692l-4.084-4.083C11.32,2.538,11.223,2.5,11.125,2.5h-6c-0.413,0-0.75,0.337-0.75,0.75v13.5c0,0.412,0.337,0.75,0.75,0.75h9.75c0.412,0,0.75-0.338,0.75-0.75V6.94C15.609,6.839,15.554,6.771,15.475,6.692 M11.5,3.779l2.843,2.846H11.5V3.779z M14.875,16.75h-9.75V3.25h5.625V7c0,0.206,0.168,0.375,0.375,0.375h3.75V16.75z"></path>
+						</svg>
+  </a></p>
+       <textarea spellcheck="false" id="cssCODE">.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background-color:#ca879d;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}
+
+#tipmenu{background-image:url('');background-repeat:no-repeat;background-size:cover;background-position:center;background-attachment:fixed;background-color:#fff;box-shadow:0 0 5px #999;margin:2% auto 1% auto;}
+#tipmenu h1{display:block;text-align:center;font-family:-apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-weight:100;font-size:3.33em;}
+.tprequest{color:#8b0404;border-bottom:1px solid #ca879d;}.tprequest p{display:block;line-height:normal;margin:0 auto;color:#8b0404;font-size:17px;}.buy a, .buy a:visited{display:block;padding:8px 11px;text-align:center;background-color:#e12965;color:#fff;-webkit-box-shadow:inset 0 7px 22px #8b0404;box-shadow:inset 0 7px 22px #8b0404;font-size:.7em;text-transform:uppercase;text-decoration:none;}.buy a:hover{background-color:#900;color:#fff;-webkit-box-shadow:inset 0 11px 27px #000;box-shadow:inset 0 11px 27px #000;}</textarea>
+       <p>Make sure that you do remember to wrapp the css markup between &lt;style&gt; and &lt;/style&gt; tags, folowed by the HTML markup code</p>
+   </div>
+   </div>
+<div class="gr-1 divider"><p>Camgirl Live Editor - Divider</p></div>
+</div>
+</div>
+</div>
+
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("htmlCODE");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+function myFunction2() {
+  var copyText = document.getElementById("cssCODE");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+</body>
+</html>
