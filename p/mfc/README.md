@@ -1,4 +1,4 @@
-# cgc-designers
+# cgc-designers  - MyFreeCams section
 [Camgirl.Cloud Freelance Program](https://camgirl.cloud/docs/designers/)
 
 ![CGC Freelancer Program](https://cgc-dan.github.io/cgc-designers/assets/cgc.jpg)
