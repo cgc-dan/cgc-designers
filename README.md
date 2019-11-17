@@ -25,4 +25,4 @@ We've declined collaborations with some entities (websites, services) from this 
 * [Home Page](https://cgc-dan.github.io/cgc-designers/)
 
 **Need to get in touch with us?**
-feel free to use the [contact form](https://camgirl.cloud/contact/) from our main website or on [twitter](https://twitter.com/CamgirlCloud)
+feel free to use the [contact form](https://camgirl.cloud/contact/) from our main website or on [twitter](https://twitter.com/CamgirlCloud) | [Discord Channel](https://discord.gg/2XvqfsJ)
