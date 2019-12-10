@@ -1,5 +1,7 @@
 # Giveaway - CGC
 
+![CGC KIT](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/fdownload.jpg)
+
 **Offline kit for webcam performers and freelancers**
 
 If you landed on this particular page, it means you are interested in creativ part of adult caming.
@@ -12,9 +14,9 @@ This particular package is the main content from another project, a Desktop App 
 - **bootstrap 4x** , uses Bootstrap framework to render content
 - **updates** , unfortunateley updates are not possible to push to already downloaded packages but we do announce on our discord server
 
-![CGC APP](https://raw.githubusercontent.com/cgc-dan/cgc-app/master/docs/screens/cgc-app-templatev1.jpg) | ![CGC APP](https://raw.githubusercontent.com/cgc-dan/cgc-app/master/docs/screens/cgc-app-templatev1.jpg)
+![CGC CB Cover](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/cb-cover.jpg) | ![CGC MFC Cover](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/mfc-cover.jpg)
 ------------ | -------------
-![CGC APP](https://raw.githubusercontent.com/cgc-dan/cgc-app/master/docs/screens/cgc-app-templatev1.jpg) | ![CGC APP](https://raw.githubusercontent.com/cgc-dan/cgc-app/master/docs/screens/cgc-app-templatev1.jpg)
+![CGC NF Cover](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/nf-cover.jpg) | ![CGC OBS Cover](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/obs-cover.jpg)
 
 
 ## To Do
@@ -24,4 +26,14 @@ This particular package is the main content from another project, a Desktop App 
 - [ ] add translation to other languages - currently only English and Romanian
 
 ## Support
+- Not really necessary unless you're a dev or have good suggestions
+
  
+# CGC App Development
+![CGC APP](https://raw.githubusercontent.com/cgc-dan/cgc-app/master/docs/screens/cgc-app-templatev1.jpg)
+[work in progress](https://github.com/cgc-dan/cgc-app)
+
+### CGC Online
+[Discord Server](https://discord.gg/u7rKW2H) | [Twitter](https://twitter.com/CamgirlCloud)
+----------------- | -----------------
+[Website](https://camgirl.cloud/editor/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/)
