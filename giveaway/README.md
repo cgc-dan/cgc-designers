@@ -3,6 +3,7 @@
 ![CGC KIT](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/fdownload.jpg)
 
 **Offline kit for webcam performers and freelancers**
+[:inbox_tray: Download Zip](https://github.com/cgc-dan/cgc-designers/raw/master/giveaway/CGC_Giveaway.zip)
 
 If you landed on this particular page, it means you are interested in creativ part of adult caming.
 [Camgirl Cloud](https://camgirl.cloud/editor/) service does exactly that. Focused on creative part of adult industry, online environment.
@@ -31,7 +32,7 @@ This particular package is the main content from another project, a Desktop App 
  
 # CGC App Development
 ![CGC APP](https://raw.githubusercontent.com/cgc-dan/cgc-app/master/docs/screens/cgc-app-templatev1.jpg)
-[work in progress](https://github.com/cgc-dan/cgc-app)
+[:electron: work in progress](https://github.com/cgc-dan/cgc-app)
 
 ### CGC Online
 [Discord Server](https://discord.gg/u7rKW2H) | [Twitter](https://twitter.com/CamgirlCloud)
