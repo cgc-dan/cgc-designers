@@ -5,7 +5,7 @@
 **Offline kit for webcam performers and freelancers**
 [:inbox_tray: Download Zip](https://github.com/cgc-dan/cgc-designers/raw/master/giveaway/CGC_Giveaway.zip)
 
-If you landed on this particular page, it means you are interested in creativ part of adult caming.
+If you landed on this particular page, it means you are interested in creative part of adult camming.
 [Camgirl Cloud](https://camgirl.cloud/editor/) service does exactly that. Focused on creative part of adult industry, online environment.
 
 This particular package is the main content from another project, a Desktop App (currently in development) which can be found [here](https://github.com/cgc-dan/cgc-app)
@@ -13,7 +13,7 @@ This particular package is the main content from another project, a Desktop App 
 ## CGC Giveaway
 - **works offline**, web pages with informations, codes, suggestions, resources
 - **bootstrap 4x** , uses Bootstrap framework to render content
-- **updates** , unfortunateley updates are not possible to push to already downloaded packages but we do announce on our discord server
+- **updates** , unfortunately updates are not possible to push to already downloaded packages but we do announce on our discord server
 
 ![CGC CB Cover](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/cb-cover.jpg) | ![CGC MFC Cover](https://raw.githubusercontent.com/cgc-dan/cgc-designers/master/giveaway/assets/mfc-cover.jpg)
 ------------ | -------------
