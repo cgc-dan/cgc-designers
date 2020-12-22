@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Startup-Ro</title>
+<style>
+* {box-sizing:border-box;}
+body{background-color:#f1f1f1;color:#033;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-size: calc(15px + 6 * ((100vw - 320px) / 680));padding:0;margin:0 auto;}
+html{scroll-behavior: smooth;}
+
+
+.container{display:block;width:80%;height:auto;margin:0 auto;float:none;clear:left;background-color:#fff;box-shadow:0 0 8px #999;}
+.header{padding:2em 0 2em;}.header h3{display:block;width:80%;height:auto;margin:0 auto;font-size: calc(22px + 6 * ((100vw - 320px) / 680));font-weight:400;color:#777;text-align:center;}
+
+.content{display:block;width:90%;height:auto;margin:0 auto 12px auto;padding:.3em;}
+.content p,.content em,.content strong,.content{font-size: calc(15px + 6 * ((100vw - 320px) / 680));font-weight:100;}
+.content code{padding:.3em .6em .3em;background-color:#f1f1f1;color:#F63;font-size: calc(13px + 3 * ((100vw - 320px) / 680));font-weight:400;font-family:"Lucida Console", Monaco, monospace;margin-left:4px;margin-right:4px;}
+pre > code{display:block;width:90%;height:auto;padding:.3em .6em .3em;background-color:#f1f1f1;color:#F63;font-size: calc(13px + 3 * ((100vw - 320px) / 680));font-weight:400;font-family:"Lucida Console", Monaco, monospace;margin:2px auto 7px auto; word-break:keep-all;}
+.content strong{font-weight:400;}
+.content hr{display:block;width:100%;height:1px;background-color:#f1f1f1;box-shadow:0 1px 2px #999;float:none;clear:left;margin:10px auto 12px auto;border:0; outline:none;}
+a, a:visited{color:#099;text-decoration:none;}
+a:hover{color:#F93; text-decoration:none;}
+a:after, a:visited:after, a:hover:after{content:'\21B8';display:inline-block;margin-left:5px;transform:rotateY(180deg);}
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+  
+  <div class="header"><h3>Demo/Start-up</h3></div>
+  
+  <div class="content">
+  <p><strong>Chaturbate Bio Design</strong></p>
+  <p>Optimizat pentru Editor</p>
+  <ul> 
+    <li>Editorul foloseste filtre care au functia de a identifica si de a citi continutul markup. Pentru o buna functionare si eficienta in editare, tot designul este incorporat intr-un singur tag HTML.<br>
+    Recomandat este tagul HTML <code>&lt;ul&gt;</code> pentru ca in mod nativ poate include alte taguri HTML ca <code>&lt;p&gt;, &lt;i&gt;, &lt;a href, &lt;span&gt;, &lt;b&gt;, &lt;br&gt;, &lt;font&gt;, &lt;h1&gt;...&lt;h6&gt;, &lt;img src=</code> s.a.m.d</li>
+    <li>Pentru un design cat mai "responsive" folosim valori exprimate in <code>%</code> pentru elementele de tip block (imaginile inclusiv) si formula <code>font-size: calc(13px + 3 * ((100vw - 320px) / 680));</code> de tip calc pentru dimensiunea fonturilor.<br>O alta varianta pentru dimensiune fonturi este <code>vw</code> <i>viewport</i> = dimensiunea ferestrei browserului. Daca ecranul are o latime de 50cm, 1vw = 0,5cm</li>
+    <li>Pozitionare. In tagul principal <code>&lt;ul&gt;</code> il putem numi si element parinte, trebuie sa existe atributul pentru <code>margin</code><br>
+    Pentru o posiztionare buna recomandam <code>margin:120px auto 50px -146px</code> ca proprietate pentru <code>margin</code> in <code>&lt;ul&gt;</code><br>Exemplu:<br>
+    <pre><code>&lt;ul style=&quot;display:block;width;100%;height:auto;margin:120px auto 50px -146px&quot;&gt;</code></pre></li>
+    <li>Nu recomandam CSS minified . Se foloseste <code>background-color:...</code> pentru culoare de fundal si <code>background-image:url();</code> pentru imagine de fundal</li>
+  </ul>
+  <p><strong>De Evitat</strong></p>
+  <ul>
+     <li>Editorul citeste fiecare element HTML din cod si identifica ce functii sa ii afiseze pentru editare. De exemplu face diferenta dintr-un element text, un link sau o imagine, motiv pentru care <code>target="_blank"</code> folosit DOAR la link-uri (URL-uri) nu trebuie sa existe in alte elemente HTML</li>
+   </ul>
+   <hr>
+   <p><strong>Elemente HTML si Atribute CSS</strong></p>
+   <p>Cele mai folosite taguri si atribute:</p>
+   <p><code>display:block;</code> - poate fi folosit cu orice tag HTML <br>
+   <code>width:100%;min-width:10%;</code> - latimea este exprimata in % si nu in pixeli<br>
+   <code>height:auto;</code> - inaltime e de obicei setata cu auto<br>
+   <code>box-sizing:border-box;</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">demo foarte util aici</a><br>
+   <code>list-style:none;</code> - ascunde orice element bullet<br>
+   <code>line-height:normal</code> - Chaturbate e un pic cretin la interpretarea space si font kernel si transforma spatiul gol ca <code>br</code> in paragraf iar spatiul dintre paragrafe sau alte elemente block este mult mai anapoda, motiv pentru care atributl css line-height definit in sintaxa CSS e binevenit<br>
+   <code>float:...</code> - "obliga" tagul HTML sa fie pozitionat intr-o anumita parte dreapta sau stanga <br>
+   <code>clear:...</code> - elimina pozitia float<br>
+   <pre><code>float:none;clear:left</code></pre> </p>
+   <p><strong>Cateva Exemple de Layout-uri</strong></p>
+   <ul> 
+     <li><a href="demos/demos-cb/demo_01.html" target="_blank">Demo 1</a></li>
+     <li><a href="demos/demos-cb/demo_02.html" target="_blank">Demo 2</a></li>
+     <li><a href="demos/demos-cb/demo_03.html" target="_blank">Demo 3</a></li>
+     <li><a href="demos/demos-cb/demo_04.html" target="_blank">Demo 4</a></li>
+     <li><a href="demos/demos-cb/demo_05.html" target="_blank">Demo 5</a></li>
+     <li><a href="demos/demos-cb/demo_06.html" target="_blank">Demo 6</a></li>
+   </ul>
+   
+   <hr>
+   <p><a href="https://cgc-dan.github.io/cgc-designers/p/cb/code-bios-chaturbate.html">Inapoi</a> la documentatia Learn 2 Code</p>
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
